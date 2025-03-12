@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/CMakeFiles/mvfst_exception.dir/depend.make
@@ -72,16 +72,16 @@ include quic/CMakeFiles/mvfst_exception.dir/flags.make
 quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o: quic/CMakeFiles/mvfst_exception.dir/flags.make
 quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o: ../quic/QuicException.cpp
 quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o: quic/CMakeFiles/mvfst_exception.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o -MF CMakeFiles/mvfst_exception.dir/QuicException.cpp.o.d -o CMakeFiles/mvfst_exception.dir/QuicException.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o -MF CMakeFiles/mvfst_exception.dir/QuicException.cpp.o.d -o CMakeFiles/mvfst_exception.dir/QuicException.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp
 
 quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_exception.dir/QuicException.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp > CMakeFiles/mvfst_exception.dir/QuicException.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp > CMakeFiles/mvfst_exception.dir/QuicException.cpp.i
 
 quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_exception.dir/QuicException.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp -o CMakeFiles/mvfst_exception.dir/QuicException.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp -o CMakeFiles/mvfst_exception.dir/QuicException.cpp.s
 
 # Object files for target mvfst_exception
 mvfst_exception_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_exception_EXTERNAL_OBJECTS =
 quic/libmvfst_exception.a: quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o
 quic/libmvfst_exception.a: quic/CMakeFiles/mvfst_exception.dir/build.make
 quic/libmvfst_exception.a: quic/CMakeFiles/mvfst_exception.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_exception.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_exception.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_exception.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_exception.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_exception.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_exception.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/CMakeFiles/mvfst_exception.dir/build: quic/libmvfst_exception.a
 .PHONY : quic/CMakeFiles/mvfst_exception.dir/build
 
 quic/CMakeFiles/mvfst_exception.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_exception.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_exception.dir/cmake_clean.cmake
 .PHONY : quic/CMakeFiles/mvfst_exception.dir/clean
 
 quic/CMakeFiles/mvfst_exception.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_exception.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_exception.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/CMakeFiles/mvfst_exception.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/depend.make
@@ -72,16 +72,16 @@ include quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/flags.make
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o: quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/flags.make
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o: ../quic/codec/QuicPacketBuilder.cpp
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o: quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o -MF CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o.d -o CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o -MF CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o.d -o CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp
 
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp > CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp > CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.i
 
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp -o CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/QuicPacketBuilder.cpp -o CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.s
 
 # Object files for target mvfst_codec_pktbuilder
 mvfst_codec_pktbuilder_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_codec_pktbuilder_EXTERNAL_OBJECTS =
 quic/codec/libmvfst_codec_pktbuilder.a: quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/QuicPacketBuilder.cpp.o
 quic/codec/libmvfst_codec_pktbuilder.a: quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/build.make
 quic/codec/libmvfst_codec_pktbuilder.a: quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_codec_pktbuilder.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_codec_pktbuilder.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_codec_pktbuilder.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_codec_pktbuilder.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_codec_pktbuilder.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_codec_pktbuilder.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/build: quic/codec/libmvfst_codec_pktbuilder.a
 .PHONY : quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/build
 
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_codec_pktbuilder.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_codec_pktbuilder.dir/cmake_clean.cmake
 .PHONY : quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/clean
 
 quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/codec/CMakeFiles/mvfst_codec_pktbuilder.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/xsk/CMakeFiles/mvfst_xsk.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/CMakeFiles/mvfst_xsk.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/xsk/CMakeFiles/mvfst_xsk.dir/rule
 .PHONY : quic/xsk/CMakeFiles/mvfst_xsk.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mvfst_xsk: quic/xsk/CMakeFiles/mvfst_xsk.dir/rule
 
 # fast build rule for target.
 mvfst_xsk/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/build
 .PHONY : mvfst_xsk/fast
 
 BaseXskContainer.o: BaseXskContainer.cpp.o
@@ -180,7 +180,7 @@ BaseXskContainer.o: BaseXskContainer.cpp.o
 
 # target to build an object file
 BaseXskContainer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o
 .PHONY : BaseXskContainer.cpp.o
 
 BaseXskContainer.i: BaseXskContainer.cpp.i
@@ -188,7 +188,7 @@ BaseXskContainer.i: BaseXskContainer.cpp.i
 
 # target to preprocess a source file
 BaseXskContainer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i
 .PHONY : BaseXskContainer.cpp.i
 
 BaseXskContainer.s: BaseXskContainer.cpp.s
@@ -196,7 +196,7 @@ BaseXskContainer.s: BaseXskContainer.cpp.s
 
 # target to generate assembly for a file
 BaseXskContainer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s
 .PHONY : BaseXskContainer.cpp.s
 
 HashingXskContainer.o: HashingXskContainer.cpp.o
@@ -204,7 +204,7 @@ HashingXskContainer.o: HashingXskContainer.cpp.o
 
 # target to build an object file
 HashingXskContainer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o
 .PHONY : HashingXskContainer.cpp.o
 
 HashingXskContainer.i: HashingXskContainer.cpp.i
@@ -212,7 +212,7 @@ HashingXskContainer.i: HashingXskContainer.cpp.i
 
 # target to preprocess a source file
 HashingXskContainer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i
 .PHONY : HashingXskContainer.cpp.i
 
 HashingXskContainer.s: HashingXskContainer.cpp.s
@@ -220,7 +220,7 @@ HashingXskContainer.s: HashingXskContainer.cpp.s
 
 # target to generate assembly for a file
 HashingXskContainer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s
 .PHONY : HashingXskContainer.cpp.s
 
 ThreadLocalXskContainer.o: ThreadLocalXskContainer.cpp.o
@@ -228,7 +228,7 @@ ThreadLocalXskContainer.o: ThreadLocalXskContainer.cpp.o
 
 # target to build an object file
 ThreadLocalXskContainer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o
 .PHONY : ThreadLocalXskContainer.cpp.o
 
 ThreadLocalXskContainer.i: ThreadLocalXskContainer.cpp.i
@@ -236,7 +236,7 @@ ThreadLocalXskContainer.i: ThreadLocalXskContainer.cpp.i
 
 # target to preprocess a source file
 ThreadLocalXskContainer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i
 .PHONY : ThreadLocalXskContainer.cpp.i
 
 ThreadLocalXskContainer.s: ThreadLocalXskContainer.cpp.s
@@ -244,7 +244,7 @@ ThreadLocalXskContainer.s: ThreadLocalXskContainer.cpp.s
 
 # target to generate assembly for a file
 ThreadLocalXskContainer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s
 .PHONY : ThreadLocalXskContainer.cpp.s
 
 XskSender.o: XskSender.cpp.o
@@ -252,7 +252,7 @@ XskSender.o: XskSender.cpp.o
 
 # target to build an object file
 XskSender.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o
 .PHONY : XskSender.cpp.o
 
 XskSender.i: XskSender.cpp.i
@@ -260,7 +260,7 @@ XskSender.i: XskSender.cpp.i
 
 # target to preprocess a source file
 XskSender.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i
 .PHONY : XskSender.cpp.i
 
 XskSender.s: XskSender.cpp.s
@@ -268,7 +268,7 @@ XskSender.s: XskSender.cpp.s
 
 # target to generate assembly for a file
 XskSender.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s
 .PHONY : XskSender.cpp.s
 
 packet_utils.o: packet_utils.cpp.o
@@ -276,7 +276,7 @@ packet_utils.o: packet_utils.cpp.o
 
 # target to build an object file
 packet_utils.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o
 .PHONY : packet_utils.cpp.o
 
 packet_utils.i: packet_utils.cpp.i
@@ -284,7 +284,7 @@ packet_utils.i: packet_utils.cpp.i
 
 # target to preprocess a source file
 packet_utils.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i
 .PHONY : packet_utils.cpp.i
 
 packet_utils.s: packet_utils.cpp.s
@@ -292,7 +292,7 @@ packet_utils.s: packet_utils.cpp.s
 
 # target to generate assembly for a file
 packet_utils.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s
 .PHONY : packet_utils.cpp.s
 
 xsk_lib.o: xsk_lib.cpp.o
@@ -300,7 +300,7 @@ xsk_lib.o: xsk_lib.cpp.o
 
 # target to build an object file
 xsk_lib.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o
 .PHONY : xsk_lib.cpp.o
 
 xsk_lib.i: xsk_lib.cpp.i
@@ -308,7 +308,7 @@ xsk_lib.i: xsk_lib.cpp.i
 
 # target to preprocess a source file
 xsk_lib.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i
 .PHONY : xsk_lib.cpp.i
 
 xsk_lib.s: xsk_lib.cpp.s
@@ -316,7 +316,7 @@ xsk_lib.s: xsk_lib.cpp.s
 
 # target to generate assembly for a file
 xsk_lib.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s
 .PHONY : xsk_lib.cpp.s
 
 # Help Target
@@ -361,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

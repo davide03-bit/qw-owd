@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/flowcontrol//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/flowcontrol//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/rule
 .PHONY : quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mvfst_flowcontrol: quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/rule
 
 # fast build rule for target.
 mvfst_flowcontrol/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build
 .PHONY : mvfst_flowcontrol/fast
 
 QuicFlowController.o: QuicFlowController.cpp.o
@@ -180,7 +180,7 @@ QuicFlowController.o: QuicFlowController.cpp.o
 
 # target to build an object file
 QuicFlowController.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.o
 .PHONY : QuicFlowController.cpp.o
 
 QuicFlowController.i: QuicFlowController.cpp.i
@@ -188,7 +188,7 @@ QuicFlowController.i: QuicFlowController.cpp.i
 
 # target to preprocess a source file
 QuicFlowController.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.i
 .PHONY : QuicFlowController.cpp.i
 
 QuicFlowController.s: QuicFlowController.cpp.s
@@ -196,7 +196,7 @@ QuicFlowController.s: QuicFlowController.cpp.s
 
 # target to generate assembly for a file
 QuicFlowController.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/build.make quic/flowcontrol/CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.s
 .PHONY : QuicFlowController.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

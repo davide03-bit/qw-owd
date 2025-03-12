@@ -4,8 +4,8 @@
 quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../quic/fizz/handshake/FizzBridge.cpp \
   /usr/include/stdc-predef.h \
   ../quic/fizz/handshake/FizzBridge.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
   /usr/include/c++/11/cassert \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -198,12 +198,12 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
   /usr/include/c++/11/version \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -220,22 +220,22 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
   /usr/include/c++/11/atomic \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
   /usr/include/boost/preprocessor/control/expr_iif.hpp \
   /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
@@ -268,10 +268,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/boost/preprocessor/logical/not.hpp \
   /usr/include/boost/preprocessor/tuple/to_list.hpp \
   /usr/include/boost/preprocessor/tuple/size.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
   /usr/include/c++/11/cinttypes \
   /usr/include/inttypes.h \
   /usr/include/c++/11/cstring \
@@ -320,11 +320,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/gflags/gflags_gflags.h \
   /usr/include/glog/log_severity.h \
   /usr/include/glog/vlog_is_on.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
   /usr/include/limits.h \
@@ -358,44 +358,44 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/jemalloc/jemalloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
   /usr/include/c++/11/climits \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -403,48 +403,48 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
   /usr/include/c++/11/cstdarg \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
   /usr/include/c++/11/charconv \
   /usr/include/double-conversion/double-conversion.h \
   /usr/include/double-conversion/string-to-double.h \
   /usr/include/double-conversion/utils.h \
   /usr/include/double-conversion/double-to-string.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
   ../quic/QuicConstants.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
   ../quic/common/third-party/enum.h \
   ../quic/handshake/Aead.h \
   ../quic/common/Optional.h \
@@ -452,9 +452,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o: ../qui
 
 quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o: ../quic/fizz/handshake/FizzCryptoFactory.cpp \
   /usr/include/stdc-predef.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Utils.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Utils.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
   /usr/include/c++/11/cstddef \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -469,11 +469,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
   /usr/include/c++/11/pstl/pstl_config.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
   /usr/include/c++/11/version \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
   /usr/include/c++/11/cassert \
   /usr/include/assert.h \
   /usr/include/c++/11/cstdint \
@@ -486,7 +486,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
@@ -494,7 +494,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/strings.h \
   /usr/include/x86_64-linux-gnu/bits/strings_fortified.h \
   /usr/include/x86_64-linux-gnu/bits/string_fortified.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/c++/11/bits/atomic_lockfree_defines.h \
@@ -635,10 +635,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/utility \
   /usr/include/c++/11/bits/stl_relops.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/tuple \
   /usr/include/c++/11/array \
@@ -678,16 +678,16 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
   /usr/include/boost/preprocessor/control/expr_iif.hpp \
   /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
@@ -720,10 +720,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/boost/preprocessor/logical/not.hpp \
   /usr/include/boost/preprocessor/tuple/to_list.hpp \
   /usr/include/boost/preprocessor/tuple/size.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/climits \
@@ -747,8 +747,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/bits/streambuf.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -773,17 +773,17 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
   ../quic/fizz/handshake/FizzCryptoFactory.h \
   ../quic/fizz/handshake/QuicFizzFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
   /usr/include/c++/11/cinttypes \
   /usr/include/inttypes.h \
   /usr/include/glog/logging.h \
@@ -817,37 +817,37 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/gflags/gflags_gflags.h \
   /usr/include/glog/log_severity.h \
   /usr/include/glog/vlog_is_on.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/jemalloc/jemalloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -855,61 +855,61 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
   /usr/include/c++/11/optional \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
   /usr/include/c++/11/cstdarg \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
   /usr/include/c++/11/charconv \
   /usr/include/double-conversion/double-conversion.h \
   /usr/include/double-conversion/string-to-double.h \
   /usr/include/double-conversion/utils.h \
   /usr/include/double-conversion/double-to-string.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
   /usr/include/openssl/opensslv.h \
   /usr/include/openssl/macros.h \
   /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
@@ -983,28 +983,28 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/openssl/dtls1.h \
   /usr/include/openssl/srtp.h \
   /usr/include/openssl/ecdsa.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h \
   ../quic/handshake/CryptoFactory.h \
   ../quic/QuicConstants.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
   ../quic/common/third-party/enum.h \
   ../quic/codec/PacketNumberCipher.h \
   ../quic/common/BufUtil.h \
@@ -1013,14 +1013,14 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   ../quic/common/third-party/optional.h \
   ../quic/codec/QuicConnectionId.h \
   ../quic/codec/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddress.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressException.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/IPAddress.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Sockets.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/net/NetOps.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/net/NetworkSocket.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/net/detail/SocketFileDescriptorMap.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Time.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddress.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressException.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/IPAddress.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Sockets.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/net/NetOps.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/net/NetworkSocket.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/net/detail/SocketFileDescriptorMap.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Time.h \
   /usr/include/netdb.h \
   /usr/include/netinet/in.h \
   /usr/include/x86_64-linux-gnu/sys/socket.h \
@@ -1059,8 +1059,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   /usr/include/asm-generic/types.h \
   /usr/include/asm-generic/int-ll64.h \
   /usr/include/linux/time_types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV4.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV6.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV4.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV6.h \
   ../quic/QuicException.h \
   ../quic/common/Variant.h \
   ../quic/codec/PacketNumber.h \
@@ -1267,15 +1267,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o:
   ../quic/common/NetworkData.h \
   ../quic/common/TimePoints.h \
   ../quic/common/SmallCollections.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/heap_vector_types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/MemoryResource.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/heap_vector_types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/MemoryResource.h \
   /usr/include/c++/11/memory_resource \
   /usr/include/c++/11/shared_mutex \
   /usr/include/c++/11/bits/uses_allocator_args.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/small_vector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/small_vector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/small_vector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/small_vector.h \
   /usr/include/boost/operators.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/SanitizeLeak.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/SanitizeLeak.h \
   ../quic/handshake/Aead.h \
   ../quic/fizz/handshake/FizzBridge.h \
   ../quic/fizz/handshake/FizzPacketNumberCipher.h \
@@ -1285,7 +1285,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/stdc-predef.h \
   ../quic/fizz/handshake/FizzPacketNumberCipher.h \
   ../quic/codec/PacketNumberCipher.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
   /usr/include/c++/11/cassert \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1480,17 +1480,17 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
   /usr/include/c++/11/cstddef \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
   /usr/include/c++/11/version \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
   /usr/include/c++/11/limits \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
   /usr/include/c++/11/functional \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/unordered_map \
@@ -1508,11 +1508,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/c++/11/bits/algorithmfwd.h \
   /usr/include/c++/11/bits/stl_heap.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
   /usr/include/boost/preprocessor/control/expr_iif.hpp \
   /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
@@ -1545,28 +1545,28 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/boost/preprocessor/logical/not.hpp \
   /usr/include/boost/preprocessor/tuple/to_list.hpp \
   /usr/include/boost/preprocessor/tuple/size.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
   /usr/include/c++/11/atomic \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
   /usr/include/c++/11/cinttypes \
   /usr/include/inttypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/jemalloc/jemalloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
@@ -1579,9 +1579,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/climits \
@@ -1595,8 +1595,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/bits/streambuf.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -1621,14 +1621,14 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
   /usr/include/glog/logging.h \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -1660,26 +1660,26 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/gflags/gflags_gflags.h \
   /usr/include/glog/log_severity.h \
   /usr/include/glog/vlog_is_on.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -1687,27 +1687,27 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.c
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
   ../quic/common/BufUtil.h \
   ../quic/QuicConstants.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
   ../quic/common/third-party/enum.h \
   /usr/include/c++/11/optional \
   ../quic/common/ChainedByteRange.h \
   ../quic/common/Optional.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
   ../quic/common/third-party/optional.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
   /usr/include/openssl/opensslv.h \
   /usr/include/openssl/macros.h \
   /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
@@ -1786,7 +1786,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/stdc-predef.h \
   ../quic/fizz/handshake/FizzRetryIntegrityTagGenerator.h \
   ../quic/handshake/RetryIntegrityTagGenerator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
   /usr/include/c++/11/atomic \
   /usr/include/c++/11/bits/atomic_base.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -2030,7 +2030,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/gflags/gflags_gflags.h \
   /usr/include/glog/log_severity.h \
   /usr/include/glog/vlog_is_on.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/bits/stl_algo.h \
   /usr/include/c++/11/bits/algorithmfwd.h \
@@ -2046,8 +2046,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/c++/11/bits/node_handle.h \
   /usr/include/c++/11/bits/unordered_map.h \
   /usr/include/c++/11/bits/erase_if.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/syslimits.h \
   /usr/include/limits.h \
@@ -2081,19 +2081,19 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
   /usr/include/c++/11/version \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
   /usr/include/boost/preprocessor/control/expr_iif.hpp \
   /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
@@ -2126,54 +2126,54 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/boost/preprocessor/logical/not.hpp \
   /usr/include/boost/preprocessor/tuple/to_list.hpp \
   /usr/include/boost/preprocessor/tuple/size.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/jemalloc/jemalloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
   /usr/include/c++/11/climits \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/chrono \
   /usr/include/c++/11/ratio \
@@ -2181,21 +2181,21 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/c++/11/bits/parse_numbers.h \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
   ../quic/QuicConstants.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h \
   ../quic/common/third-party/enum.h \
   /usr/include/c++/11/optional \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/Properties.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/Properties.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
   /usr/include/openssl/opensslv.h \
   /usr/include/openssl/macros.h \
   /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
@@ -2269,46 +2269,46 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGen
   /usr/include/openssl/dtls1.h \
   /usr/include/openssl/srtp.h \
   /usr/include/openssl/ecdsa.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/IOBufUtil.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/IOBufUtil.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
   /usr/include/c++/11/cstdarg \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
   /usr/include/c++/11/charconv \
   /usr/include/double-conversion/double-conversion.h \
   /usr/include/double-conversion/string-to-double.h \
   /usr/include/double-conversion/utils.h \
   /usr/include/double-conversion/double-to-string.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher-inl.h
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher-inl.h
 
 quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: ../quic/fizz/handshake/QuicFizzFactory.cpp \
   /usr/include/stdc-predef.h \
   ../quic/common/Optional.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h \
   /usr/include/c++/11/cassert \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -2501,12 +2501,12 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h \
   /usr/include/c++/11/version \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/memory \
   /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -2523,22 +2523,22 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h \
   /usr/include/c++/11/atomic \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h \
   /usr/include/boost/preprocessor/control/expr_iif.hpp \
   /usr/include/boost/preprocessor/config/config.hpp \
   /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp \
@@ -2571,9 +2571,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/boost/preprocessor/logical/not.hpp \
   /usr/include/boost/preprocessor/tuple/to_list.hpp \
   /usr/include/boost/preprocessor/tuple/size.hpp \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h \
   ../quic/common/third-party/optional.h \
   /usr/include/c++/11/climits \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h \
@@ -2595,15 +2595,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/c++/11/ctime \
   /usr/include/c++/11/bits/parse_numbers.h \
   ../quic/fizz/handshake/QuicFizzFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h \
   /usr/include/c++/11/algorithm \
   /usr/include/c++/11/pstl/glue_algorithm_defs.h \
   /usr/include/c++/11/iterator \
@@ -2616,8 +2616,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/include/c++/11/bits/streambuf.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -2642,10 +2642,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
   /usr/include/c++/11/tr1/riemann_zeta.tcc \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h \
   /usr/include/c++/11/cinttypes \
   /usr/include/inttypes.h \
   /usr/include/glog/logging.h \
@@ -2679,92 +2679,92 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/gflags/gflags_gflags.h \
   /usr/include/glog/log_severity.h \
   /usr/include/glog/vlog_is_on.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h \
   /usr/include/c++/11/stdlib.h \
   /usr/include/jemalloc/jemalloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h \
   /usr/include/x86_64-linux-gnu/sys/uio.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/x86_64-linux-gnu/bits/uio-ext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h \
   /usr/include/c++/11/mutex \
   /usr/include/c++/11/bits/std_mutex.h \
   /usr/include/c++/11/bits/unique_lock.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h \
   /usr/include/c++/11/thread \
   /usr/include/c++/11/bits/std_thread.h \
   /usr/include/c++/11/bits/this_thread_sleep.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h \
   /usr/include/c++/11/cstdarg \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h \
   /usr/include/c++/11/charconv \
   /usr/include/double-conversion/double-conversion.h \
   /usr/include/double-conversion/string-to-double.h \
   /usr/include/double-conversion/utils.h \
   /usr/include/double-conversion/double-to-string.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String.h \
   /usr/include/c++/11/unordered_set \
   /usr/include/c++/11/bits/unordered_set.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h \
   /usr/include/c++/11/map \
   /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/bits/stl_multimap.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h \
   /usr/include/openssl/opensslv.h \
   /usr/include/openssl/macros.h \
   /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
@@ -2838,44 +2838,52 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
   /usr/include/openssl/dtls1.h \
   /usr/include/openssl/srtp.h \
   /usr/include/openssl/ecdsa.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h \
-  /client/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h \
+  /qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h
 
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher-inl.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher-inl.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/IOBufUtil.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/Properties.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/Properties.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher.h:
+
+../quic/fizz/handshake/FizzRetryIntegrityTagGenerator.cpp:
 
 ../quic/fizz/handshake/FizzPacketNumberCipher.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/memory/SanitizeLeak.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/small_vector.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/small_vector.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/small_vector.h:
 
 /usr/include/c++/11/bits/uses_allocator_args.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/memory/MemoryResource.h:
+/usr/include/c++/11/shared_mutex:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/MemoryResource.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/heap_vector_types.h:
 
 ../quic/common/TimePoints.h:
+
+../quic/common/NetworkData.h:
 
 /usr/include/c++/11/bits/stl_deque.h:
 
@@ -2901,6 +2909,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/mpl/aux_/config/bind.hpp:
 
+/usr/include/boost/mpl/bind_fwd.hpp:
+
 /usr/include/boost/mpl/lambda.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_wrap.hpp:
@@ -2921,13 +2931,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/apply_fwd.hpp:
 
-/usr/include/boost/mpl/apply_fwd.hpp:
-
 /usr/include/boost/mpl/aux_/preprocessor/default_params.hpp:
 
-/usr/include/boost/type_traits/add_pointer.hpp:
-
 /usr/include/boost/core/addressof.hpp:
+
+/usr/include/boost/type_traits/remove_cv.hpp:
 
 /usr/include/boost/type_traits/is_member_pointer.hpp:
 
@@ -2943,7 +2951,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/detail/indirect_traits.hpp:
 
-/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
 
 /usr/include/boost/mpl/aux_/arity_spec.hpp:
 
@@ -2969,15 +2979,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/iterator/iterator_categories.hpp:
 
-/usr/include/boost/iterator/iterator_traits.hpp:
-
-/usr/include/boost/iterator/detail/config_undef.hpp:
-
-/usr/include/boost/type_traits/is_floating_point.hpp:
+/usr/include/boost/type_traits/add_lvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_integral.hpp:
-
-/usr/include/boost/static_assert.hpp:
 
 /usr/include/boost/type_traits/is_array.hpp:
 
@@ -2985,13 +2989,13 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
+/usr/include/boost/type_traits/is_function.hpp:
+
 /usr/include/boost/preprocessor/array/data.hpp:
 
 /usr/include/boost/type_traits/remove_reference.hpp:
 
 /usr/include/boost/type_traits/is_rvalue_reference.hpp:
-
-/usr/include/boost/type_traits/is_lvalue_reference.hpp:
 
 /usr/include/boost/type_traits/is_reference.hpp:
 
@@ -2999,7 +3003,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
 
-/usr/include/boost/version.hpp:
+/usr/include/boost/type_traits/add_reference.hpp:
+
+/usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/type_traits/intrinsics.hpp:
 
@@ -3012,10 +3018,6 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/boost/mpl/aux_/config/compiler.hpp:
 
 /usr/include/boost/mpl/aux_/include_preprocessed.hpp:
-
-/usr/include/boost/detail/select_type.hpp:
-
-/usr/include/boost/mpl/aux_/lambda_support.hpp:
 
 /usr/include/boost/mpl/and.hpp:
 
@@ -3047,6 +3049,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/preprocessor/logical/bitand.hpp:
 
+/usr/include/boost/preprocessor/logical/and.hpp:
+
 /usr/include/boost/mpl/limits/arity.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/def_params_tail.hpp:
@@ -3065,9 +3069,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
+/usr/include/boost/mpl/aux_/config/dtp.hpp:
 
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
@@ -3080,8 +3082,6 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
 
 /usr/include/boost/mpl/aux_/config/ttp.hpp:
-
-/usr/include/boost/mpl/aux_/config/ctps.hpp:
 
 /usr/include/boost/mpl/aux_/na_fwd.hpp:
 
@@ -3098,6 +3098,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/boost/mpl/integral_c_tag.hpp:
 
 /usr/include/boost/detail/workaround.hpp:
+
+/usr/include/boost/mpl/aux_/config/gcc.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessor/enum.hpp:
 
@@ -3137,13 +3139,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 ../quic/common/Variant.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV4.h:
-
-/usr/include/linux/time_types.h:
-
-/usr/include/asm-generic/types.h:
-
 /usr/include/linux/types.h:
+
+/usr/include/linux/errqueue.h:
 
 /usr/include/arpa/inet.h:
 
@@ -3163,17 +3161,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/in.h:
 
-/usr/include/boost/mpl/next_prior.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/socket2.h:
-
 /usr/include/x86_64-linux-gnu/asm/sockios.h:
 
 /usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
-
-/usr/include/asm-generic/posix_types.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
@@ -3191,65 +3181,75 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/netinet/in.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Time.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/net/detail/SocketFileDescriptorMap.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Sockets.h:
+/usr/include/linux/time_types.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/IPAddress.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/net/NetworkSocket.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/IPAddress.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressException.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddress.h:
 
 ../quic/codec/QuicConnectionId.h:
 
 ../quic/common/ChainedByteRange.h:
 
-/usr/include/boost/preprocessor/repetition/enum_params.hpp:
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
-../quic/codec/PacketNumberCipher.h:
+../quic/common/BufUtil.h:
 
 ../quic/handshake/CryptoFactory.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h:
+/usr/include/boost/type_traits/add_pointer.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/PlaintextRecordLayer.h:
 
-/usr/include/boost/mpl/bind_fwd.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Executor.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h:
+/usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/BufAndPaddingPolicy.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h:
+/usr/include/boost/mpl/aux_/preprocessor/params.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/EncryptedRecordLayer.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/util/Variant.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/KeyScheduler.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/ssl/OpenSSLPtrTypes.h:
 
 /usr/include/openssl/ecdsa.h:
+
+/usr/include/boost/preprocessor/repetition/detail/for.hpp:
 
 /usr/include/boost/preprocessor/logical/bool.hpp:
 
 /usr/include/boost/preprocessor/facilities/detail/is_empty.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h:
 
-/usr/include/boost/preprocessor/repetition/detail/for.hpp:
+/usr/include/c++/11/deque:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h:
+/usr/include/openssl/rsaerr.h:
 
-/usr/include/x86_64-linux-gnu/bits/sched.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h:
 
-/usr/include/c++/11/ext/alloc_traits.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddress.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h:
-
-/usr/include/c++/11/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/11/bits/shared_ptr_atomic.h:
+/usr/include/c++/11/cwctype:
 
 /usr/include/c++/11/bits/unique_ptr.h:
 
@@ -3265,11 +3265,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/memory:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h:
+/usr/include/c++/11/limits:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Config.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h:
+
+/usr/include/c++/11/bits/istream.tcc:
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
@@ -3283,23 +3287,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdio2.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h:
-
-/usr/include/stdio.h:
 
 /usr/include/c++/11/cstdio:
 
-/usr/include/netinet/tcp.h:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
 ../quic/handshake/Aead.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/c++/11/functional:
 
@@ -3313,15 +3305,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
-/usr/include/boost/iterator/detail/enable_if.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
 /usr/include/boost/mpl/bool.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h:
 
 /usr/include/time.h:
 
@@ -3332,6 +3318,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/boost/mpl/aux_/type_wrapper.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/c++/11/ext/alloc_traits.h:
 
 /usr/include/netdb.h:
 
@@ -3353,21 +3343,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/openssl/dtls1.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
 /usr/include/ctype.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h:
-
 /usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/initializer_list:
 
 /usr/include/c++/11/bits/refwrap.h:
 
 /usr/include/jemalloc/jemalloc.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h:
 
 ../quic/common/SmallCollections.h:
 
@@ -3395,25 +3379,17 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/cstdint:
 
-/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h:
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar2.h:
 
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h:
-
 /usr/include/boost/preprocessor/repetition/for.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h:
-
-/usr/include/c++/11/bits/hashtable.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/client/ClientExtensions.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -3425,14 +3401,6 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h:
-
-/usr/include/x86_64-linux-gnu/asm/types.h:
-
-/usr/include/glog/log_severity.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h:
-
 /usr/include/x86_64-linux-gnu/asm/socket.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
@@ -3441,15 +3409,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/types.h:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h:
+
 /usr/include/c++/11/debug/assertions.h:
 
 /usr/include/c++/11/string:
 
-/usr/include/boost/type_traits/is_pod.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Builtin.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/SafeAssert.h:
 
 /usr/include/c++/11/stdexcept:
 
@@ -3458,8 +3426,6 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/x86_64-linux-gnu/bits/socket.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/boost/mpl/aux_/adl_barrier.hpp:
 
@@ -3471,9 +3437,13 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
-/usr/include/c++/11/bits/string_view.tcc:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Exception.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h:
+
+/usr/include/c++/11/bits/string_view.tcc:
 
 /usr/include/c++/11/bits/deque.tcc:
 
@@ -3481,37 +3451,33 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/cryptoerr_legacy.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h:
-
 /usr/include/c++/11/bits/move.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h:
+/usr/include/boost/type_traits/is_floating_point.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h:
 
-/usr/include/c++/11/vector:
+/usr/include/boost/preprocessor/control/iif.hpp:
+
+/usr/include/c++/11/bits/enable_special_members.h:
+
+/usr/include/boost/preprocessor/variadic/elem.hpp:
+
+/usr/include/boost/preprocessor/facilities/empty.hpp:
+
+/usr/include/c++/11/bits/basic_ios.tcc:
+
+/usr/include/assert.h:
+
+/usr/include/c++/11/bits/allocated_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h:
-
-/usr/include/c++/11/bits/concept_check.h:
-
-../quic/handshake/HandshakeLayer.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-/usr/include/c++/11/bits/algorithmfwd.h:
-
 /usr/include/c++/11/pstl/execution_defs.h:
 
-/usr/include/c++/11/bits/exception.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h:
 
 /usr/include/c++/11/bits/locale_facets.h:
 
@@ -3521,9 +3487,25 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
+/usr/include/c++/11/bits/concept_check.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h:
+
+/usr/include/c++/11/bits/shared_ptr.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hkdf.h:
+
 /usr/include/endian.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
+
+/usr/include/boost/mpl/next_prior.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h:
 
 /usr/include/pthread.h:
 
@@ -3531,11 +3513,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
-/usr/include/c++/11/limits:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Assume.h:
-
-/usr/include/openssl/buffer.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -3543,7 +3523,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressException.h:
+/usr/include/double-conversion/utils.h:
 
 /usr/include/c++/11/cwchar:
 
@@ -3558,6 +3538,18 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/unistd.h:
 
 /usr/include/openssl/randerr.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/11/atomic:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/SanitizeLeak.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SimpleSimdStringUtils.h:
 
 /usr/include/x86_64-linux-gnu/bits/socket_type.h:
 
@@ -3579,33 +3571,23 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
-/usr/include/boost/preprocessor/detail/check.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/net/detail/SocketFileDescriptorMap.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h:
-
-/usr/include/boost/type_traits/add_lvalue_reference.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Thunk.h:
-
-/usr/include/c++/11/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/11/bits/std_mutex.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions.h:
 
 /usr/include/c++/11/cctype:
 
 /usr/include/c++/11/unordered_map:
-
-../quic/fizz/handshake/FizzBridge.cpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/HandshakeContext.h:
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h:
 
 /usr/include/boost/preprocessor/facilities/is_empty_variadic.hpp:
+
+/usr/include/asm-generic/types.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h:
+
+/usr/include/openssl/core.h:
 
 /usr/include/openssl/comperr.h:
 
@@ -3623,41 +3605,27 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/cterr.h:
 
-/usr/include/c++/11/new:
-
 /usr/include/boost/mpl/aux_/value_wknd.hpp:
 
 /usr/include/c++/11/bits/sstream.tcc:
 
-/usr/include/double-conversion/string-to-double.h:
+/usr/include/c++/11/climits:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
 /usr/include/c++/11/tr1/gamma.tcc:
 
-/usr/include/x86_64-linux-gnu/asm/errno.h:
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+/usr/include/boost/mpl/protect.hpp:
 
-../quic/common/CircularDeque.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/net/NetOps.h:
-
-/usr/include/openssl/objects.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h:
-
-/usr/include/boost/preprocessor/logical/compl.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h:
-
-/usr/include/openssl/rsa.h:
+/usr/include/c++/11/chrono:
 
 /usr/include/boost/mpl/aux_/config/workaround.hpp:
 
 /usr/include/c++/11/bits/uses_allocator.h:
 
-/usr/include/features.h:
+/usr/include/c++/11/bits/unique_lock.h:
 
 /usr/include/c++/11/bits/atomic_base.h:
 
@@ -3669,47 +3637,25 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 ../quic/common/third-party/enum.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h:
-
 /usr/include/c++/11/utility:
 
 /usr/include/c++/11/ios:
-
-/usr/include/boost/preprocessor/logical/and.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h:
-
-/usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/openssl/sha.h:
 
 /usr/include/boost/type_traits/is_arithmetic.hpp:
 
 /usr/include/c++/11/bits/unordered_map.h:
 
-/usr/include/openssl/ssl.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h:
-
 /usr/include/c++/11/ext/type_traits.h:
 
-/usr/include/c++/11/climits:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/AsyncTransportCertificate.h:
+/usr/include/asm-generic/posix_types.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/folly-config.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Utility.h:
 
-/usr/include/double-conversion/double-conversion.h:
+../quic/fizz/handshake/QuicFizzFactory.cpp:
 
-/usr/include/boost/preprocessor/control/iif.hpp:
-
-/usr/include/c++/11/bits/enable_special_members.h:
-
-/usr/include/boost/preprocessor/variadic/elem.hpp:
-
-/usr/include/boost/preprocessor/facilities/empty.hpp:
-
-/usr/include/c++/11/bits/basic_ios.tcc:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 /usr/include/c++/11/bits/stl_algo.h:
 
@@ -3717,47 +3663,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/cassert:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h:
 
-/usr/include/boost/preprocessor/tuple/to_list.hpp:
+/usr/include/boost/preprocessor/detail/is_binary.hpp:
 
-/usr/include/c++/11/backward/auto_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h:
-
-/usr/include/c++/11/cstring:
-
-../quic/fizz/handshake/FizzPacketNumberCipher.cpp:
-
-/usr/include/c++/11/bits/charconv.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
-
-/usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/math.h:
-
-../quic/handshake/RetryIntegrityTagGenerator.h:
-
-/usr/include/asm-generic/sockios.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-../quic/fizz/handshake/FizzBridge.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/boost/mpl/protect.hpp:
-
-/usr/include/c++/11/chrono:
-
-/usr/include/openssl/tls1.h:
-
-/usr/include/x86_64-linux-gnu/bits/time.h:
+/usr/include/x86_64-linux-gnu/bits/select.h:
 
 /usr/include/c++/11/ext/atomicity.h:
 
@@ -3769,15 +3679,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/memoryfwd.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fmt/format.h:
-
-/usr/include/openssl/srtp.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
-
 /usr/include/openssl/asyncerr.h:
 
 /usr/include/stdc-predef.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/hpke/Types.h:
 
 /usr/include/errno.h:
 
@@ -3785,41 +3691,51 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-../quic/fizz/handshake/FizzRetryIntegrityTagGenerator.cpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/11/atomic:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Math.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/heap_vector_types.h:
-
 /usr/include/boost/mpl/bind.hpp:
 
 ../quic/QuicConstants.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h:
 
 /usr/include/boost/mpl/aux_/config/arrays.hpp:
 
 /usr/include/openssl/opensslv.h:
 
-/usr/include/c++/11/bits/functional_hash.h:
+/usr/include/boost/preprocessor/detail/check.hpp:
 
-/usr/include/boost/mpl/int_fwd.hpp:
+/usr/include/boost/iterator/detail/enable_if.hpp:
 
-/usr/include/openssl/bnerr.h:
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
-/usr/include/boost/mpl/aux_/config/has_apply.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h:
 
-/usr/include/limits.h:
+/usr/include/boost/mpl/aux_/arity.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/boost/preprocessor/logical/compl.hpp:
+
+/usr/include/openssl/rsa.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+../quic/common/CircularDeque.h:
+
+/usr/include/openssl/objects.h:
 
 /usr/include/c++/11/optional:
 
 /usr/include/boost/type_traits/detail/config.hpp:
 
 /usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/boost/iterator/iterator_traits.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h:
 
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
@@ -3839,39 +3755,85 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/cmath:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/hash/traits.h:
+../quic/handshake/RetryIntegrityTagGenerator.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h:
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/c++/11/pstl/pstl_config.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h:
+/usr/include/c++/11/version:
+
+/usr/include/boost/preprocessor/tuple/to_list.hpp:
+
+../quic/fizz/handshake/FizzPacketNumberCipher.cpp:
+
+/usr/include/c++/11/bits/charconv.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h:
+
+/usr/include/c++/11/bits/exception_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/math.h:
+
+/usr/include/boost/iterator/detail/facade_iterator_category.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/net/NetOps.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h:
+
+../quic/fizz/handshake/FizzBridge.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Builtins.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/New.h:
+
+/usr/include/c++/11/bits/functional_hash.h:
+
+/usr/include/boost/mpl/int_fwd.hpp:
+
+/usr/include/openssl/bnerr.h:
+
+/usr/include/c++/11/bits/stl_relops.h:
+
+/usr/include/boost/mpl/aux_/config/has_apply.hpp:
+
+/usr/include/limits.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
-/usr/include/boost/preprocessor/arithmetic/inc.hpp:
-
 /usr/include/c++/11/bits/stl_iterator.h:
+
+/usr/include/boost/preprocessor/arithmetic/inc.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/boost/type_traits/add_reference.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h:
 
-/usr/include/boost/type_traits/integral_constant.hpp:
+/usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h:
+/usr/include/openssl/dtls1.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Optional.h:
+
+/usr/include/openssl/cryptoerr.h:
+
+../quic/fizz/handshake/QuicFizzFactory.h:
 
 /usr/include/c++/11/cstddef:
-
-/usr/include/c++/11/shared_mutex:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/ssl/OpenSSLTransportCertificate.h:
 
 /usr/include/boost/type_traits/is_complete.hpp:
 
 /usr/include/c++/11/string_view:
 
 /usr/include/boost/preprocessor/detail/auto_rec.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -3891,15 +3853,21 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/tuple:
 
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types-inl.h:
+
 /usr/include/c++/11/bits/postypes.h:
 
 /usr/include/netinet/udp.h:
 
 /usr/include/boost/preprocessor/tuple/elem.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/backend/openssl/crypto/aead/OpenSSLEVPCipher.h:
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio.h:
 
@@ -3913,15 +3881,17 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/stringfwd.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h:
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/cxxabi_forced.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/Aead.h:
+/usr/include/c++/11/bits/hashtable.h:
 
 /usr/include/c++/11/bits/hashtable_policy.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/client/PskCache.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h:
 
 /usr/include/boost/preprocessor/cat.hpp:
 
@@ -3945,7 +3915,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Hint-inl.h:
+
+/usr/include/stdint.h:
+
+/usr/include/openssl/evp.h:
+
 /usr/include/c++/11/bits/align.h:
+
+/usr/include/c++/11/vector:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -3953,17 +3931,17 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/boost/mpl/bool_fwd.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/CPortability.h:
-
 /usr/include/x86_64-linux-gnu/bits/endianness.h:
 
 /usr/include/openssl/ocsp.h:
 
+/usr/include/boost/type_traits/is_pod.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/Invoke.h:
+
 /usr/include/c++/11/bit:
-
-/usr/include/c++/11/bits/allocated_ptr.h:
-
-/usr/include/assert.h:
 
 /usr/include/boost/preprocessor/list/fold_left.hpp:
 
@@ -3971,7 +3949,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h:
+
+/usr/include/stdio.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h:
+
 /usr/include/c++/11/cstdlib:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/c++/11/bits/basic_string.h:
 
@@ -3981,9 +3967,21 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/boost/preprocessor/config/config.hpp:
+
 /usr/include/openssl/params.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV4.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h:
+
+/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+../quic/common/third-party/optional.h:
 
 /usr/include/asm-generic/socket.h:
 
@@ -3991,7 +3989,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV6.h:
 
 /usr/include/boost/preprocessor/control/expr_iif.hpp:
 
@@ -3999,15 +3997,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
-../quic/fizz/handshake/QuicFizzFactory.cpp:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/c++/11/bits/range_access.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/boost/preprocessor/tuple/eat.hpp:
+
+/usr/include/boost/type_traits/is_lvalue_reference.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/memory/detail/MallocImpl.h:
 
 /usr/include/c++/11/bits/parse_numbers.h:
 
@@ -4025,15 +4023,19 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Time.h:
+
 /usr/include/alloca.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h:
 
 /usr/include/openssl/pkcs7err.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CArray.h:
-
 /usr/include/c++/11/exception:
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Utils.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
@@ -4041,43 +4043,45 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/uniform_int_dist.h:
 
+/usr/include/c++/11/bits/basic_ios.h:
+
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
 
-/usr/include/boost/type_traits/is_function.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/OpenSSL.h:
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/small_vector.h:
-
 /usr/include/boost/preprocessor/variadic/size.hpp:
 
 /usr/include/boost/preprocessor/tuple/rem.hpp:
 
-/usr/include/c++/11/bits/unique_lock.h:
+/usr/include/c++/11/bits/std_thread.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/StaticConst.h:
+/usr/include/boost/preprocessor/logical/not.hpp:
 
-/usr/include/c++/11/bits/stl_relops.h:
+/usr/include/double-conversion/double-conversion.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Windows.h:
 
-/usr/include/boost/preprocessor/detail/is_binary.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/TypeInfo.h:
 
-/usr/include/x86_64-linux-gnu/bits/select.h:
+/usr/include/c++/11/ext/string_conversions.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h:
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBuf.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/functional/ApplyTuple.h:
+
+/usr/include/openssl/dsaerr.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h:
 
 /usr/include/c++/11/cinttypes:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h:
 
 /usr/include/inttypes.h:
 
@@ -4089,6 +4093,8 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/bits/streambuf.tcc:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h:
+
 /usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/bits/strings_fortified.h:
@@ -4097,23 +4103,21 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/async.h:
 
-/usr/include/c++/11/bits/stream_iterator.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h:
 
 /usr/include/c++/11/bits/streambuf_iterator.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/net/NetworkSocket.h:
-
-/usr/include/c++/11/bits/basic_ios.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/FBString.h:
-
 /usr/include/c++/11/streambuf:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/FormatTraits.h:
+
+/usr/include/c++/11/bits/ios_base.h:
+
+/usr/include/openssl/sha.h:
+
 /usr/include/c++/11/bits/locale_classes.h:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/c++/11/bits/locale_classes.tcc:
 
 /usr/include/features-time64.h:
 
@@ -4127,9 +4131,11 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/ostream:
 
-/usr/include/c++/11/cwctype:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Likely.h:
 
 /usr/include/boost/preprocessor/punctuation/is_begin_parens.hpp:
 
@@ -4137,25 +4143,29 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
-../quic/common/NetworkData.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/hash/MurmurHash.h:
-
 /usr/include/c++/11/sstream:
 
 /usr/include/boost/type_traits/is_abstract.hpp:
 
 /usr/include/gflags/gflags_gflags.h:
 
+/usr/include/openssl/sslerr.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Sockets.h:
+
 /usr/include/c++/11/istream:
 
-/usr/include/c++/11/bits/istream.tcc:
+/usr/include/features.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/MicroSpinLock.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/ExceptionString.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/boost/mpl/apply_fwd.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/IOBufQueue.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
@@ -4167,27 +4177,33 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/unistd.h:
 
-/usr/include/double-conversion/utils.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Hasher.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types-inl.h:
-
 /usr/include/openssl/crypto.h:
 
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Traits.h:
-
 /usr/include/linux/close_range.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Params.h:
+/usr/include/x86_64-linux-gnu/asm/types.h:
+
+/usr/include/glog/log_severity.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h:
+
+/usr/include/openssl/srtp.h:
 
 /usr/include/c++/11/algorithm:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fmt/base.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fmt/format.h:
+
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/limits.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fmt/base.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -4195,9 +4211,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/CpuId.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/IPAddressV6.h:
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/boost/preprocessor/tuple/size.hpp:
 
@@ -4210,10 +4224,6 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/usr/include/c++/11/ext/string_conversions.h:
-
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
 /usr/include/c++/11/bits/specfun.h:
 
@@ -4233,81 +4243,89 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/tr1/exp_integral.tcc:
 
+../quic/common/Optional.h:
+
+/usr/include/openssl/conf.h:
+
+/usr/include/c++/11/tr1/hypergeometric.tcc:
+
 /usr/include/boost/preprocessor/facilities/identity.hpp:
 
 /usr/include/c++/11/tr1/modified_bessel_func.tcc:
 
+/usr/include/double-conversion/string-to-double.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Demangle.h:
+
 /usr/include/c++/11/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/11/bits/std_mutex.h:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/usr/include/c++/11/ext/aligned_buffer.h:
 
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+/usr/include/c++/11/bits/locale_classes.tcc:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Bits.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/Hash.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/ConstexprMath.h:
+/usr/include/c++/11/bits/exception.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CheckedMath.h:
-
-/usr/include/boost/type_traits/remove_cv.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Constexpr.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/FBVector.h:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/placeholders.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV1.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h:
-
-/usr/include/c++/11/deque:
-
-/usr/include/openssl/rsaerr.h:
-
-/usr/include/linux/errqueue.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/Malloc.h:
 
 /usr/include/c++/11/stdlib.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Reserve.h:
 
-/usr/include/openssl/core.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/FBVector.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Function.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Range.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/UncaughtExceptions.h:
+
+/usr/include/netinet/tcp.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Function.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h:
+
+/usr/include/c++/11/backward/auto_ptr.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeCommon.h:
+
+/usr/include/boost/mpl/aux_/config/eti.hpp:
+
+/usr/include/openssl/pem.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/RangeSse42.h:
+
+../quic/fizz/handshake/FizzBridge.cpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Conv.h:
+
+/usr/include/openssl/comp.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/boost/version.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h:
 
 /usr/include/x86_64-linux-gnu/sys/uio.h:
-
-/usr/include/c++/11/version:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Align.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Range.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/Iterators.h:
-
-/usr/include/openssl/sslerr.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Ordering.h:
-
-/usr/include/boost/mpl/aux_/lambda_arity_param.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
-
-../quic/common/third-party/optional.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysUio.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-../quic/common/BufUtil.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/IOVec.h:
 
 /usr/include/x86_64-linux-gnu/sys/poll.h:
 
@@ -4315,117 +4333,109 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/c++/11/mutex:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/async/WriteFlags.h:
-
 /usr/include/c++/11/ratio:
 
 /usr/include/c++/11/thread:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h:
+
+/usr/include/boost/static_assert.hpp:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h:
+
 /usr/include/c++/11/ctime:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/String.h:
+/usr/include/boost/mpl/aux_/config/ctps.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/SanitizeThread.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/Asm.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/synchronization/detail/Sleeper.h:
 
-/usr/include/c++/11/bits/shared_ptr_base.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Types.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Crypto.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h:
 
-/usr/include/openssl/ssl3.h:
+../quic/handshake/HandshakeLayer.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/Types.h:
+/usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/CustomizationPoint.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/hash/SpookyHashV2.h:
 
-/usr/include/boost/mpl/aux_/arity.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h:
 
-/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+/usr/include/openssl/asn1.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/RValueReferenceWrapper.h:
 
-/usr/include/c++/11/bits/std_thread.h:
+/usr/include/openssl/dsa.h:
 
-/usr/include/boost/preprocessor/logical/not.hpp:
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/Access.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/io/Cursor-inl.h:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/and.hpp:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/Iterator.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Events.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/CString.h:
 
 /usr/include/c++/11/charconv:
 
-/usr/include/boost/preprocessor/config/config.hpp:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Expected.h:
+/usr/include/boost/iterator/detail/config_undef.hpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Certificate.h:
 
-/usr/include/c++/11/bits/ostream.tcc:
+/usr/include/boost/preprocessor/repetition/enum_params.hpp:
 
-/usr/include/openssl/e_os2.h:
+../quic/codec/PacketNumberCipher.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Portability.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/Unit.h:
+
+/usr/include/c++/11/bits/stream_iterator.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/Pretty.h:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/ech/Types.h:
+
+/usr/include/openssl/hmac.h:
+
+/usr/include/c++/11/cstring:
+
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/lang/ToAscii.h:
 
 /usr/include/c++/11/bits/stl_vector.h:
 
 /usr/include/c++/11/bits/unordered_set.h:
 
-/usr/include/boost/mpl/aux_/config/gcc.hpp:
+/usr/include/c++/11/new:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/detail/SplitStringSimd.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/String-inl.h:
-
-../quic/common/Optional.h:
-
-/usr/include/c++/11/tr1/hypergeometric.tcc:
-
-/usr/include/openssl/conf.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/chrono/Clock.h:
 
 ../quic/fizz/handshake/FizzCryptoFactory.cpp:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/Utils.h:
+/usr/include/boost/detail/select_type.hpp:
 
-/usr/include/boost/mpl/aux_/config/eti.hpp:
+/usr/include/boost/mpl/aux_/lambda_support.hpp:
 
-/usr/include/openssl/pem.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h:
 
-/usr/include/openssl/cryptoerr.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/fizz-config.h:
 
-../quic/fizz/handshake/QuicFizzFactory.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h:
 
-/usr/include/c++/11/initializer_list:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/Factory.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/DefaultFactory.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/KeyDerivation.h:
 
-/usr/include/boost/mpl/aux_/config/dtp.hpp:
+/usr/include/c++/11/bits/hash_bytes.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/protocol/MultiBackendFactory.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/exchange/KeyExchange.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Memory.h:
-
-/usr/include/openssl/ec.h:
+/usr/include/openssl/bio.h:
 
 /usr/include/c++/11/map:
-
-/usr/include/c++/11/bits/stl_tree.h:
 
 /usr/include/x86_64-linux-gnu/sys/un.h:
 
@@ -4445,15 +4455,9 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/sslerr_legacy.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/fizz/record/RecordLayer.h:
+/usr/include/c++/11/bits/ostream.tcc:
 
-/usr/include/openssl/asn1.h:
-
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/Preprocessor.h:
-
-/usr/include/openssl/bio.h:
+/usr/include/openssl/e_os2.h:
 
 /usr/include/openssl/safestack.h:
 
@@ -4475,23 +4479,15 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/lhash.h:
 
-/usr/include/stdint.h:
-
-/usr/include/openssl/evp.h:
-
 /usr/include/x86_64-linux-gnu/bits/string_fortified.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/ScopeGuard.h:
 
 /usr/include/openssl/evperr.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/memory/Malloc.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/crypto/aead/IOBufUtil.h:
 
 /usr/include/openssl/obj_mac.h:
 
 /usr/include/openssl/objectserr.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/CppAttributes.h:
 
 /usr/include/openssl/x509.h:
 
@@ -4499,17 +4495,19 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/x509v3err.h:
 
-/usr/include/openssl/hmac.h:
-
 /usr/include/x86_64-linux-gnu/bits/confname.h:
 
 /usr/include/openssl/rand.h:
 
-/usr/include/openssl/comp.h:
+/usr/include/openssl/ssl.h:
 
-/usr/include/openssl/dsa.h:
+/usr/include/x86_64-linux-gnu/bits/time.h:
 
-/usr/include/openssl/dsaerr.h:
+/usr/include/openssl/tls1.h:
+
+/usr/include/openssl/buffer.h:
+
+/usr/include/openssl/ec.h:
 
 /usr/include/openssl/x509err.h:
 
@@ -4525,9 +4523,7 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/conftypes.h:
 
-/client/qw/proxygen/proxygen/_build/deps/include/folly/portability/SysTypes.h:
-
-/client/qw/proxygen/proxygen/_build/deps/include/folly/container/span.h:
+/qw/qw/proxygen/proxygen/_build/deps/include/fizz/record/Extensions-inl.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
@@ -4535,6 +4531,10 @@ quic/fizz/handshake/CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o: .
 
 /usr/include/openssl/pemerr.h:
 
+/qw/qw/proxygen/proxygen/_build/deps/include/folly/String.h:
+
 /usr/include/openssl/prov_ssl.h:
 
 /usr/include/openssl/ssl2.h:
+
+/usr/include/openssl/ssl3.h:

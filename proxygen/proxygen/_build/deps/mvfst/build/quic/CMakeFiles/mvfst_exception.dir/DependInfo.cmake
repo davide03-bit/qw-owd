@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp" "quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o" "gcc" "quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicException.cpp" "quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o" "gcc" "quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o.d"
   )
 
 # Targets to which this target links.

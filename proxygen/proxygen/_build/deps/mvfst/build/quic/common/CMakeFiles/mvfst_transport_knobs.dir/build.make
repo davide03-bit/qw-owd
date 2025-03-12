@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/common/CMakeFiles/mvfst_transport_knobs.dir/depend.make
@@ -72,16 +72,16 @@ include quic/common/CMakeFiles/mvfst_transport_knobs.dir/flags.make
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o: quic/common/CMakeFiles/mvfst_transport_knobs.dir/flags.make
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o: ../quic/common/TransportKnobs.cpp
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o: quic/common/CMakeFiles/mvfst_transport_knobs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o -MF CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o.d -o CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o -MF CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o.d -o CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp
 
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp > CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp > CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i
 
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp -o CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp -o CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s
 
 # Object files for target mvfst_transport_knobs
 mvfst_transport_knobs_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_transport_knobs_EXTERNAL_OBJECTS =
 quic/common/libmvfst_transport_knobs.a: quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o
 quic/common/libmvfst_transport_knobs.a: quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make
 quic/common/libmvfst_transport_knobs.a: quic/common/CMakeFiles/mvfst_transport_knobs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_transport_knobs.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport_knobs.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_transport_knobs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_transport_knobs.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport_knobs.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_transport_knobs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/build: quic/common/libmvfst_transport_knobs.a
 .PHONY : quic/common/CMakeFiles/mvfst_transport_knobs.dir/build
 
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport_knobs.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport_knobs.dir/cmake_clean.cmake
 .PHONY : quic/common/CMakeFiles/mvfst_transport_knobs.dir/clean
 
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_transport_knobs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_transport_knobs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/common/CMakeFiles/mvfst_transport_knobs.dir/depend
 

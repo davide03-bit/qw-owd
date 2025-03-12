@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/handshake//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/handshake//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/handshake/CMakeFiles/mvfst_handshake.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/CMakeFiles/mvfst_handshake.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/handshake/CMakeFiles/mvfst_handshake.dir/rule
 .PHONY : quic/handshake/CMakeFiles/mvfst_handshake.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mvfst_handshake: quic/handshake/CMakeFiles/mvfst_handshake.dir/rule
 
 # fast build rule for target.
 mvfst_handshake/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/build
 .PHONY : mvfst_handshake/fast
 
 CryptoFactory.o: CryptoFactory.cpp.o
@@ -180,7 +180,7 @@ CryptoFactory.o: CryptoFactory.cpp.o
 
 # target to build an object file
 CryptoFactory.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.o
 .PHONY : CryptoFactory.cpp.o
 
 CryptoFactory.i: CryptoFactory.cpp.i
@@ -188,7 +188,7 @@ CryptoFactory.i: CryptoFactory.cpp.i
 
 # target to preprocess a source file
 CryptoFactory.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.i
 .PHONY : CryptoFactory.cpp.i
 
 CryptoFactory.s: CryptoFactory.cpp.s
@@ -196,7 +196,7 @@ CryptoFactory.s: CryptoFactory.cpp.s
 
 # target to generate assembly for a file
 CryptoFactory.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.s
 .PHONY : CryptoFactory.cpp.s
 
 HandshakeLayer.o: HandshakeLayer.cpp.o
@@ -204,7 +204,7 @@ HandshakeLayer.o: HandshakeLayer.cpp.o
 
 # target to build an object file
 HandshakeLayer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.o
 .PHONY : HandshakeLayer.cpp.o
 
 HandshakeLayer.i: HandshakeLayer.cpp.i
@@ -212,7 +212,7 @@ HandshakeLayer.i: HandshakeLayer.cpp.i
 
 # target to preprocess a source file
 HandshakeLayer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.i
 .PHONY : HandshakeLayer.cpp.i
 
 HandshakeLayer.s: HandshakeLayer.cpp.s
@@ -220,7 +220,7 @@ HandshakeLayer.s: HandshakeLayer.cpp.s
 
 # target to generate assembly for a file
 HandshakeLayer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.s
 .PHONY : HandshakeLayer.cpp.s
 
 TransportParameters.o: TransportParameters.cpp.o
@@ -228,7 +228,7 @@ TransportParameters.o: TransportParameters.cpp.o
 
 # target to build an object file
 TransportParameters.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.o
 .PHONY : TransportParameters.cpp.o
 
 TransportParameters.i: TransportParameters.cpp.i
@@ -236,7 +236,7 @@ TransportParameters.i: TransportParameters.cpp.i
 
 # target to preprocess a source file
 TransportParameters.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.i
 .PHONY : TransportParameters.cpp.i
 
 TransportParameters.s: TransportParameters.cpp.s
@@ -244,7 +244,7 @@ TransportParameters.s: TransportParameters.cpp.s
 
 # target to generate assembly for a file
 TransportParameters.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/handshake/CMakeFiles/mvfst_handshake.dir/build.make quic/handshake/CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.s
 .PHONY : TransportParameters.cpp.s
 
 # Help Target
@@ -280,6 +280,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

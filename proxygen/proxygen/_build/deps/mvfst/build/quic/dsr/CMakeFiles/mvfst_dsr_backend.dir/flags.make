@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_CONTEXT_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DGFLAGS_IS_A_DLL=0
 
-CXX_INCLUDES = -I/client/qw/proxygen/proxygen/_build/deps/mvfst -isystem /client/qw/proxygen/proxygen/_build/deps/include -isystem /usr/include/libiberty
+CXX_INCLUDES = -I/qw/qw/proxygen/proxygen/_build/deps/mvfst -isystem /qw/qw/proxygen/proxygen/_build/deps/include -isystem /usr/include/libiberty
 
 CXX_FLAGS = -O2 -g -DNDEBUG -std=c++17
 

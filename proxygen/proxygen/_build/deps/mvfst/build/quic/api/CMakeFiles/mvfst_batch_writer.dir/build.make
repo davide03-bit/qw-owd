@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/api/CMakeFiles/mvfst_batch_writer.dir/depend.make
@@ -72,44 +72,44 @@ include quic/api/CMakeFiles/mvfst_batch_writer.dir/flags.make
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/flags.make
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o: ../quic/api/QuicBatchWriter.cpp
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.i
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriter.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.s
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/flags.make
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o: ../quic/api/QuicBatchWriterFactory.cpp
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.i
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicBatchWriterFactory.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.s
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/flags.make
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o: ../quic/api/QuicGsoBatchWriters.cpp
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o: quic/api/CMakeFiles/mvfst_batch_writer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o -MF CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o.d -o CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp > CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.i
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicGsoBatchWriters.cpp -o CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.s
 
 # Object files for target mvfst_batch_writer
 mvfst_batch_writer_OBJECTS = \
@@ -125,19 +125,19 @@ quic/api/libmvfst_batch_writer.a: quic/api/CMakeFiles/mvfst_batch_writer.dir/Qui
 quic/api/libmvfst_batch_writer.a: quic/api/CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o
 quic/api/libmvfst_batch_writer.a: quic/api/CMakeFiles/mvfst_batch_writer.dir/build.make
 quic/api/libmvfst_batch_writer.a: quic/api/CMakeFiles/mvfst_batch_writer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmvfst_batch_writer.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_batch_writer.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_batch_writer.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmvfst_batch_writer.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_batch_writer.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_batch_writer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/api/CMakeFiles/mvfst_batch_writer.dir/build: quic/api/libmvfst_batch_writer.a
 .PHONY : quic/api/CMakeFiles/mvfst_batch_writer.dir/build
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_batch_writer.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_batch_writer.dir/cmake_clean.cmake
 .PHONY : quic/api/CMakeFiles/mvfst_batch_writer.dir/clean
 
 quic/api/CMakeFiles/mvfst_batch_writer.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api/CMakeFiles/mvfst_batch_writer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api/CMakeFiles/mvfst_batch_writer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/api/CMakeFiles/mvfst_batch_writer.dir/depend
 

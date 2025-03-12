@@ -239,18 +239,18 @@ void WestwoodOWD::onPacketAcked(const CongestionController::AckEvent::AckPacket 
     }
 
     // If the delay condition is met, adjust ssthresh and cwnd.
-    if (delayControl(0.5)) {
-        uint64_t rttMinUs = rttSampler_.minRtt().count();
-        ssthresh_ = std::max(
-            static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
-            2 * quicConnectionState_.udpSendPacketLen);
-        cwndBytes_ = ssthresh_;
-        cwndBytes_ = boundedCwnd(
-            cwndBytes_,
-            quicConnectionState_.udpSendPacketLen,
-            quicConnectionState_.transportSettings.maxCwndInMss,
-            quicConnectionState_.transportSettings.minCwndInMss);
-    }
+    // if (delayControl(0.5)) {
+    //     uint64_t rttMinUs = rttSampler_.minRtt().count();
+    //     ssthresh_ = std::max(
+    //         static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
+    //         2 * quicConnectionState_.udpSendPacketLen);
+    //     cwndBytes_ = ssthresh_;
+    //     cwndBytes_ = boundedCwnd(
+    //         cwndBytes_,
+    //         quicConnectionState_.udpSendPacketLen,
+    //         quicConnectionState_.transportSettings.maxCwndInMss,
+    //         quicConnectionState_.transportSettings.minCwndInMss);
+    // }
 
     // Slow start or congestion avoidance increment:
     if (cwndBytes_ < ssthresh_) {

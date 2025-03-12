@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,121 +43,121 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/AcceptObserver.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/AcceptObserver.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicHandshakeSocketHolder.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicHandshakeSocketHolder.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicReusePortUDPSocketFactory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicReusePortUDPSocketFactory.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServer.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServer.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerPacketRouter.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerPacketRouter.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerTransport.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerTransport.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerTransportFactory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerTransportFactory.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerWorker.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicServerWorker.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicSharedUDPSocketFactory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicSharedUDPSocketFactory.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicUDPSocketFactory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/QuicUDPSocketFactory.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/RateLimiter.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/RateLimiter.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/SlidingWindowRateLimiter.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/SlidingWindowRateLimiter.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicAsyncTransportAcceptor.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicAsyncTransportAcceptor.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicAsyncTransportServer.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicAsyncTransportServer.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicServerAsyncTransport.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/async_tran" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/async_tran/QuicServerAsyncTransport.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/AppToken.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/AppToken.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/DefaultAppTokenValidator.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/DefaultAppTokenValidator.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerHandshake.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerHandshake.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerHandshakeFactory.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerHandshakeFactory.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerTransportParametersExtension.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/ServerTransportParametersExtension.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/StatelessResetGenerator.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/StatelessResetGenerator.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/TokenGenerator.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/handshake/TokenGenerator.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/state" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/state/ServerConnectionIdRejector.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/state" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/state/ServerConnectionIdRejector.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/state" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/state/ServerStateMachine.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/state" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/state/ServerStateMachine.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/third-party" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/third-party/siphash.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/server/third-party" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/server/third-party/siphash.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server_state.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server_state.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server_async_tran.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/libmvfst_server_async_tran.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/test/cmake_install.cmake")
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/handshake/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/server/handshake/test/cmake_install.cmake")
 
 endif()
 

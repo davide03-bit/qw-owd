@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/common/events/CMakeFiles/mvfst_events.dir/depend.make
@@ -72,16 +72,16 @@ include quic/common/events/CMakeFiles/mvfst_events.dir/flags.make
 quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o: quic/common/events/CMakeFiles/mvfst_events.dir/flags.make
 quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o: ../quic/common/events/FollyQuicEventBase.cpp
 quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o: quic/common/events/CMakeFiles/mvfst_events.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o -MF CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o.d -o CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o -MF CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o.d -o CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp
 
 quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp > CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp > CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.i
 
 quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp -o CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/FollyQuicEventBase.cpp -o CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.s
 
 # Object files for target mvfst_events
 mvfst_events_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_events_EXTERNAL_OBJECTS =
 quic/common/events/libmvfst_events.a: quic/common/events/CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o
 quic/common/events/libmvfst_events.a: quic/common/events/CMakeFiles/mvfst_events.dir/build.make
 quic/common/events/libmvfst_events.a: quic/common/events/CMakeFiles/mvfst_events.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_events.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_events.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_events.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_events.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_events.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_events.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/common/events/CMakeFiles/mvfst_events.dir/build: quic/common/events/libmvfst_events.a
 .PHONY : quic/common/events/CMakeFiles/mvfst_events.dir/build
 
 quic/common/events/CMakeFiles/mvfst_events.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_events.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_events.dir/cmake_clean.cmake
 .PHONY : quic/common/events/CMakeFiles/mvfst_events.dir/clean
 
 quic/common/events/CMakeFiles/mvfst_events.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events/CMakeFiles/mvfst_events.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/events/CMakeFiles/mvfst_events.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/common/events/CMakeFiles/mvfst_events.dir/depend
 

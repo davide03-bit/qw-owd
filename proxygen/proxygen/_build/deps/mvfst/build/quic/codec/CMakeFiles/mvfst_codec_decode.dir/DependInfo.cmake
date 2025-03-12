@@ -8,15 +8,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/Decode.cpp" "quic/codec/CMakeFiles/mvfst_codec_decode.dir/Decode.cpp.o" "gcc" "quic/codec/CMakeFiles/mvfst_codec_decode.dir/Decode.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/codec/Decode.cpp" "quic/codec/CMakeFiles/mvfst_codec_decode.dir/Decode.cpp.o" "gcc" "quic/codec/CMakeFiles/mvfst_codec_decode.dir/Decode.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec/CMakeFiles/mvfst_codec_types.dir/DependInfo.cmake"
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_exception.dir/DependInfo.cmake"
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_bufutil.dir/DependInfo.cmake"
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/codec/CMakeFiles/mvfst_codec_types.dir/DependInfo.cmake"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_exception.dir/DependInfo.cmake"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_bufutil.dir/DependInfo.cmake"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

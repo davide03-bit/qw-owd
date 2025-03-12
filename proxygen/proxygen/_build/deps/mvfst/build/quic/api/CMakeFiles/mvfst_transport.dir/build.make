@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/api/CMakeFiles/mvfst_transport.dir/depend.make
@@ -72,86 +72,86 @@ include quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o: ../quic/api/IoBufQuicBatch.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o -MF CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o.d -o CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o -MF CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o.d -o CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp > CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp > CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp -o CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/IoBufQuicBatch.cpp -o CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.s
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o: ../quic/api/QuicPacketScheduler.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp > CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp > CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp -o CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicPacketScheduler.cpp -o CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.s
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o: ../quic/api/QuicStreamAsyncTransport.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp > CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp > CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp -o CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicStreamAsyncTransport.cpp -o CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.s
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o: ../quic/api/QuicTransportBase.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBase.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.s
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o: ../quic/api/QuicTransportBaseLite.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportBaseLite.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.s
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/flags.make
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o: ../quic/api/QuicTransportFunctions.cpp
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o: quic/api/CMakeFiles/mvfst_transport.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o -MF CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o.d -o CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp > CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.i
 
 quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/QuicTransportFunctions.cpp -o CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.s
 
 # Object files for target mvfst_transport
 mvfst_transport_OBJECTS = \
@@ -173,19 +173,19 @@ quic/api/libmvfst_transport.a: quic/api/CMakeFiles/mvfst_transport.dir/QuicTrans
 quic/api/libmvfst_transport.a: quic/api/CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o
 quic/api/libmvfst_transport.a: quic/api/CMakeFiles/mvfst_transport.dir/build.make
 quic/api/libmvfst_transport.a: quic/api/CMakeFiles/mvfst_transport.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmvfst_transport.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_transport.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmvfst_transport.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_transport.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/api/CMakeFiles/mvfst_transport.dir/build: quic/api/libmvfst_transport.a
 .PHONY : quic/api/CMakeFiles/mvfst_transport.dir/build
 
 quic/api/CMakeFiles/mvfst_transport.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_transport.dir/cmake_clean.cmake
 .PHONY : quic/api/CMakeFiles/mvfst_transport.dir/clean
 
 quic/api/CMakeFiles/mvfst_transport.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api/CMakeFiles/mvfst_transport.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/api/CMakeFiles/mvfst_transport.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/api/CMakeFiles/mvfst_transport.dir/depend
 

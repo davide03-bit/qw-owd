@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/test
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

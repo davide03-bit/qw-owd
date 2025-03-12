@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,16 +43,16 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/loss" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/loss" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/libmvfst_loss.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/libmvfst_loss.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/test/cmake_install.cmake")
 
 endif()
 

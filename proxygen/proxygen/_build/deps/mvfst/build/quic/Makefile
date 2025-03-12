@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/CMakeFiles/mvfst_constants.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/CMakeFiles/mvfst_constants.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/CMakeFiles/mvfst_constants.dir/rule
 .PHONY : quic/CMakeFiles/mvfst_constants.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ mvfst_constants: quic/CMakeFiles/mvfst_constants.dir/rule
 
 # fast build rule for target.
 mvfst_constants/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/build
 .PHONY : mvfst_constants/fast
 
 # Convenience name for target.
 quic/CMakeFiles/mvfst_exception.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/CMakeFiles/mvfst_exception.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/CMakeFiles/mvfst_exception.dir/rule
 .PHONY : quic/CMakeFiles/mvfst_exception.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ mvfst_exception: quic/CMakeFiles/mvfst_exception.dir/rule
 
 # fast build rule for target.
 mvfst_exception/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/build
 .PHONY : mvfst_exception/fast
 
 QuicConstants.o: QuicConstants.cpp.o
@@ -194,7 +194,7 @@ QuicConstants.o: QuicConstants.cpp.o
 
 # target to build an object file
 QuicConstants.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o
 .PHONY : QuicConstants.cpp.o
 
 QuicConstants.i: QuicConstants.cpp.i
@@ -202,7 +202,7 @@ QuicConstants.i: QuicConstants.cpp.i
 
 # target to preprocess a source file
 QuicConstants.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i
 .PHONY : QuicConstants.cpp.i
 
 QuicConstants.s: QuicConstants.cpp.s
@@ -210,7 +210,7 @@ QuicConstants.s: QuicConstants.cpp.s
 
 # target to generate assembly for a file
 QuicConstants.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_constants.dir/build.make quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s
 .PHONY : QuicConstants.cpp.s
 
 QuicException.o: QuicException.cpp.o
@@ -218,7 +218,7 @@ QuicException.o: QuicException.cpp.o
 
 # target to build an object file
 QuicException.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.o
 .PHONY : QuicException.cpp.o
 
 QuicException.i: QuicException.cpp.i
@@ -226,7 +226,7 @@ QuicException.i: QuicException.cpp.i
 
 # target to preprocess a source file
 QuicException.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.i
 .PHONY : QuicException.cpp.i
 
 QuicException.s: QuicException.cpp.s
@@ -234,7 +234,7 @@ QuicException.s: QuicException.cpp.s
 
 # target to generate assembly for a file
 QuicException.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/CMakeFiles/mvfst_exception.dir/build.make quic/CMakeFiles/mvfst_exception.dir/QuicException.cpp.s
 .PHONY : QuicException.cpp.s
 
 # Help Target
@@ -268,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

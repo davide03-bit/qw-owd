@@ -35,6 +35,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mvfst_cc_algo.dir/TokenlessPacer.cpp.o.d"
   "CMakeFiles/mvfst_cc_algo.dir/Westwood.cpp.o"
   "CMakeFiles/mvfst_cc_algo.dir/Westwood.cpp.o.d"
+  "CMakeFiles/mvfst_cc_algo.dir/WestwoodOWD.cpp.o"
+  "CMakeFiles/mvfst_cc_algo.dir/WestwoodOWD.cpp.o.d"
   "libmvfst_cc_algo.a"
   "libmvfst_cc_algo.pdb"
 )

@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,33 +43,33 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientExtensions.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientExtensions.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientHandshake.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientHandshake.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientQuicHandshakeContext.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/FizzClientQuicHandshakeContext.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/QuicPskCache.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/QuicPskCache.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/QuicTokenCache.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/fizz/client/handshake" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/fizz/client/handshake/QuicTokenCache.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/libmvfst_fizz_client.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/libmvfst_fizz_client.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/test/cmake_install.cmake")
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/handshake/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/fizz/client/handshake/test/cmake_install.cmake")
 
 endif()
 

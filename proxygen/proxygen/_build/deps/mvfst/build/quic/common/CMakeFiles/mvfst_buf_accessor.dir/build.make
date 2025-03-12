@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/common/CMakeFiles/mvfst_buf_accessor.dir/depend.make
@@ -72,16 +72,16 @@ include quic/common/CMakeFiles/mvfst_buf_accessor.dir/flags.make
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o: quic/common/CMakeFiles/mvfst_buf_accessor.dir/flags.make
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o: ../quic/common/BufAccessor.cpp
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o: quic/common/CMakeFiles/mvfst_buf_accessor.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o -MF CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o.d -o CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o -MF CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o.d -o CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp
 
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp > CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp > CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i
 
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp -o CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufAccessor.cpp -o CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s
 
 # Object files for target mvfst_buf_accessor
 mvfst_buf_accessor_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_buf_accessor_EXTERNAL_OBJECTS =
 quic/common/libmvfst_buf_accessor.a: quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o
 quic/common/libmvfst_buf_accessor.a: quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make
 quic/common/libmvfst_buf_accessor.a: quic/common/CMakeFiles/mvfst_buf_accessor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_buf_accessor.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_buf_accessor.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_buf_accessor.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_buf_accessor.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_buf_accessor.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_buf_accessor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/build: quic/common/libmvfst_buf_accessor.a
 .PHONY : quic/common/CMakeFiles/mvfst_buf_accessor.dir/build
 
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_buf_accessor.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_buf_accessor.dir/cmake_clean.cmake
 .PHONY : quic/common/CMakeFiles/mvfst_buf_accessor.dir/clean
 
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_buf_accessor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/CMakeFiles/mvfst_buf_accessor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/common/CMakeFiles/mvfst_buf_accessor.dir/depend
 

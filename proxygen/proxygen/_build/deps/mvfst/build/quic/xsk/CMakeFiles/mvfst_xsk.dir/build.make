@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/xsk/CMakeFiles/mvfst_xsk.dir/depend.make
@@ -72,86 +72,86 @@ include quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o: ../quic/xsk/packet_utils.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o -MF CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o -MF CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp > CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp > CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp -o CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/packet_utils.cpp -o CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.s
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o: ../quic/xsk/xsk_lib.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o -MF CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o -MF CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp > CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp > CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp -o CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp -o CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.s
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o: ../quic/xsk/BaseXskContainer.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/BaseXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.s
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o: ../quic/xsk/HashingXskContainer.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/HashingXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.s
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o: ../quic/xsk/ThreadLocalXskContainer.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o -MF CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp > CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/ThreadLocalXskContainer.cpp -o CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.s
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/flags.make
 quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o: ../quic/xsk/XskSender.cpp
 quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o: quic/xsk/CMakeFiles/mvfst_xsk.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o -MF CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o -MF CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o.d -o CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp > CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp > CMakeFiles/mvfst_xsk.dir/XskSender.cpp.i
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp -o CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/XskSender.cpp -o CMakeFiles/mvfst_xsk.dir/XskSender.cpp.s
 
 # Object files for target mvfst_xsk
 mvfst_xsk_OBJECTS = \
@@ -173,19 +173,19 @@ quic/xsk/libmvfst_xsk.a: quic/xsk/CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContain
 quic/xsk/libmvfst_xsk.a: quic/xsk/CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o
 quic/xsk/libmvfst_xsk.a: quic/xsk/CMakeFiles/mvfst_xsk.dir/build.make
 quic/xsk/libmvfst_xsk.a: quic/xsk/CMakeFiles/mvfst_xsk.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmvfst_xsk.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_xsk.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_xsk.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libmvfst_xsk.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_xsk.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_xsk.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/xsk/CMakeFiles/mvfst_xsk.dir/build: quic/xsk/libmvfst_xsk.a
 .PHONY : quic/xsk/CMakeFiles/mvfst_xsk.dir/build
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_xsk.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_xsk.dir/cmake_clean.cmake
 .PHONY : quic/xsk/CMakeFiles/mvfst_xsk.dir/clean
 
 quic/xsk/CMakeFiles/mvfst_xsk.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk/CMakeFiles/mvfst_xsk.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/xsk/CMakeFiles/mvfst_xsk.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/xsk/CMakeFiles/mvfst_xsk.dir/depend
 

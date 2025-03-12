@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/client//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/client//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/client/CMakeFiles/mvfst_client.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/CMakeFiles/mvfst_client.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/client/CMakeFiles/mvfst_client.dir/rule
 .PHONY : quic/client/CMakeFiles/mvfst_client.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mvfst_client: quic/client/CMakeFiles/mvfst_client.dir/rule
 
 # fast build rule for target.
 mvfst_client/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/build
 .PHONY : mvfst_client/fast
 
 QuicClientAsyncTransport.o: QuicClientAsyncTransport.cpp.o
@@ -180,7 +180,7 @@ QuicClientAsyncTransport.o: QuicClientAsyncTransport.cpp.o
 
 # target to build an object file
 QuicClientAsyncTransport.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.o
 .PHONY : QuicClientAsyncTransport.cpp.o
 
 QuicClientAsyncTransport.i: QuicClientAsyncTransport.cpp.i
@@ -188,7 +188,7 @@ QuicClientAsyncTransport.i: QuicClientAsyncTransport.cpp.i
 
 # target to preprocess a source file
 QuicClientAsyncTransport.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.i
 .PHONY : QuicClientAsyncTransport.cpp.i
 
 QuicClientAsyncTransport.s: QuicClientAsyncTransport.cpp.s
@@ -196,7 +196,7 @@ QuicClientAsyncTransport.s: QuicClientAsyncTransport.cpp.s
 
 # target to generate assembly for a file
 QuicClientAsyncTransport.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.s
 .PHONY : QuicClientAsyncTransport.cpp.s
 
 QuicClientTransport.o: QuicClientTransport.cpp.o
@@ -204,7 +204,7 @@ QuicClientTransport.o: QuicClientTransport.cpp.o
 
 # target to build an object file
 QuicClientTransport.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.o
 .PHONY : QuicClientTransport.cpp.o
 
 QuicClientTransport.i: QuicClientTransport.cpp.i
@@ -212,7 +212,7 @@ QuicClientTransport.i: QuicClientTransport.cpp.i
 
 # target to preprocess a source file
 QuicClientTransport.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.i
 .PHONY : QuicClientTransport.cpp.i
 
 QuicClientTransport.s: QuicClientTransport.cpp.s
@@ -220,7 +220,7 @@ QuicClientTransport.s: QuicClientTransport.cpp.s
 
 # target to generate assembly for a file
 QuicClientTransport.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.s
 .PHONY : QuicClientTransport.cpp.s
 
 connector/QuicConnector.o: connector/QuicConnector.cpp.o
@@ -228,7 +228,7 @@ connector/QuicConnector.o: connector/QuicConnector.cpp.o
 
 # target to build an object file
 connector/QuicConnector.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.o
 .PHONY : connector/QuicConnector.cpp.o
 
 connector/QuicConnector.i: connector/QuicConnector.cpp.i
@@ -236,7 +236,7 @@ connector/QuicConnector.i: connector/QuicConnector.cpp.i
 
 # target to preprocess a source file
 connector/QuicConnector.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.i
 .PHONY : connector/QuicConnector.cpp.i
 
 connector/QuicConnector.s: connector/QuicConnector.cpp.s
@@ -244,7 +244,7 @@ connector/QuicConnector.s: connector/QuicConnector.cpp.s
 
 # target to generate assembly for a file
 connector/QuicConnector.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.s
 .PHONY : connector/QuicConnector.cpp.s
 
 handshake/ClientHandshake.o: handshake/ClientHandshake.cpp.o
@@ -252,7 +252,7 @@ handshake/ClientHandshake.o: handshake/ClientHandshake.cpp.o
 
 # target to build an object file
 handshake/ClientHandshake.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.o
 .PHONY : handshake/ClientHandshake.cpp.o
 
 handshake/ClientHandshake.i: handshake/ClientHandshake.cpp.i
@@ -260,7 +260,7 @@ handshake/ClientHandshake.i: handshake/ClientHandshake.cpp.i
 
 # target to preprocess a source file
 handshake/ClientHandshake.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.i
 .PHONY : handshake/ClientHandshake.cpp.i
 
 handshake/ClientHandshake.s: handshake/ClientHandshake.cpp.s
@@ -268,7 +268,7 @@ handshake/ClientHandshake.s: handshake/ClientHandshake.cpp.s
 
 # target to generate assembly for a file
 handshake/ClientHandshake.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.s
 .PHONY : handshake/ClientHandshake.cpp.s
 
 state/ClientStateMachine.o: state/ClientStateMachine.cpp.o
@@ -276,7 +276,7 @@ state/ClientStateMachine.o: state/ClientStateMachine.cpp.o
 
 # target to build an object file
 state/ClientStateMachine.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.o
 .PHONY : state/ClientStateMachine.cpp.o
 
 state/ClientStateMachine.i: state/ClientStateMachine.cpp.i
@@ -284,7 +284,7 @@ state/ClientStateMachine.i: state/ClientStateMachine.cpp.i
 
 # target to preprocess a source file
 state/ClientStateMachine.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.i
 .PHONY : state/ClientStateMachine.cpp.i
 
 state/ClientStateMachine.s: state/ClientStateMachine.cpp.s
@@ -292,7 +292,7 @@ state/ClientStateMachine.s: state/ClientStateMachine.cpp.s
 
 # target to generate assembly for a file
 state/ClientStateMachine.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/client/CMakeFiles/mvfst_client.dir/build.make quic/client/CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.s
 .PHONY : state/ClientStateMachine.cpp.s
 
 # Help Target
@@ -334,6 +334,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

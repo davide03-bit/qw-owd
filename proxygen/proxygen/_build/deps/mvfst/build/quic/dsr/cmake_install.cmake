@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,44 +43,44 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/DSRPacketizationRequestSender.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/DSRPacketizationRequestSender.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/Types.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/Types.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/backend" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/backend/DSRPacketizer.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/backend" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/backend/DSRPacketizer.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/PacketBuilder.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/PacketBuilder.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/dsr/frontend" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/libmvfst_dsr_types.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/libmvfst_dsr_types.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/libmvfst_dsr_frontend.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/libmvfst_dsr_frontend.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/test/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/test/cmake_install.cmake")
 
 endif()
 

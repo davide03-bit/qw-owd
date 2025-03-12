@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/loss/CMakeFiles/mvfst_loss.dir/depend.make
@@ -72,16 +72,16 @@ include quic/loss/CMakeFiles/mvfst_loss.dir/flags.make
 quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o: quic/loss/CMakeFiles/mvfst_loss.dir/flags.make
 quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o: ../quic/loss/QuicLossFunctions.cpp
 quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o: quic/loss/CMakeFiles/mvfst_loss.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o -MF CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o.d -o CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o -MF CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o.d -o CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp
 
 quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp > CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp > CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.i
 
 quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp -o CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss/QuicLossFunctions.cpp -o CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.s
 
 # Object files for target mvfst_loss
 mvfst_loss_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_loss_EXTERNAL_OBJECTS =
 quic/loss/libmvfst_loss.a: quic/loss/CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o
 quic/loss/libmvfst_loss.a: quic/loss/CMakeFiles/mvfst_loss.dir/build.make
 quic/loss/libmvfst_loss.a: quic/loss/CMakeFiles/mvfst_loss.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_loss.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_loss.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_loss.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_loss.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_loss.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_loss.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/loss/CMakeFiles/mvfst_loss.dir/build: quic/loss/libmvfst_loss.a
 .PHONY : quic/loss/CMakeFiles/mvfst_loss.dir/build
 
 quic/loss/CMakeFiles/mvfst_loss.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_loss.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_loss.dir/cmake_clean.cmake
 .PHONY : quic/loss/CMakeFiles/mvfst_loss.dir/clean
 
 quic/loss/CMakeFiles/mvfst_loss.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/CMakeFiles/mvfst_loss.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/loss /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/loss/CMakeFiles/mvfst_loss.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/loss/CMakeFiles/mvfst_loss.dir/depend
 

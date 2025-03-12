@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufUtil.cpp" "quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o.d"
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/ChainedByteRange.cpp" "quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/BufUtil.cpp" "quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/ChainedByteRange.cpp" "quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o.d"
   )
 
 # Targets to which this target links.

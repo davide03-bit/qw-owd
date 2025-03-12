@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/depend.make
@@ -72,16 +72,16 @@ include quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/flags.make
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o: quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/flags.make
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o: ../quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o: quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o -MF CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o.d -o CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o -MF CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o.d -o CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp
 
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp > CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp > CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.i
 
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp -o CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs/QuicHappyEyeballsFunctions.cpp -o CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.s
 
 # Object files for target mvfst_happyeyeballs
 mvfst_happyeyeballs_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_happyeyeballs_EXTERNAL_OBJECTS =
 quic/happyeyeballs/libmvfst_happyeyeballs.a: quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o
 quic/happyeyeballs/libmvfst_happyeyeballs.a: quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/build.make
 quic/happyeyeballs/libmvfst_happyeyeballs.a: quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_happyeyeballs.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_happyeyeballs.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_happyeyeballs.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_happyeyeballs.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_happyeyeballs.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_happyeyeballs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/build: quic/happyeyeballs/libmvfst_happyeyeballs.a
 .PHONY : quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/build
 
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_happyeyeballs.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_happyeyeballs.dir/cmake_clean.cmake
 .PHONY : quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/clean
 
 quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/happyeyeballs /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/happyeyeballs/CMakeFiles/mvfst_happyeyeballs.dir/depend
 

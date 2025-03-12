@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/CMakeFiles/mvfst_constants.dir/depend.make
@@ -72,16 +72,16 @@ include quic/CMakeFiles/mvfst_constants.dir/flags.make
 quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o: quic/CMakeFiles/mvfst_constants.dir/flags.make
 quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o: ../quic/QuicConstants.cpp
 quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o: quic/CMakeFiles/mvfst_constants.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o -MF CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o.d -o CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o -MF CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o.d -o CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp
 
 quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp > CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp > CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.i
 
 quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp -o CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/QuicConstants.cpp -o CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.s
 
 # Object files for target mvfst_constants
 mvfst_constants_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_constants_EXTERNAL_OBJECTS =
 quic/libmvfst_constants.a: quic/CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o
 quic/libmvfst_constants.a: quic/CMakeFiles/mvfst_constants.dir/build.make
 quic/libmvfst_constants.a: quic/CMakeFiles/mvfst_constants.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_constants.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_constants.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_constants.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_constants.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_constants.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_constants.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/CMakeFiles/mvfst_constants.dir/build: quic/libmvfst_constants.a
 .PHONY : quic/CMakeFiles/mvfst_constants.dir/build
 
 quic/CMakeFiles/mvfst_constants.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_constants.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_constants.dir/cmake_clean.cmake
 .PHONY : quic/CMakeFiles/mvfst_constants.dir/clean
 
 quic/CMakeFiles/mvfst_constants.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/CMakeFiles/mvfst_constants.dir/depend
 

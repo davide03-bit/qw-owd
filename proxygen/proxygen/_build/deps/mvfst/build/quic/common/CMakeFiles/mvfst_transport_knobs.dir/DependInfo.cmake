@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp" "quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/TransportKnobs.cpp" "quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/CMakeFiles/mvfst_constants.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

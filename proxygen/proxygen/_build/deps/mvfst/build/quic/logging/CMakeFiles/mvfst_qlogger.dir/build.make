@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/logging/CMakeFiles/mvfst_qlogger.dir/depend.make
@@ -72,72 +72,72 @@ include quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o: ../quic/logging/BaseQLogger.cpp
 quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp > CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp > CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.i
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/BaseQLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.s
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o: ../quic/logging/FileQLogger.cpp
 quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp > CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp > CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.i
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/FileQLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.s
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o: ../quic/logging/QLogger.cpp
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp > CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp > CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.i
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLogger.cpp -o CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.s
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o: ../quic/logging/QLoggerConstants.cpp
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp > CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp > CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.i
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp -o CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerConstants.cpp -o CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.s
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/flags.make
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o: ../quic/logging/QLoggerTypes.cpp
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o: quic/logging/CMakeFiles/mvfst_qlogger.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o -MF CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o.d -o CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp > CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp > CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.i
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp -o CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging/QLoggerTypes.cpp -o CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.s
 
 # Object files for target mvfst_qlogger
 mvfst_qlogger_OBJECTS = \
@@ -157,19 +157,19 @@ quic/logging/libmvfst_qlogger.a: quic/logging/CMakeFiles/mvfst_qlogger.dir/QLogg
 quic/logging/libmvfst_qlogger.a: quic/logging/CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o
 quic/logging/libmvfst_qlogger.a: quic/logging/CMakeFiles/mvfst_qlogger.dir/build.make
 quic/logging/libmvfst_qlogger.a: quic/logging/CMakeFiles/mvfst_qlogger.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libmvfst_qlogger.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_qlogger.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_qlogger.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libmvfst_qlogger.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_qlogger.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_qlogger.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/logging/CMakeFiles/mvfst_qlogger.dir/build: quic/logging/libmvfst_qlogger.a
 .PHONY : quic/logging/CMakeFiles/mvfst_qlogger.dir/build
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_qlogger.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_qlogger.dir/cmake_clean.cmake
 .PHONY : quic/logging/CMakeFiles/mvfst_qlogger.dir/clean
 
 quic/logging/CMakeFiles/mvfst_qlogger.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging/CMakeFiles/mvfst_qlogger.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/logging /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/logging/CMakeFiles/mvfst_qlogger.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/logging/CMakeFiles/mvfst_qlogger.dir/depend
 

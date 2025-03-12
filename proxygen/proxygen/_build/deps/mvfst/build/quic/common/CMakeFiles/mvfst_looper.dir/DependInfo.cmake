@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/FunctionLooper.cpp" "quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o.d"
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/HighResQuicTimer.cpp" "quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/FunctionLooper.cpp" "quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/common/events/HighResQuicTimer.cpp" "quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o" "gcc" "quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o.d"
   )
 
 # Targets to which this target links.

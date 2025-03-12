@@ -1,5 +1,5 @@
 quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o: \
- /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp \
+ /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.cpp \
  /usr/include/stdc-predef.h /usr/include/net/if.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -52,7 +52,7 @@ quic/xsk/CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o: \
  /usr/include/asm-generic/sockios.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_osockaddr.h \
  /usr/include/x86_64-linux-gnu/bits/socket2.h \
- /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.h \
+ /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/xsk/xsk_lib.h \
  /usr/include/linux/if_xdp.h /usr/include/linux/types.h \
  /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \

@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/TransportSettingsFunctions.cpp" "quic/state/CMakeFiles/mvfst_transport_settings_functions.dir/TransportSettingsFunctions.cpp.o" "gcc" "quic/state/CMakeFiles/mvfst_transport_settings_functions.dir/TransportSettingsFunctions.cpp.o.d"
+  "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/TransportSettingsFunctions.cpp" "quic/state/CMakeFiles/mvfst_transport_settings_functions.dir/TransportSettingsFunctions.cpp.o" "gcc" "quic/state/CMakeFiles/mvfst_transport_settings_functions.dir/TransportSettingsFunctions.cpp.o.d"
   )
 
 # Targets to which this target links.

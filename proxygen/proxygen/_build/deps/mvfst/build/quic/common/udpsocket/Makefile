@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/udpsocket//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common/udpsocket//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/rule
 .PHONY : quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ mvfst_async_udp_socket: quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.
 
 # fast build rule for target.
 mvfst_async_udp_socket/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build
 .PHONY : mvfst_async_udp_socket/fast
 
 FollyQuicAsyncUDPSocket.o: FollyQuicAsyncUDPSocket.cpp.o
@@ -180,7 +180,7 @@ FollyQuicAsyncUDPSocket.o: FollyQuicAsyncUDPSocket.cpp.o
 
 # target to build an object file
 FollyQuicAsyncUDPSocket.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.o
 .PHONY : FollyQuicAsyncUDPSocket.cpp.o
 
 FollyQuicAsyncUDPSocket.i: FollyQuicAsyncUDPSocket.cpp.i
@@ -188,7 +188,7 @@ FollyQuicAsyncUDPSocket.i: FollyQuicAsyncUDPSocket.cpp.i
 
 # target to preprocess a source file
 FollyQuicAsyncUDPSocket.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.i
 .PHONY : FollyQuicAsyncUDPSocket.cpp.i
 
 FollyQuicAsyncUDPSocket.s: FollyQuicAsyncUDPSocket.cpp.s
@@ -196,7 +196,7 @@ FollyQuicAsyncUDPSocket.s: FollyQuicAsyncUDPSocket.cpp.s
 
 # target to generate assembly for a file
 FollyQuicAsyncUDPSocket.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.s
 .PHONY : FollyQuicAsyncUDPSocket.cpp.s
 
 QuicAsyncUDPSocket.o: QuicAsyncUDPSocket.cpp.o
@@ -204,7 +204,7 @@ QuicAsyncUDPSocket.o: QuicAsyncUDPSocket.cpp.o
 
 # target to build an object file
 QuicAsyncUDPSocket.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.o
 .PHONY : QuicAsyncUDPSocket.cpp.o
 
 QuicAsyncUDPSocket.i: QuicAsyncUDPSocket.cpp.i
@@ -212,7 +212,7 @@ QuicAsyncUDPSocket.i: QuicAsyncUDPSocket.cpp.i
 
 # target to preprocess a source file
 QuicAsyncUDPSocket.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.i
 .PHONY : QuicAsyncUDPSocket.cpp.i
 
 QuicAsyncUDPSocket.s: QuicAsyncUDPSocket.cpp.s
@@ -220,7 +220,7 @@ QuicAsyncUDPSocket.s: QuicAsyncUDPSocket.cpp.s
 
 # target to generate assembly for a file
 QuicAsyncUDPSocket.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.s
 .PHONY : QuicAsyncUDPSocket.cpp.s
 
 QuicAsyncUDPSocketImpl.o: QuicAsyncUDPSocketImpl.cpp.o
@@ -228,7 +228,7 @@ QuicAsyncUDPSocketImpl.o: QuicAsyncUDPSocketImpl.cpp.o
 
 # target to build an object file
 QuicAsyncUDPSocketImpl.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.o
 .PHONY : QuicAsyncUDPSocketImpl.cpp.o
 
 QuicAsyncUDPSocketImpl.i: QuicAsyncUDPSocketImpl.cpp.i
@@ -236,7 +236,7 @@ QuicAsyncUDPSocketImpl.i: QuicAsyncUDPSocketImpl.cpp.i
 
 # target to preprocess a source file
 QuicAsyncUDPSocketImpl.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.i
 .PHONY : QuicAsyncUDPSocketImpl.cpp.i
 
 QuicAsyncUDPSocketImpl.s: QuicAsyncUDPSocketImpl.cpp.s
@@ -244,7 +244,7 @@ QuicAsyncUDPSocketImpl.s: QuicAsyncUDPSocketImpl.cpp.s
 
 # target to generate assembly for a file
 QuicAsyncUDPSocketImpl.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/build.make quic/common/udpsocket/CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.s
 .PHONY : QuicAsyncUDPSocketImpl.cpp.s
 
 # Help Target
@@ -280,6 +280,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,8 +44,8 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/quic/api/test" TYPE FILE FILES
-    "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test/MockQuicSocket.h"
-    "/client/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test/Mocks.h"
+    "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test/MockQuicSocket.h"
+    "/qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/api/test/Mocks.h"
     )
 endif()
 

@@ -1,8 +1,8 @@
-# Install script for directory: /client/qw/proxygen/proxygen/_build/deps/mvfst
+# Install script for directory: /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/client/qw/proxygen/proxygen/_build/deps")
+  set(CMAKE_INSTALL_PREFIX "/qw/qw/proxygen/proxygen/_build/deps")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -46,7 +46,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst/mvfst-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst/mvfst-targets.cmake"
-         "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets.cmake")
+         "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst/mvfst-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -55,19 +55,19 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets-relwithdebinfo.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles/Export/lib/cmake/mvfst/mvfst-targets-relwithdebinfo.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/mvfst-config.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mvfst" TYPE FILE FILES "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/mvfst-config.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/cmake_install.cmake")
+  include("/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/cmake_install.cmake")
 
 endif()
 
@@ -79,5 +79,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/client/qw/proxygen/proxygen/_build/deps/mvfst/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

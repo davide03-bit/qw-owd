@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/depend.make
@@ -72,16 +72,16 @@ include quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/flags.make
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o: quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/flags.make
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o: ../quic/state/DatagramHandlers.cpp
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o: quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o -MF CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o.d -o CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o -MF CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o.d -o CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp
 
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp > CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp > CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.i
 
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp -o CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/state/DatagramHandlers.cpp -o CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.s
 
 # Object files for target mvfst_state_datagram_handler
 mvfst_state_datagram_handler_OBJECTS = \
@@ -93,19 +93,19 @@ mvfst_state_datagram_handler_EXTERNAL_OBJECTS =
 quic/state/libmvfst_state_datagram_handler.a: quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o
 quic/state/libmvfst_state_datagram_handler.a: quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/build.make
 quic/state/libmvfst_state_datagram_handler.a: quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_state_datagram_handler.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_state_datagram_handler.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_state_datagram_handler.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libmvfst_state_datagram_handler.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_state_datagram_handler.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_state_datagram_handler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/build: quic/state/libmvfst_state_datagram_handler.a
 .PHONY : quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/build
 
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_state_datagram_handler.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_state_datagram_handler.dir/cmake_clean.cmake
 .PHONY : quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/clean
 
 quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/state /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/state /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/state/CMakeFiles/mvfst_state_datagram_handler.dir/depend
 

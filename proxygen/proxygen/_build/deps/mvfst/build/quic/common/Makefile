@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/common//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/common/CMakeFiles/mvfst_buf_accessor.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_buf_accessor.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_buf_accessor.dir/rule
 .PHONY : quic/common/CMakeFiles/mvfst_buf_accessor.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ mvfst_buf_accessor: quic/common/CMakeFiles/mvfst_buf_accessor.dir/rule
 
 # fast build rule for target.
 mvfst_buf_accessor/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/build
 .PHONY : mvfst_buf_accessor/fast
 
 # Convenience name for target.
 quic/common/CMakeFiles/mvfst_looper.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_looper.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_looper.dir/rule
 .PHONY : quic/common/CMakeFiles/mvfst_looper.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ mvfst_looper: quic/common/CMakeFiles/mvfst_looper.dir/rule
 
 # fast build rule for target.
 mvfst_looper/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/build
 .PHONY : mvfst_looper/fast
 
 # Convenience name for target.
 quic/common/CMakeFiles/mvfst_bufutil.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_bufutil.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_bufutil.dir/rule
 .PHONY : quic/common/CMakeFiles/mvfst_bufutil.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ mvfst_bufutil: quic/common/CMakeFiles/mvfst_bufutil.dir/rule
 
 # fast build rule for target.
 mvfst_bufutil/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/build
 .PHONY : mvfst_bufutil/fast
 
 # Convenience name for target.
 quic/common/CMakeFiles/mvfst_transport_knobs.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_transport_knobs.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/common/CMakeFiles/mvfst_transport_knobs.dir/rule
 .PHONY : quic/common/CMakeFiles/mvfst_transport_knobs.dir/rule
 
 # Convenience name for target.
@@ -214,7 +214,7 @@ mvfst_transport_knobs: quic/common/CMakeFiles/mvfst_transport_knobs.dir/rule
 
 # fast build rule for target.
 mvfst_transport_knobs/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/build
 .PHONY : mvfst_transport_knobs/fast
 
 BufAccessor.o: BufAccessor.cpp.o
@@ -222,7 +222,7 @@ BufAccessor.o: BufAccessor.cpp.o
 
 # target to build an object file
 BufAccessor.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o
 .PHONY : BufAccessor.cpp.o
 
 BufAccessor.i: BufAccessor.cpp.i
@@ -230,7 +230,7 @@ BufAccessor.i: BufAccessor.cpp.i
 
 # target to preprocess a source file
 BufAccessor.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.i
 .PHONY : BufAccessor.cpp.i
 
 BufAccessor.s: BufAccessor.cpp.s
@@ -238,7 +238,7 @@ BufAccessor.s: BufAccessor.cpp.s
 
 # target to generate assembly for a file
 BufAccessor.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_buf_accessor.dir/build.make quic/common/CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.s
 .PHONY : BufAccessor.cpp.s
 
 BufUtil.o: BufUtil.cpp.o
@@ -246,7 +246,7 @@ BufUtil.o: BufUtil.cpp.o
 
 # target to build an object file
 BufUtil.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.o
 .PHONY : BufUtil.cpp.o
 
 BufUtil.i: BufUtil.cpp.i
@@ -254,7 +254,7 @@ BufUtil.i: BufUtil.cpp.i
 
 # target to preprocess a source file
 BufUtil.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.i
 .PHONY : BufUtil.cpp.i
 
 BufUtil.s: BufUtil.cpp.s
@@ -262,7 +262,7 @@ BufUtil.s: BufUtil.cpp.s
 
 # target to generate assembly for a file
 BufUtil.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/BufUtil.cpp.s
 .PHONY : BufUtil.cpp.s
 
 ChainedByteRange.o: ChainedByteRange.cpp.o
@@ -270,7 +270,7 @@ ChainedByteRange.o: ChainedByteRange.cpp.o
 
 # target to build an object file
 ChainedByteRange.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.o
 .PHONY : ChainedByteRange.cpp.o
 
 ChainedByteRange.i: ChainedByteRange.cpp.i
@@ -278,7 +278,7 @@ ChainedByteRange.i: ChainedByteRange.cpp.i
 
 # target to preprocess a source file
 ChainedByteRange.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.i
 .PHONY : ChainedByteRange.cpp.i
 
 ChainedByteRange.s: ChainedByteRange.cpp.s
@@ -286,7 +286,7 @@ ChainedByteRange.s: ChainedByteRange.cpp.s
 
 # target to generate assembly for a file
 ChainedByteRange.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_bufutil.dir/build.make quic/common/CMakeFiles/mvfst_bufutil.dir/ChainedByteRange.cpp.s
 .PHONY : ChainedByteRange.cpp.s
 
 FunctionLooper.o: FunctionLooper.cpp.o
@@ -294,7 +294,7 @@ FunctionLooper.o: FunctionLooper.cpp.o
 
 # target to build an object file
 FunctionLooper.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o
 .PHONY : FunctionLooper.cpp.o
 
 FunctionLooper.i: FunctionLooper.cpp.i
@@ -302,7 +302,7 @@ FunctionLooper.i: FunctionLooper.cpp.i
 
 # target to preprocess a source file
 FunctionLooper.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.i
 .PHONY : FunctionLooper.cpp.i
 
 FunctionLooper.s: FunctionLooper.cpp.s
@@ -310,7 +310,7 @@ FunctionLooper.s: FunctionLooper.cpp.s
 
 # target to generate assembly for a file
 FunctionLooper.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.s
 .PHONY : FunctionLooper.cpp.s
 
 TransportKnobs.o: TransportKnobs.cpp.o
@@ -318,7 +318,7 @@ TransportKnobs.o: TransportKnobs.cpp.o
 
 # target to build an object file
 TransportKnobs.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o
 .PHONY : TransportKnobs.cpp.o
 
 TransportKnobs.i: TransportKnobs.cpp.i
@@ -326,7 +326,7 @@ TransportKnobs.i: TransportKnobs.cpp.i
 
 # target to preprocess a source file
 TransportKnobs.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.i
 .PHONY : TransportKnobs.cpp.i
 
 TransportKnobs.s: TransportKnobs.cpp.s
@@ -334,7 +334,7 @@ TransportKnobs.s: TransportKnobs.cpp.s
 
 # target to generate assembly for a file
 TransportKnobs.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_transport_knobs.dir/build.make quic/common/CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.s
 .PHONY : TransportKnobs.cpp.s
 
 events/HighResQuicTimer.o: events/HighResQuicTimer.cpp.o
@@ -342,7 +342,7 @@ events/HighResQuicTimer.o: events/HighResQuicTimer.cpp.o
 
 # target to build an object file
 events/HighResQuicTimer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o
 .PHONY : events/HighResQuicTimer.cpp.o
 
 events/HighResQuicTimer.i: events/HighResQuicTimer.cpp.i
@@ -350,7 +350,7 @@ events/HighResQuicTimer.i: events/HighResQuicTimer.cpp.i
 
 # target to preprocess a source file
 events/HighResQuicTimer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.i
 .PHONY : events/HighResQuicTimer.cpp.i
 
 events/HighResQuicTimer.s: events/HighResQuicTimer.cpp.s
@@ -358,7 +358,7 @@ events/HighResQuicTimer.s: events/HighResQuicTimer.cpp.s
 
 # target to generate assembly for a file
 events/HighResQuicTimer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/common/CMakeFiles/mvfst_looper.dir/build.make quic/common/CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.s
 .PHONY : events/HighResQuicTimer.cpp.s
 
 # Help Target
@@ -406,6 +406,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

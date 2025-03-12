@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr//CMakeFiles/progress.marks
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr//CMakeFiles/progress.marks
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/clean
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/preinstall
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 quic/dsr/CMakeFiles/mvfst_dsr_types.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_types.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_types.dir/rule
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_types.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ mvfst_dsr_types: quic/dsr/CMakeFiles/mvfst_dsr_types.dir/rule
 
 # fast build rule for target.
 mvfst_dsr_types/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build
 .PHONY : mvfst_dsr_types/fast
 
 # Convenience name for target.
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/rule
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ mvfst_dsr_frontend: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/rule
 
 # fast build rule for target.
 mvfst_dsr_frontend/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build
 .PHONY : mvfst_dsr_frontend/fast
 
 # Convenience name for target.
 quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/rule:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/rule
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/rule
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/rule
 
 # Convenience name for target.
@@ -200,7 +200,7 @@ mvfst_dsr_backend: quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/rule
 
 # fast build rule for target.
 mvfst_dsr_backend/fast:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build
 .PHONY : mvfst_dsr_backend/fast
 
 Types.o: Types.cpp.o
@@ -208,7 +208,7 @@ Types.o: Types.cpp.o
 
 # target to build an object file
 Types.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.o
 .PHONY : Types.cpp.o
 
 Types.i: Types.cpp.i
@@ -216,7 +216,7 @@ Types.i: Types.cpp.i
 
 # target to preprocess a source file
 Types.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.i
 .PHONY : Types.cpp.i
 
 Types.s: Types.cpp.s
@@ -224,7 +224,7 @@ Types.s: Types.cpp.s
 
 # target to generate assembly for a file
 Types.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_types.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_types.dir/Types.cpp.s
 .PHONY : Types.cpp.s
 
 backend/DSRPacketizer.o: backend/DSRPacketizer.cpp.o
@@ -232,7 +232,7 @@ backend/DSRPacketizer.o: backend/DSRPacketizer.cpp.o
 
 # target to build an object file
 backend/DSRPacketizer.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.o
 .PHONY : backend/DSRPacketizer.cpp.o
 
 backend/DSRPacketizer.i: backend/DSRPacketizer.cpp.i
@@ -240,7 +240,7 @@ backend/DSRPacketizer.i: backend/DSRPacketizer.cpp.i
 
 # target to preprocess a source file
 backend/DSRPacketizer.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.i
 .PHONY : backend/DSRPacketizer.cpp.i
 
 backend/DSRPacketizer.s: backend/DSRPacketizer.cpp.s
@@ -248,7 +248,7 @@ backend/DSRPacketizer.s: backend/DSRPacketizer.cpp.s
 
 # target to generate assembly for a file
 backend/DSRPacketizer.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.s
 .PHONY : backend/DSRPacketizer.cpp.s
 
 frontend/Scheduler.o: frontend/Scheduler.cpp.o
@@ -256,7 +256,7 @@ frontend/Scheduler.o: frontend/Scheduler.cpp.o
 
 # target to build an object file
 frontend/Scheduler.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o
 .PHONY : frontend/Scheduler.cpp.o
 
 frontend/Scheduler.i: frontend/Scheduler.cpp.i
@@ -264,7 +264,7 @@ frontend/Scheduler.i: frontend/Scheduler.cpp.i
 
 # target to preprocess a source file
 frontend/Scheduler.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i
 .PHONY : frontend/Scheduler.cpp.i
 
 frontend/Scheduler.s: frontend/Scheduler.cpp.s
@@ -272,7 +272,7 @@ frontend/Scheduler.s: frontend/Scheduler.cpp.s
 
 # target to generate assembly for a file
 frontend/Scheduler.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s
 .PHONY : frontend/Scheduler.cpp.s
 
 frontend/WriteCodec.o: frontend/WriteCodec.cpp.o
@@ -280,7 +280,7 @@ frontend/WriteCodec.o: frontend/WriteCodec.cpp.o
 
 # target to build an object file
 frontend/WriteCodec.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o
 .PHONY : frontend/WriteCodec.cpp.o
 
 frontend/WriteCodec.i: frontend/WriteCodec.cpp.i
@@ -288,7 +288,7 @@ frontend/WriteCodec.i: frontend/WriteCodec.cpp.i
 
 # target to preprocess a source file
 frontend/WriteCodec.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i
 .PHONY : frontend/WriteCodec.cpp.i
 
 frontend/WriteCodec.s: frontend/WriteCodec.cpp.s
@@ -296,7 +296,7 @@ frontend/WriteCodec.s: frontend/WriteCodec.cpp.s
 
 # target to generate assembly for a file
 frontend/WriteCodec.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s
 .PHONY : frontend/WriteCodec.cpp.s
 
 frontend/WriteFunctions.o: frontend/WriteFunctions.cpp.o
@@ -304,7 +304,7 @@ frontend/WriteFunctions.o: frontend/WriteFunctions.cpp.o
 
 # target to build an object file
 frontend/WriteFunctions.cpp.o:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o
 .PHONY : frontend/WriteFunctions.cpp.o
 
 frontend/WriteFunctions.i: frontend/WriteFunctions.cpp.i
@@ -312,7 +312,7 @@ frontend/WriteFunctions.i: frontend/WriteFunctions.cpp.i
 
 # target to preprocess a source file
 frontend/WriteFunctions.cpp.i:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i
 .PHONY : frontend/WriteFunctions.cpp.i
 
 frontend/WriteFunctions.s: frontend/WriteFunctions.cpp.s
@@ -320,7 +320,7 @@ frontend/WriteFunctions.s: frontend/WriteFunctions.cpp.s
 
 # target to generate assembly for a file
 frontend/WriteFunctions.cpp.s:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(MAKE) $(MAKESILENT) -f quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s
 .PHONY : frontend/WriteFunctions.cpp.s
 
 # Help Target
@@ -364,6 +364,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst
+CMAKE_SOURCE_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /client/qw/proxygen/proxygen/_build/deps/mvfst/build
+CMAKE_BINARY_DIR = /qw/qw/proxygen/proxygen/_build/deps/mvfst/build
 
 # Include any dependencies generated for this target.
 include quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/depend.make
@@ -72,44 +72,44 @@ include quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/flags.make
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/flags.make
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o: ../quic/dsr/frontend/Scheduler.cpp
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.i
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/Scheduler.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.s
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/flags.make
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o: ../quic/dsr/frontend/WriteCodec.cpp
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.i
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteCodec.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.s
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/flags.make
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o: ../quic/dsr/frontend/WriteFunctions.cpp
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o -c /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o -MF CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o.d -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o -c /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp > CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.i
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr/frontend/WriteFunctions.cpp -o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.s
 
 # Object files for target mvfst_dsr_frontend
 mvfst_dsr_frontend_OBJECTS = \
@@ -125,19 +125,19 @@ quic/dsr/libmvfst_dsr_frontend.a: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/fro
 quic/dsr/libmvfst_dsr_frontend.a: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o
 quic/dsr/libmvfst_dsr_frontend.a: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build.make
 quic/dsr/libmvfst_dsr_frontend.a: quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/client/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmvfst_dsr_frontend.a"
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_dsr_frontend.dir/cmake_clean_target.cmake
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_dsr_frontend.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/qw/qw/proxygen/proxygen/_build/deps/mvfst/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libmvfst_dsr_frontend.a"
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_dsr_frontend.dir/cmake_clean_target.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mvfst_dsr_frontend.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build: quic/dsr/libmvfst_dsr_frontend.a
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/build
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/clean:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_dsr_frontend.dir/cmake_clean.cmake
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr && $(CMAKE_COMMAND) -P CMakeFiles/mvfst_dsr_frontend.dir/cmake_clean.cmake
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/clean
 
 quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/depend:
-	cd /client/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /client/qw/proxygen/proxygen/_build/deps/mvfst /client/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr /client/qw/proxygen/proxygen/_build/deps/mvfst/build /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr /client/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/DependInfo.cmake --color=$(COLOR)
+	cd /qw/qw/proxygen/proxygen/_build/deps/mvfst/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /qw/qw/proxygen/proxygen/_build/deps/mvfst /qw/qw/proxygen/proxygen/_build/deps/mvfst/quic/dsr /qw/qw/proxygen/proxygen/_build/deps/mvfst/build /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr /qw/qw/proxygen/proxygen/_build/deps/mvfst/build/quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quic/dsr/CMakeFiles/mvfst_dsr_frontend.dir/depend
 
