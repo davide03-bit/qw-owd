@@ -4,7 +4,7 @@ import argparse
 import math
 import statistics 
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 import numpy as np
@@ -410,7 +410,8 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
     if save_path:
         plt.savefig(save_path)
         print(f"Plot saved to {save_path}")
-    plt.show()
+    #plt.show()
+    plt.savefig("grafici.png")
 
 
 ###############################################################################
