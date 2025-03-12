@@ -1,0 +1,936 @@
+{
+  "description": "Converted from file",
+  "qlog_version": "draft-00",
+  "summary": {
+    "max_duration": 244225,
+    "total_event_count": 47,
+    "trace_count": 1
+  },
+  "title": "mvfst qlog",
+  "traces": [
+    {
+      "common_fields": {
+        "dcid": "aaa6faa258ff0b25",
+        "protocol_type": "QUIC_HTTP3",
+        "reference_time": "0",
+        "scid": ""
+      },
+      "configuration": {
+        "time_offset": 0,
+        "time_units": "us"
+      },
+      "description": "Generated qlog from connection",
+      "event_fields": [
+        "relative_time",
+        "category",
+        "event",
+        "data"
+      ],
+      "events": [
+        [
+          "9321836718",
+          "transport",
+          "transport_state_update",
+          {
+            "update": "start"
+          }
+        ],
+        [
+          "9321908087",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 371,
+                "offset": 0
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 840
+              }
+            ],
+            "header": {
+              "packet_number": 3556992,
+              "packet_size": 1252
+            },
+            "packet_type": "initial"
+          }
+        ],
+        [
+          "9321966547",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 1232
+          }
+        ],
+        [
+          "9321966551",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 944
+          }
+        ],
+        [
+          "9321966551",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 80
+          }
+        ],
+        [
+          "9321978146",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 90,
+                "offset": 0
+              },
+              {
+                "ack_delay": 2168,
+                "acked_ranges": [
+                  [
+                    3556992,
+                    3556992
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 3556992,
+                "latest_recvd_packet_time": 0,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      0
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 1
+              }
+            ],
+            "header": {
+              "packet_number": 9714922,
+              "packet_size": 1232
+            },
+            "packet_type": "initial"
+          }
+        ],
+        [
+          "9321978214",
+          "recovery",
+          "metric_update",
+          {
+            "ack_delay": 2168,
+            "latest_rtt": 65942,
+            "min_rtt": 65942,
+            "smoothed_rtt": 65942
+          }
+        ],
+        [
+          "9321984769",
+          "metric_update",
+          "congestion_metric_update",
+          {
+            "bytes_in_flight": 0,
+            "congestion_event": "congestion packet ack",
+            "current_cwnd": 13772,
+            "recovery_state": "",
+            "ssthresh": -1,
+            "state": "Hystart"
+          }
+        ],
+        [
+          "9321985101",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 903,
+                "offset": 0
+              }
+            ],
+            "header": {
+              "packet_number": 9714922,
+              "packet_size": 944
+            },
+            "packet_type": "handshake"
+          }
+        ],
+        [
+          "9322002760",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": true,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322002763",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": false,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322002764",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": true,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322006722",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": false,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322006726",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": true,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322006853",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": false,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322026651",
+          "HTTP3",
+          "stream_state_update",
+          {
+            "id": 0,
+            "ms_since_creation": 19,
+            "update": "headers"
+          }
+        ],
+        [
+          "9322026679",
+          "HTTP3",
+          "stream_state_update",
+          {
+            "id": 0,
+            "ms_since_creation": 19,
+            "update": "eom"
+          }
+        ],
+        [
+          "9322026731",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 41,
+                "offset": 0,
+                "stream_id": "3"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "7"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "11"
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 1
+              }
+            ],
+            "header": {
+              "packet_number": 9714922,
+              "packet_size": 80
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322027972",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 36,
+                "offset": 0
+              },
+              {
+                "ack_delay": 61286,
+                "acked_ranges": [
+                  [
+                    9714922,
+                    9714922
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 9714922,
+                "latest_recvd_packet_time": 147607,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      18450
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              }
+            ],
+            "header": {
+              "packet_number": 3556992,
+              "packet_size": 100
+            },
+            "packet_type": "handshake"
+          }
+        ],
+        [
+          "9322028030",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "ack_delay": 61441,
+                "acked_ranges": [
+                  [
+                    9714922,
+                    9714922
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 9714922,
+                "latest_recvd_packet_time": 147607,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      18450
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 15
+              }
+            ],
+            "header": {
+              "packet_number": 3556992,
+              "packet_size": 68
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322028188",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 24,
+                "offset": 0,
+                "stream_id": "2"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "6"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "10"
+              },
+              {
+                "fin": true,
+                "frame_type": "stream",
+                "length": 43,
+                "offset": 0,
+                "stream_id": "0"
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 23
+              }
+            ],
+            "header": {
+              "packet_number": 3556993,
+              "packet_size": 132
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322076880",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 1232
+          }
+        ],
+        [
+          "9322076881",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 944
+          }
+        ],
+        [
+          "9322076882",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 74
+          }
+        ],
+        [
+          "9322076900",
+          "loss",
+          "packet_drop",
+          {
+            "drop_reason": "parse",
+            "packet_size": 1232
+          }
+        ],
+        [
+          "9322076935",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 903,
+                "offset": 0
+              }
+            ],
+            "header": {
+              "packet_number": 9714924,
+              "packet_size": 944
+            },
+            "packet_type": "handshake"
+          }
+        ],
+        [
+          "9322076956",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 41,
+                "offset": 0,
+                "stream_id": "3"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "7"
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 1,
+                "offset": 0,
+                "stream_id": "11"
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 1
+              }
+            ],
+            "header": {
+              "packet_number": 9714924,
+              "packet_size": 74
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322077097",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "ack_delay": 109,
+                "acked_ranges": [
+                  [
+                    9714924,
+                    9714924
+                  ],
+                  [
+                    9714922,
+                    9714922
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 9714924,
+                "latest_recvd_packet_time": 257937,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      32242
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  },
+                  {
+                    "deltas": [
+                      13791
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              }
+            ],
+            "header": {
+              "packet_number": 3556993,
+              "packet_size": 65
+            },
+            "packet_type": "handshake"
+          }
+        ],
+        [
+          "9322077149",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "ack_delay": 226,
+                "acked_ranges": [
+                  [
+                    9714924,
+                    9714924
+                  ],
+                  [
+                    9714922,
+                    9714922
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 9714924,
+                "latest_recvd_packet_time": 257937,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      32242
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  },
+                  {
+                    "deltas": [
+                      13791
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 10
+              }
+            ],
+            "header": {
+              "packet_number": 3556994,
+              "packet_size": 68
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322077406",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 55
+          }
+        ],
+        [
+          "9322077407",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 240
+          }
+        ],
+        [
+          "9322077428",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "ack_delay": 424,
+                "acked_ranges": [
+                  [
+                    3556992,
+                    3556992
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 3556992,
+                "latest_recvd_packet_time": 113948,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      113944
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              }
+            ],
+            "header": {
+              "packet_number": 9714925,
+              "packet_size": 55
+            },
+            "packet_type": "handshake"
+          }
+        ],
+        [
+          "9322077437",
+          "recovery",
+          "metric_update",
+          {
+            "ack_delay": 424,
+            "latest_rtt": 49583,
+            "min_rtt": 49583,
+            "smoothed_rtt": 63896
+          }
+        ],
+        [
+          "9322077457",
+          "metric_update",
+          "congestion_metric_update",
+          {
+            "bytes_in_flight": 132,
+            "congestion_event": "congestion packet ack",
+            "current_cwnd": 13872,
+            "recovery_state": "",
+            "ssthresh": -1,
+            "state": "Hystart"
+          }
+        ],
+        [
+          "9322077476",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "frame_type": "crypto_frame",
+                "len": 209,
+                "offset": 0
+              },
+              {
+                "frame_type": "handshake_done"
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 1
+              }
+            ],
+            "header": {
+              "packet_number": 9714925,
+              "packet_size": 240
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322077676",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "ack_delay": 169,
+                "acked_ranges": [
+                  [
+                    9714924,
+                    9714925
+                  ],
+                  [
+                    9714922,
+                    9714922
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 9714925,
+                "latest_recvd_packet_time": 258463,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      32307,
+                      65
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 2
+                  },
+                  {
+                    "deltas": [
+                      13791
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 1
+                  }
+                ]
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 8
+              }
+            ],
+            "header": {
+              "packet_number": 3556995,
+              "packet_size": 68
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322078005",
+          "transport",
+          "datagram_received",
+          {
+            "data_len": 208
+          }
+        ],
+        [
+          "9322078026",
+          "transport",
+          "packet_received",
+          {
+            "frames": [
+              {
+                "ack_delay": 664,
+                "acked_ranges": [
+                  [
+                    3556992,
+                    3556993
+                  ]
+                ],
+                "frame_type": "ack_receive_timestamps",
+                "latest_recvd_packet_num": 3556993,
+                "latest_recvd_packet_time": 114655,
+                "timestamp_ranges": [
+                  {
+                    "deltas": [
+                      114648,
+                      32
+                    ],
+                    "gap": 0,
+                    "timestamp_delta_count": 2
+                  }
+                ]
+              },
+              {
+                "fin": false,
+                "frame_type": "stream",
+                "length": 58,
+                "offset": 1,
+                "stream_id": "7"
+              },
+              {
+                "fin": true,
+                "frame_type": "stream",
+                "length": 75,
+                "offset": 0,
+                "stream_id": "0"
+              },
+              {
+                "frame_type": "padding",
+                "num_frames": 1
+              }
+            ],
+            "header": {
+              "packet_number": 9714926,
+              "packet_size": 208
+            },
+            "packet_type": "1RTT"
+          }
+        ],
+        [
+          "9322078034",
+          "recovery",
+          "metric_update",
+          {
+            "ack_delay": 664,
+            "latest_rtt": 49928,
+            "min_rtt": 49583,
+            "smoothed_rtt": 62150
+          }
+        ],
+        [
+          "9322078707",
+          "metric_update",
+          "congestion_metric_update",
+          {
+            "bytes_in_flight": 0,
+            "congestion_event": "congestion packet ack",
+            "current_cwnd": 14004,
+            "recovery_state": "",
+            "ssthresh": -1,
+            "state": "Hystart"
+          }
+        ],
+        [
+          "9322078773",
+          "HTTP3",
+          "stream_state_update",
+          {
+            "id": 0,
+            "ttlb": 71,
+            "update": "on eom"
+          }
+        ],
+        [
+          "9322078827",
+          "transport",
+          "transport_state_update",
+          {
+            "update": "closing stream, stream id: 0"
+          }
+        ],
+        [
+          "9322078834",
+          "idle_update",
+          "app_idle_update",
+          {
+            "idle": true,
+            "idle_event": "app idle"
+          }
+        ],
+        [
+          "9322080667",
+          "HTTP3",
+          "stream_state_update",
+          {
+            "id": 0,
+            "ttfb": 73,
+            "update": "on headers"
+          }
+        ],
+        [
+          "9322080896",
+          "transport",
+          "transport_summary",
+          {
+            "current_conn_flow_control": 10485691,
+            "current_writable_bytes": 14004,
+            "dsr_packet_count": 0,
+            "final_packet_loss_reordering_threshold": 3,
+            "final_packet_loss_time_reordering_threshold_dividend": 5,
+            "quic_version": 4207849474,
+            "sum_cur_stream_buffer_len": 1,
+            "sum_cur_write_offset": 69,
+            "sum_max_observed_offset": 176,
+            "total_bytes_cloned": 0,
+            "total_bytes_recvd": 5009,
+            "total_bytes_retransmitted": 0,
+            "total_bytes_sent": 1753,
+            "total_crypto_data_recvd": 1202,
+            "total_crypto_data_written": 407,
+            "total_packets_spuriously_marked_lost": 0,
+            "total_stream_bytes_cloned": 0,
+            "used_zero_rtt": false
+          }
+        ],
+        [
+          "9322080900",
+          "connectivity",
+          "connection_close",
+          {
+            "drain_connection": false,
+            "error": "HTTP: No error",
+            "reason": "HTTP: No error",
+            "send_close_immediately": true
+          }
+        ],
+        [
+          "9322080943",
+          "transport",
+          "packet_sent",
+          {
+            "frames": [
+              {
+                "closing_frame_type": "APPLICATION_CLOSE",
+                "error_code": "256",
+                "frame_type": "connection_close",
+                "reason_phrase": "HTTP: No error"
+              }
+            ],
+            "header": {
+              "packet_number": 3556996,
+              "packet_size": 44
+            },
+            "packet_type": "1RTT"
+          }
+        ]
+      ],
+      "title": "mvfst qlog from single connection",
+      "vantage_point": {
+        "name": "client",
+        "type": "client"
+      }
+    }
+  ]
+}
