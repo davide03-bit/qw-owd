@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_buf_accessor.a CMakeFiles/mvfst_buf_accessor.dir/BufAccessor.cpp.o
+/usr/bin/ranlib libmvfst_buf_accessor.a

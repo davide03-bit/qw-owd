@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_machine.a CMakeFiles/mvfst_state_machine.dir/QuicAckFrequencyFunctions.cpp.o CMakeFiles/mvfst_state_machine.dir/QuicStreamManager.cpp.o CMakeFiles/mvfst_state_machine.dir/QuicStreamUtilities.cpp.o CMakeFiles/mvfst_state_machine.dir/StateData.cpp.o CMakeFiles/mvfst_state_machine.dir/ClonedPacketIdentifier.cpp.o CMakeFiles/mvfst_state_machine.dir/PendingPathRateLimiter.cpp.o CMakeFiles/mvfst_state_machine.dir/QuicPriorityQueue.cpp.o
+/usr/bin/ranlib libmvfst_state_machine.a

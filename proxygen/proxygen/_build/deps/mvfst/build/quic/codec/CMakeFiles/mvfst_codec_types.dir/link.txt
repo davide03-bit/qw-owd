@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_codec_types.a CMakeFiles/mvfst_codec_types.dir/DefaultConnectionIdAlgo.cpp.o CMakeFiles/mvfst_codec_types.dir/PacketNumber.cpp.o CMakeFiles/mvfst_codec_types.dir/QuicConnectionId.cpp.o CMakeFiles/mvfst_codec_types.dir/QuicInteger.cpp.o CMakeFiles/mvfst_codec_types.dir/Types.cpp.o
+/usr/bin/ranlib libmvfst_codec_types.a

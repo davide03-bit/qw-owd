@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_codec.a CMakeFiles/mvfst_codec.dir/QuicHeaderCodec.cpp.o CMakeFiles/mvfst_codec.dir/QuicReadCodec.cpp.o CMakeFiles/mvfst_codec.dir/QuicWriteCodec.cpp.o
+/usr/bin/ranlib libmvfst_codec.a

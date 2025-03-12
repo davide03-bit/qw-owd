@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_batch_writer.a CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriter.cpp.o CMakeFiles/mvfst_batch_writer.dir/QuicBatchWriterFactory.cpp.o CMakeFiles/mvfst_batch_writer.dir/QuicGsoBatchWriters.cpp.o
+/usr/bin/ranlib libmvfst_batch_writer.a

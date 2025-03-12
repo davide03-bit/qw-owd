@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_transport_settings_functions.a CMakeFiles/mvfst_transport_settings_functions.dir/TransportSettingsFunctions.cpp.o
+/usr/bin/ranlib libmvfst_transport_settings_functions.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_stream.a CMakeFiles/mvfst_state_stream.dir/stream/StreamStateFunctions.cpp.o CMakeFiles/mvfst_state_stream.dir/stream/StreamSendHandlers.cpp.o CMakeFiles/mvfst_state_stream.dir/stream/StreamReceiveHandlers.cpp.o
+/usr/bin/ranlib libmvfst_state_stream.a

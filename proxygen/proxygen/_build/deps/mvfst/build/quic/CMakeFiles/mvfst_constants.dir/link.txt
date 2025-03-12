@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_constants.a CMakeFiles/mvfst_constants.dir/QuicConstants.cpp.o
+/usr/bin/ranlib libmvfst_constants.a

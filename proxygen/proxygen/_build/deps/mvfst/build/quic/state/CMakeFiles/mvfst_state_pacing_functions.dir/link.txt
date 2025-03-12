@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_pacing_functions.a CMakeFiles/mvfst_state_pacing_functions.dir/QuicPacingFunctions.cpp.o
+/usr/bin/ranlib libmvfst_state_pacing_functions.a

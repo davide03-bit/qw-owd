@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_transport_knobs.a CMakeFiles/mvfst_transport_knobs.dir/TransportKnobs.cpp.o
+/usr/bin/ranlib libmvfst_transport_knobs.a

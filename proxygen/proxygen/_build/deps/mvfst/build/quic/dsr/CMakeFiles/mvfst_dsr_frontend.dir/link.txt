@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_dsr_frontend.a CMakeFiles/mvfst_dsr_frontend.dir/frontend/Scheduler.cpp.o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteCodec.cpp.o CMakeFiles/mvfst_dsr_frontend.dir/frontend/WriteFunctions.cpp.o
+/usr/bin/ranlib libmvfst_dsr_frontend.a

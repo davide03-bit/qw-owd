@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_events.a CMakeFiles/mvfst_events.dir/FollyQuicEventBase.cpp.o
+/usr/bin/ranlib libmvfst_events.a

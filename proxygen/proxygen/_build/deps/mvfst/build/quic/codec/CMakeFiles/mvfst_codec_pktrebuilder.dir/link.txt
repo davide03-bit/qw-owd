@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_codec_pktrebuilder.a CMakeFiles/mvfst_codec_pktrebuilder.dir/QuicPacketRebuilder.cpp.o
+/usr/bin/ranlib libmvfst_codec_pktrebuilder.a

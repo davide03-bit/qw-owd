@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_fizz_client.a CMakeFiles/mvfst_fizz_client.dir/handshake/FizzClientQuicHandshakeContext.cpp.o CMakeFiles/mvfst_fizz_client.dir/handshake/FizzClientHandshake.cpp.o
+/usr/bin/ranlib libmvfst_fizz_client.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_fizz_handshake.a CMakeFiles/mvfst_fizz_handshake.dir/FizzBridge.cpp.o CMakeFiles/mvfst_fizz_handshake.dir/FizzCryptoFactory.cpp.o CMakeFiles/mvfst_fizz_handshake.dir/FizzPacketNumberCipher.cpp.o CMakeFiles/mvfst_fizz_handshake.dir/FizzRetryIntegrityTagGenerator.cpp.o CMakeFiles/mvfst_fizz_handshake.dir/QuicFizzFactory.cpp.o
+/usr/bin/ranlib libmvfst_fizz_handshake.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_observer.a CMakeFiles/mvfst_observer.dir/SocketObserverInterface.cpp.o
+/usr/bin/ranlib libmvfst_observer.a

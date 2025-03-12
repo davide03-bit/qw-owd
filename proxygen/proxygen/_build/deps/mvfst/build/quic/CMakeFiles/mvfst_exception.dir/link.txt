@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_exception.a CMakeFiles/mvfst_exception.dir/QuicException.cpp.o
+/usr/bin/ranlib libmvfst_exception.a

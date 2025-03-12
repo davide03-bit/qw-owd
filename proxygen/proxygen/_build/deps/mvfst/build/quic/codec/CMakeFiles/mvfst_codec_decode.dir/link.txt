@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_codec_decode.a CMakeFiles/mvfst_codec_decode.dir/Decode.cpp.o
+/usr/bin/ranlib libmvfst_codec_decode.a

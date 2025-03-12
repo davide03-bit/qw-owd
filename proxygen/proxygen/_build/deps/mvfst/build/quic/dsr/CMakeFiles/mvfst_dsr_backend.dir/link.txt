@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_dsr_backend.a CMakeFiles/mvfst_dsr_backend.dir/backend/DSRPacketizer.cpp.o
+/usr/bin/ranlib libmvfst_dsr_backend.a

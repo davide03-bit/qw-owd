@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_stream_functions.a CMakeFiles/mvfst_state_stream_functions.dir/QuicStreamFunctions.cpp.o
+/usr/bin/ranlib libmvfst_state_stream_functions.a

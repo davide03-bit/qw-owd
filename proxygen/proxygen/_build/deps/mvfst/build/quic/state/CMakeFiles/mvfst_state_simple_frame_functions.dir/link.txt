@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_simple_frame_functions.a CMakeFiles/mvfst_state_simple_frame_functions.dir/SimpleFrameFunctions.cpp.o
+/usr/bin/ranlib libmvfst_state_simple_frame_functions.a

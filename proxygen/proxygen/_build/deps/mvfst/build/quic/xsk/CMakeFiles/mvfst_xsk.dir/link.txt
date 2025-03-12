@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_xsk.a CMakeFiles/mvfst_xsk.dir/packet_utils.cpp.o CMakeFiles/mvfst_xsk.dir/xsk_lib.cpp.o CMakeFiles/mvfst_xsk.dir/BaseXskContainer.cpp.o CMakeFiles/mvfst_xsk.dir/HashingXskContainer.cpp.o CMakeFiles/mvfst_xsk.dir/ThreadLocalXskContainer.cpp.o CMakeFiles/mvfst_xsk.dir/XskSender.cpp.o
+/usr/bin/ranlib libmvfst_xsk.a

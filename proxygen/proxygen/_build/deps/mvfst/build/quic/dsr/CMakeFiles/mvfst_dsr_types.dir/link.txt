@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_dsr_types.a CMakeFiles/mvfst_dsr_types.dir/Types.cpp.o
+/usr/bin/ranlib libmvfst_dsr_types.a

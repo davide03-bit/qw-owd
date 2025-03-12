@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_transport.a CMakeFiles/mvfst_transport.dir/IoBufQuicBatch.cpp.o CMakeFiles/mvfst_transport.dir/QuicPacketScheduler.cpp.o CMakeFiles/mvfst_transport.dir/QuicStreamAsyncTransport.cpp.o CMakeFiles/mvfst_transport.dir/QuicTransportBase.cpp.o CMakeFiles/mvfst_transport.dir/QuicTransportBaseLite.cpp.o CMakeFiles/mvfst_transport.dir/QuicTransportFunctions.cpp.o
+/usr/bin/ranlib libmvfst_transport.a

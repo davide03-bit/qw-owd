@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_happyeyeballs.a CMakeFiles/mvfst_happyeyeballs.dir/QuicHappyEyeballsFunctions.cpp.o
+/usr/bin/ranlib libmvfst_happyeyeballs.a

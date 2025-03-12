@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_flowcontrol.a CMakeFiles/mvfst_flowcontrol.dir/QuicFlowController.cpp.o
+/usr/bin/ranlib libmvfst_flowcontrol.a

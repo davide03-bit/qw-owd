@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_client.a CMakeFiles/mvfst_client.dir/QuicClientTransport.cpp.o CMakeFiles/mvfst_client.dir/QuicClientAsyncTransport.cpp.o CMakeFiles/mvfst_client.dir/handshake/ClientHandshake.cpp.o CMakeFiles/mvfst_client.dir/state/ClientStateMachine.cpp.o CMakeFiles/mvfst_client.dir/connector/QuicConnector.cpp.o
+/usr/bin/ranlib libmvfst_client.a

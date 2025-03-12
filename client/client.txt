@@ -1,0 +1,2 @@
+/qw/proxygen/proxygen# ./_build/proxygen/httpserver/hq --mode=client --host=10.73.0.20 --outdir=/qw/client --path="/largefile1G.bin" -local_address=10.73.0.160:0 -qlogger_path=/qw/client/logs/
+

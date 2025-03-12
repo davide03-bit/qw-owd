@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_handshake.a CMakeFiles/mvfst_handshake.dir/CryptoFactory.cpp.o CMakeFiles/mvfst_handshake.dir/HandshakeLayer.cpp.o CMakeFiles/mvfst_handshake.dir/TransportParameters.cpp.o
+/usr/bin/ranlib libmvfst_handshake.a

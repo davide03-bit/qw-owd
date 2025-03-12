@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_functions.a CMakeFiles/mvfst_state_functions.dir/QuicStateFunctions.cpp.o
+/usr/bin/ranlib libmvfst_state_functions.a

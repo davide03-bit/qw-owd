@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_server_state.a CMakeFiles/mvfst_server_state.dir/handshake/AppToken.cpp.o CMakeFiles/mvfst_server_state.dir/handshake/ServerHandshake.cpp.o CMakeFiles/mvfst_server_state.dir/handshake/StatelessResetGenerator.cpp.o CMakeFiles/mvfst_server_state.dir/handshake/TokenGenerator.cpp.o CMakeFiles/mvfst_server_state.dir/state/ServerStateMachine.cpp.o
+/usr/bin/ranlib libmvfst_server_state.a

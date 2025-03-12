@@ -1,0 +1,55 @@
+*.DS_Store
+
+*~
+\#*\#
+
+# Build artifacts
+.libs
+*.log
+*.trs
+*.o
+*.lo
+*.a
+*.la
+gen-cpp
+gen-cpp2
+
+# Generated files
+/proxygen/lib/http/HTTPCommonHeaders.cpp
+/proxygen/lib/http/HTTPCommonHeaders.h
+/proxygen/lib/utils/TraceEventType.cpp
+/proxygen/lib/utils/TraceEventType.h
+/proxygen/lib/utils/TraceFieldType.cpp
+/proxygen/lib/utils/TraceFieldType.h
+/proxygen/lib/stats/StatsWrapper.h
+# *_build/
+/proxygen/proxygen/_build/CMakeFiles
+/proxygen/proxygen/_build/CTestTestfile.cmake
+/proxygen/proxygen/_build/DartConfiguration.tcl
+/proxygen/proxygen/_build/Makefile
+/proxygen/proxygen/_build/cmake_install.cmake
+/proxygen/proxygen/_build/cmake_uninstall.cmake
+/proxygen/proxygen/_build/proxygen-config.cmake
+/proxygen/proxygen/_build/Testing/
+/proxygen/proxygen/_build/generated/
+/proxygen/proxygen/_build/proxygen/
+/proxygen/proxygen/_build/deps/bin/
+/proxygen/proxygen/_build/deps/fizz/
+/proxygen/proxygen/_build/deps/fmt/
+/proxygen/proxygen/_build/deps/folly/
+/proxygen/proxygen/_build/deps/googletest/
+/proxygen/proxygen/_build/deps/include/
+/proxygen/proxygen/_build/deps/lib/
+/proxygen/proxygen/_build/deps/share/
+/proxygen/proxygen/_build/deps/wangle/
+/proxygen/proxygen/_build/deps/zstd/
+/proxygen/proxygen/_build/CMakeCache.txt
+
+# common editor artifacts
+*~
+*.vscode*
+
+# Generated document
+html/
+latex/
+

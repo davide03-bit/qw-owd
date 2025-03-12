@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_server_async_tran.a CMakeFiles/mvfst_server_async_tran.dir/async_tran/QuicAsyncTransportAcceptor.cpp.o CMakeFiles/mvfst_server_async_tran.dir/async_tran/QuicAsyncTransportServer.cpp.o CMakeFiles/mvfst_server_async_tran.dir/async_tran/QuicServerAsyncTransport.cpp.o
+/usr/bin/ranlib libmvfst_server_async_tran.a

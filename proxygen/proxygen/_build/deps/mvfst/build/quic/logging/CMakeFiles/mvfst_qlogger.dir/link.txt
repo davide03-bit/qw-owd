@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_qlogger.a CMakeFiles/mvfst_qlogger.dir/BaseQLogger.cpp.o CMakeFiles/mvfst_qlogger.dir/FileQLogger.cpp.o CMakeFiles/mvfst_qlogger.dir/QLogger.cpp.o CMakeFiles/mvfst_qlogger.dir/QLoggerConstants.cpp.o CMakeFiles/mvfst_qlogger.dir/QLoggerTypes.cpp.o
+/usr/bin/ranlib libmvfst_qlogger.a

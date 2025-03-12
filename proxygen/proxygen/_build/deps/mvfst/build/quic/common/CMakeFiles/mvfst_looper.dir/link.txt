@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_looper.a CMakeFiles/mvfst_looper.dir/FunctionLooper.cpp.o CMakeFiles/mvfst_looper.dir/events/HighResQuicTimer.cpp.o
+/usr/bin/ranlib libmvfst_looper.a

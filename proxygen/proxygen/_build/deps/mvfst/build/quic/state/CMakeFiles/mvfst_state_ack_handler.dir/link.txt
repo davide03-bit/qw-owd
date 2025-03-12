@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_ack_handler.a CMakeFiles/mvfst_state_ack_handler.dir/AckEvent.cpp.o CMakeFiles/mvfst_state_ack_handler.dir/AckHandlers.cpp.o CMakeFiles/mvfst_state_ack_handler.dir/AckedPacketIterator.cpp.o
+/usr/bin/ranlib libmvfst_state_ack_handler.a

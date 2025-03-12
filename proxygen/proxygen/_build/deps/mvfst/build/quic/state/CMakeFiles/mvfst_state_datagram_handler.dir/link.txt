@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_state_datagram_handler.a CMakeFiles/mvfst_state_datagram_handler.dir/DatagramHandlers.cpp.o
+/usr/bin/ranlib libmvfst_state_datagram_handler.a

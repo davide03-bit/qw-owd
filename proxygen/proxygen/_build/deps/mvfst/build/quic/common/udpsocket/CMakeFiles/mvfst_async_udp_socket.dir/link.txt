@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_async_udp_socket.a CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocket.cpp.o CMakeFiles/mvfst_async_udp_socket.dir/QuicAsyncUDPSocketImpl.cpp.o CMakeFiles/mvfst_async_udp_socket.dir/FollyQuicAsyncUDPSocket.cpp.o
+/usr/bin/ranlib libmvfst_async_udp_socket.a

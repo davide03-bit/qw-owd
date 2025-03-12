@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmvfst_loss.a CMakeFiles/mvfst_loss.dir/QuicLossFunctions.cpp.o
+/usr/bin/ranlib libmvfst_loss.a
