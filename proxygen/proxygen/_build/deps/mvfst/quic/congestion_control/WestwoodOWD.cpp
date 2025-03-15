@@ -260,7 +260,7 @@
      }
  
      // If the delay condition is met, adjust ssthresh and cwnd.
-     if (delayControl(0.2)) {
+     if (delayControl(0.1)) {
          uint64_t rttMinUs = rttSampler_.minRtt().count();
          ssthresh_ = std::max(
              static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
