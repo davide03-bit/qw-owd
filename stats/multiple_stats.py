@@ -4,7 +4,7 @@ import argparse
 import math
 import statistics 
 import matplotlib
-matplotlib.use('TkAgg')
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 import numpy as np
@@ -392,7 +392,8 @@ def plot_all_subplots_multi(connections, plot_bytes_in_flight=False, save_path=N
     if save_path:
         plt.savefig(save_path)
         print(f"Plot saved to {save_path}")
-    plt.show()
+    #plt.show()
+    plt.savefig("output.png")
 
 
 ###############################################################################
