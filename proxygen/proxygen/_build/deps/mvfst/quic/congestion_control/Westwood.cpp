@@ -349,18 +349,9 @@ namespace quic {
 
 
     uint32_t Westwood::westwoodLowPassFilter(uint32_t a, uint32_t b) { //20 midpoint 0.5 steepness
-        // Parameters to shape the sigmoid:
-        constexpr float center = 16.0f;  // Midpoint: sigmoid(center) = 0.5
-        constexpr float scale  = 1.0f;   // Controls the steepness of the sigmoid
-
-        float s = static_cast<float>(step_);
-        // Compute the sigmoid function:
-        float sigmoid = 1.0f / (1.0f + std::exp(-((s - center) / scale)));
-        // Optionally scale the coefficient as in the original code:
-        float coef = sigmoid * (6.0f / 8.0f);
-
-        float filtered = (coef * static_cast<float>(a)) + ((1.0f - coef) * static_cast<float>(b));
-        
+        float coef = 2.0f / 8.0f;
+        float filtered = (coef * static_cast<float>(a)) + 
+                      ((1.0f - coef) * static_cast<float>(b));
         return static_cast<uint32_t>(filtered);
     }
 

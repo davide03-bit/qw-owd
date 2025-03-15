@@ -259,23 +259,23 @@
          VLOG(1) << "CWND bytes  " << cwndBytes_;
      }
  
-    //  // If the delay condition is met, adjust ssthresh and cwnd.
-    //  if (delayControl(0.1)) {
-    //      uint64_t rttMinUs = rttSampler_.minRtt().count();
-    //      ssthresh_ = std::max(
-    //          static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
-    //          2 * quicConnectionState_.udpSendPacketLen);
-    //      cwndBytes_ = ssthresh_;
-    //      cwndBytes_ = boundedCwnd(
-    //          cwndBytes_,
-    //          quicConnectionState_.udpSendPacketLen,
-    //          quicConnectionState_.transportSettings.maxCwndInMss,
-    //          quicConnectionState_.transportSettings.minCwndInMss);
+     // If the delay condition is met, adjust ssthresh and cwnd.
+     if (delayControl(0.5)) {
+         uint64_t rttMinUs = rttSampler_.minRtt().count();
+         ssthresh_ = std::max(
+             static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
+             2 * quicConnectionState_.udpSendPacketLen);
+         cwndBytes_ = ssthresh_;
+         cwndBytes_ = boundedCwnd(
+             cwndBytes_,
+             quicConnectionState_.udpSendPacketLen,
+             quicConnectionState_.transportSettings.maxCwndInMss,
+             quicConnectionState_.transportSettings.minCwndInMss);
  
-    //      owd_ = 0;
-    //      owdv_ = 0;
-    //      //lossMaxRtt_ = rttSampler_.maxRtt();
-    //  }
+         owd_ = 0;
+         owdv_ = 0;
+         //lossMaxRtt_ = rttSampler_.maxRtt();
+     }
  
      // Slow start or congestion avoidance increment:
      if (cwndBytes_ < ssthresh_) {
