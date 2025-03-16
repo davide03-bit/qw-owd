@@ -390,15 +390,15 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
         sampled_bw_times, bw_samples = sampled_bw_data
         ax_bw.plot(sampled_bw_times, bw_samples, label='Sampled BW (Mb/s)', marker='.', linestyle='-', color='orange')
 
-    # Optionally plot the filter coefficient
-    if cca_name=="WESTWOOD":
-        num_samples = len(bw_estimates_mbs)
-        s_values = np.arange(num_samples)
-        center = 16.0
-        scale  = 1.0
-        factor = 6.0 / 8.0
-        coef_values = factor * (1.0 / (1.0 + np.exp(-((s_values - center) / scale))))
-        ax_bw.plot(times_bw_s, coef_values, label='Low Pass Filter Coef', marker='.', linestyle=':', color='olive')
+    # # Optionally plot the filter coefficient
+    # if cca_name=="WESTWOOD":
+    #     num_samples = len(bw_estimates_mbs)
+    #     s_values = np.arange(num_samples)
+    #     center = 16.0
+    #     scale  = 1.0
+    #     factor = 6.0 / 8.0
+    #     coef_values = factor * (1.0 / (1.0 + np.exp(-((s_values - center) / scale))))
+    #     ax_bw.plot(times_bw_s, coef_values, label='Low Pass Filter Coef', marker='.', linestyle=':', color='olive')
     
     ax_bw.set_title("Bandwidth Over Time")
     ax_bw.set_xlabel("Time (s)")
