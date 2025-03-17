@@ -384,11 +384,11 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
     # Subplot 4: Bandwidth
     ax_bw = axs[1, 1]
     if times_bw_s and bw_estimates_mbs:
-        ax_bw.plot(times_bw_s, bw_estimates_mbs, label='Estimated BW (Mb/s)', marker='.', linestyle='-', color='blue')
+        ax_bw.plot(times_bw_s, bw_estimates_mbs, label='Estimated BW (Mb/s)', linestyle='-', color='blue')
     
     if sampled_bw_data is not None:
         sampled_bw_times, bw_samples = sampled_bw_data
-        ax_bw.plot(sampled_bw_times, bw_samples, label='Sampled BW (Mb/s)', marker='.', linestyle='-', color='orange')
+        ax_bw.plot(sampled_bw_times, bw_samples, label='Sampled BW (Mb/s)', linestyle='--', color='orange')
 
     # # Optionally plot the filter coefficient
     # if cca_name=="WESTWOOD":

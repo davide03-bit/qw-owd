@@ -393,6 +393,7 @@ def plot_all_subplots_multi(connections, plot_bytes_in_flight=False, save_path=N
         plt.savefig(save_path)
         print(f"Plot saved to {save_path}")
     #plt.show()
+    plt.xlim(0,130)
     plt.savefig("output.png")
 
 
