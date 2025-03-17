@@ -388,7 +388,7 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
     
     if sampled_bw_data is not None:
         sampled_bw_times, bw_samples = sampled_bw_data
-        ax_bw.plot(sampled_bw_times, bw_samples, label='Sampled BW (Mb/s)', linestyle='--', color='orange')
+        ax_bw.plot(sampled_bw_times, bw_samples, label='Sampled BW (Mb/s)', linestyle='--', alpha=0.5, color='orange')
 
     # # Optionally plot the filter coefficient
     # if cca_name=="WESTWOOD":
