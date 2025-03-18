@@ -186,7 +186,6 @@
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
      if (!packet.receiveRelativeTimeStampUsec.has_value()) {
-         latestSendTimeStamp_ = std::chrono::steady_clock::time_point::min();
          return;
      }
      if (isFirstPacket()) {
@@ -215,7 +214,7 @@
      * caused by out‐of‐order arrivals that produce apparent negative gaps 
      * and not reflecting actual queue empting. 
      **/
-     // owd_ = std::max(static_cast<int64_t>(0), owd_);
+     owd_ = std::max(static_cast<int64_t>(0), owd_);
  
      // std::cout << packet.packetNum << " " << currentSendTimeStamp << " " << currentReceiveTimeStamp << std::endl; 
  
@@ -261,7 +260,7 @@
      }
  
      // If the delay condition is met, adjust ssthresh and cwnd.
-     if (delayControl(0.5)) {
+     if (delayControl(0.8)) {
          uint64_t rttMinUs = rttSampler_.minRtt().count();
          ssthresh_ = std::max(
              static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
@@ -273,8 +272,8 @@
              quicConnectionState_.transportSettings.maxCwndInMss,
              quicConnectionState_.transportSettings.minCwndInMss);
  
-         // owd_ = 0;
-         // owdv_ = 0;
+        owd_ = 0;
+        owdv_ = 0;
          //lossMaxRtt_ = rttSampler_.maxRtt();
      }
  
@@ -308,8 +307,8 @@
      DCHECK(loss.largestLostPacketNum.has_value() && loss.largestLostSentTime.has_value());
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
  
-     // owd_ = 0;
-     // owdv_ = 0;
+    owd_ = 0;
+    owdv_ = 0;
  
      //lossMaxRtt_ = rttSampler_.maxRtt();
  
