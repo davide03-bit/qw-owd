@@ -542,7 +542,7 @@ def main():
     parser = argparse.ArgumentParser(description='Process qlog files and plot metrics for comparison.')
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('--parent-dir', type=str,
-                       help="Parent directory containing subdirectories 'westwood+', 'delay_control_10', 'delay_control_20', 'delay_control_30', 'delay_control_50', 'delay_control_80', 'cubic', and 'bbr2'.\n"
+                       help="Parent directory containing subdirectories 'westwood+', 'delay_control_30', 'delay_control_50', 'delay_control_80', 'cubic', and 'bbr2'.\n"
                             "From each, the most recent qlog file is selected.")
     group.add_argument('--qlog-paths', nargs=4, type=str,
                        help="Paths to the 4 qlog files.")
@@ -597,7 +597,7 @@ def main():
                     'metrics': metrics,
                 })
         else:
-            required_subdirs = ['westwood+', 'delay_control_10', 'delay_control_20', 'delay_control_30', 'delay_control_50', 'delay_control_80', 'cubic', 'bbr2']
+            required_subdirs = ['westwood+', 'delay_control_30', 'delay_control_50', 'delay_control_80', 'cubic', 'bbr2']
             for sub in required_subdirs:
                 sub_path = os.path.join(args.parent_dir, sub)
                 try:
