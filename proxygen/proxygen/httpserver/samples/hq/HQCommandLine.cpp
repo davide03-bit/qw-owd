@@ -230,8 +230,9 @@ void initializeTransportSettings(HQToolParams& hqUberParams) {
   hqParams.transportSettings.advertisedInitialUniStreamFlowControlWindow =
       FLAGS_stream_flow_control;
   hqParams.congestionControlName = FLAGS_congestion;
-  hqParams.transportSettings.ccaConfig.delayControlFraction = FLAGS_delay_control_fraction;
+  hqParams.congestionControl = 
       quic::congestionControlStrToType(FLAGS_congestion);
+  hqParams.transportSettings.ccaConfig.delayControlFraction = FLAGS_delay_control_fraction;
   if (hqParams.congestionControl) {
     hqParams.transportSettings.defaultCongestionController =
         hqParams.congestionControl.value();
