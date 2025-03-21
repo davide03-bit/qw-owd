@@ -104,6 +104,10 @@ struct CongestionControlConfig {
   // used This helps accommodate minor packet bursts that can be caused by pacer
   // bursts
   float l4sCETarget{0.0f};
+
+  // Used by: WestwoodOWD
+  // Delay control fraction
+  float delayControlFraction{0.5};
 };
 
 struct DatagramConfig {
