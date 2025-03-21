@@ -60,6 +60,7 @@ struct HQBaseParams {
                                           proxygen::kHQCurrentDraft};
   quic::TransportSettings transportSettings;
   std::string congestionControlName;
+  std::float delayControlFraction;
   std::optional<quic::CongestionControlType> congestionControl;
   bool sendKnobFrame{false};
 
