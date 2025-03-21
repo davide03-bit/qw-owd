@@ -118,7 +118,7 @@ DEFINE_bool(use_ack_receive_timestamps,
             false,
             "Replace the ACK frame with ACK_RECEIVE_TIMESTAMPS frame"
             "which carries the received packet timestamps");
-DEFINE_float(delay_control_fraction, 0.5, "Delay control fraction");
+DEFINE_double(delay_control_fraction, 0.5, "Delay control fraction");
 DEFINE_uint32(
     max_ack_receive_timestamps_to_send,
     quic::kMaxReceivedPktsTimestampsStored,
@@ -232,7 +232,7 @@ void initializeTransportSettings(HQToolParams& hqUberParams) {
   hqParams.congestionControlName = FLAGS_congestion;
   hqParams.transportSettings.ccaConfig.delayControlFraction = FLAGS_delay_control_fraction;
       quic::congestionControlStrToType(FLAGS_congestion);
-  if (hqParams) {
+  if (hqParams.congestionControl) {
     hqParams.transportSettings.defaultCongestionController =
         hqParams.congestionControl.value();
   }

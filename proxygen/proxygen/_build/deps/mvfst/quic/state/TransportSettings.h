@@ -107,7 +107,7 @@ struct CongestionControlConfig {
 
   // Used by: WestwoodOWD
   // Delay control fraction
-  float delayControlFraction{0.5};
+  double delayControlFraction{0.5};
 };
 
 struct DatagramConfig {
