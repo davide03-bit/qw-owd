@@ -260,7 +260,7 @@
      }
  
      // If the delay condition is met, adjust ssthresh and cwnd.
-     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delay_control_fraction)) {
+     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
          uint64_t rttMinUs = rttSampler_.minRtt().count();
          ssthresh_ = std::max(
              static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
