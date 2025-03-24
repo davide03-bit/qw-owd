@@ -538,7 +538,7 @@ def print_summary_metrics(metrics):
     print(f"{'Duration:':30s}{tx_time_str:>15s}")
     print("------------------------------------------------------------")
 
-    print(f"{avg_bw_str}, {std_bw_str}, {throughput_str}, {goodput_str}, {avg_cwnd_str},{std_cwnd_str}, {avg_rtt_str}, {std_rtt_std}, {loss_rate_str}, {retransmissions}, {tx_time_str}")
+    print(f"{avg_bw_str}, {std_bw_str}, {throughput_str}, {goodput_str}, {avg_cwnd_str},{std_cwnd_str}, {avg_rtt_str}, {std_rtt_str}, {loss_rate_str}, {retransmissions}, {tx_time_str}")
 
 
 ###############################################################################
