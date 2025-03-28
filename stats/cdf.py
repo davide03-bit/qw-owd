@@ -37,7 +37,7 @@ def get_all_qlog_files(directory, extensions=('.qlog')):
     files = sorted(files, key=os.path.getmtime)
     return files
 
-def build_rtt(sub):
+def build_rtt(sub, args):
     rtt_data = []
     sub_path = os.path.join(args.parent_dir, sub)
     try:
@@ -62,11 +62,11 @@ def main():
                        help="Parent directory containing subdirectories 'westwood+', 'delay_control_20', 'delay_control_50', 'cubic', and 'bbr2'.\n"
                             "From each, all the qlog files are selected.")
     args = parser.parse_args()
-    westwood_rtt = build_rtt('westwood+')
-    qdc20_rtt = build_rtt('delay_control_20')
-    qdc50_rtt = build_rtt('delay_control_50')
-    cubic_rtt = build_rtt('cubic')
-    bbr2_rtt = build_rtt('bbr2')
+    westwood_rtt = build_rtt('westwood+', args)
+    qdc20_rtt = build_rtt('delay_control_20', args)
+    qdc50_rtt = build_rtt('delay_control_50', args)
+    cubic_rtt = build_rtt('cubic', args)
+    bbr2_rtt = build_rtt('bbr2', args)
 
     sorted_data, cdf_values = cdf(westwood_rtt)
     plt.plot(sorted_data, cdf_values, label='Westwood+', color='red')
