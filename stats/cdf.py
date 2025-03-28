@@ -49,6 +49,7 @@ def build_rtt(sub):
         with open(file , 'r') as f:
             qlog_data = json.load(f)
         rtt_data.extend(extract_rtt_metrics(qlog_data))
+    return rtt_data
 
 def cdf(data):
     sorted_data = np.sort(data)
@@ -60,6 +61,7 @@ def main():
     parser.add_argument('--parent-dir', type=str,
                        help="Parent directory containing subdirectories 'westwood+', 'delay_control_20', 'delay_control_50', 'cubic', and 'bbr2'.\n"
                             "From each, all the qlog files are selected.")
+    args = parser.parse_args()
     westwood_rtt = build_rtt('westwood+')
     qdc20_rtt = build_rtt('delay_control_20')
     qdc50_rtt = build_rtt('delay_control_50')
