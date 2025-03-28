@@ -11,13 +11,7 @@ import numpy as np
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes, mark_inset
 
 def extract_rtt_metrics(qlog_data):
-    """
-    Extract RTT data from qlog_data.
-
-    Returns latest_rtts_ms_filtered (list of float): Latest RTT in milliseconds withoute None values 
-    """
     latest_rtts = []
-
     events = qlog_data['traces'][0]['events']
     for event in events:
         if event[1] == 'recovery' and event[2] == 'metric_update':
@@ -27,9 +21,6 @@ def extract_rtt_metrics(qlog_data):
     return latest_rtts_ms_filtered
 
 def get_all_qlog_files(directory, extensions=('.qlog')):
-    """
-    Returns the last n qlog files (sorted by modification time) in the given directory.
-    """
     if not os.path.isdir(directory):
         raise ValueError(f"{directory} is not a valid directory.")
     files = [os.path.join(directory, f) for f in os.listdir(directory)
@@ -53,15 +44,14 @@ def build_rtt(sub, args):
 
 def cdf(data):
     sorted_data = np.sort(data)
-    cdf_values = np.arange(1, len(sorted_data) + 1)/len(sorted_data)
+    cdf_values = np.arange(1, len(sorted_data) + 1) / len(sorted_data)
     return sorted_data, cdf_values
 
 def main():
     parser = argparse.ArgumentParser(description='Process qlog files and plot metrics for comparison.')
-    parser.add_argument('--parent-dir', type=str,
-                       help="Parent directory containing subdirectories 'westwood+', 'delay_control_20', 'delay_control_50', 'cubic', and 'bbr2'.\n"
-                            "From each, all the qlog files are selected.")
+    parser.add_argument('--parent-dir', type=str, help="Parent directory containing subdirectories with qlog files.")
     args = parser.parse_args()
+    
     westwood_rtt = build_rtt('westwood+', args)
     qdc20_rtt = build_rtt('delay_control_20', args)
     qdc50_rtt = build_rtt('delay_control_50', args)
@@ -83,14 +73,15 @@ def main():
     sorted_data, cdf_values = cdf(bbr2_rtt)
     plt.plot(sorted_data, cdf_values, label='BBRv2', color='aquamarine')
 
-    plt.set_title('CDF of RTT')
-    plt.set_xlabel('RTT (ms)')
-    plt.set_ylabel('CDF')
+    plt.title('CDF of RTT')
+    plt.xlabel('RTT (ms)')
+    plt.ylabel('CDF')
 
     plt.legend()
 
+    print("Salvando il grafico come cdf.png...")
     plt.savefig("cdf.png")
+    print("Grafico salvato con successo!")
 
-
-
-            
+if __name__ == '__main__':
+    main()
