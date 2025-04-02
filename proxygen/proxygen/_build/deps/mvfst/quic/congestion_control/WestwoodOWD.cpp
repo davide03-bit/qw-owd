@@ -214,9 +214,9 @@
      * caused by out‐of‐order arrivals that produce apparent negative gaps 
      * and not reflecting actual queue empting. 
      **/
-     // owd_ = std::max(static_cast<int64_t>(0), owd_);
+    owd_ = std::max(static_cast<int64_t>(0), owd_);
  
-    std::cout << packet.packetNum << " " << currentSendTimeStamp << " " << currentReceiveTimeStamp << std::endl; 
+    // std::cout << packet.packetNum << " " << currentSendTimeStamp << " " << currentReceiveTimeStamp << std::endl; 
  
      // VLOG(1) << "-------------------------";
      // VLOG(1) << "Packet Number   :" << packet.packetNum;
