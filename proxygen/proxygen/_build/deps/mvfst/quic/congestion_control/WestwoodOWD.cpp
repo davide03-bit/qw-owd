@@ -97,7 +97,7 @@
        owdv_(0),
        owd_(0),
        //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
-       lossMaxRtt_(std::chrono::microseconds(130000)) 
+       lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -262,9 +262,10 @@
      // If the delay condition is met, adjust ssthresh and cwnd.
     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
           uint64_t rttMinUs = rttSampler_.minRtt().count();
+          uint64_t owdt = rttMinUs + 0.3 * (lossMaxRtt_.count() - rttMinUs);
           ssthresh_ = std::max(
-              static_cast<uint64_t>((bandwidthEstimate_ * rttMinUs / 1.0e6)),
-              2 * quicConnectionState_.udpSendPacketLen);
+            static_cast<uint64_t>(bandwidthEstimate_ * (owdt / 1e6)),
+            2 * quicConnectionState_.udpSendPacketLen);
           cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
@@ -272,8 +273,8 @@
               quicConnectionState_.transportSettings.maxCwndInMss,
               quicConnectionState_.transportSettings.minCwndInMss);
  
-         owd_ = 0;
-         owdv_ = 0;
+         owd_ = owdt;
+         owdv_ = owdt;
           //lossMaxRtt_ = rttSampler_.maxRtt();
       }
  
@@ -306,9 +307,12 @@
  void WestwoodOWD::onPacketLoss(const LossEvent &loss) {
      DCHECK(loss.largestLostPacketNum.has_value() && loss.largestLostSentTime.has_value());
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
+
+     uint64_t rttMinUs = rttSampler_.minRtt().count();
+     uint64_t owdt = rttMinUs + 0.3 * (lossMaxRtt_.count() - rttMinUs);
  
-     owd_ = 0;
-     owdv_ = 0;
+     owd_ = owdt;
+     owdv_ = owdt;
  
      //lossMaxRtt_ = rttSampler_.maxRtt();
  
@@ -321,7 +325,7 @@
          endOfRecovery_ = Clock::now();
          uint64_t rttMinUs = rttSampler_.minRtt().count();
          ssthresh_ = std::max(
-             static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+             static_cast<uint64_t>(bandwidthEstimate_ * (owdt / 1e6)),
              2 * quicConnectionState_.udpSendPacketLen);
          cwndBytes_ = ssthresh_;
          cwndBytes_ = boundedCwnd(
