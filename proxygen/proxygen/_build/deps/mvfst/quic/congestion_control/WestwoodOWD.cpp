@@ -97,7 +97,7 @@
        owdv_(0),
        owd_(0),
        //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
-       lossMaxRtt_(std::chrono::microseconds(70000)) 
+       lossMaxRtt_(std::chrono::microseconds(100000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -262,9 +262,9 @@
      // If the delay condition is met, adjust ssthresh and cwnd.
     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
           uint64_t rttMinUs = rttSampler_.minRtt().count();
-          uint64_t owdt = rttMinUs + 0.3 * (lossMaxRtt_.count() - rttMinUs);
+          uint64_t owdt = 0.3 * (lossMaxRtt_.count() - rttMinUs);
           ssthresh_ = std::max(
-            static_cast<uint64_t>(bandwidthEstimate_ * (owdt / 1e6)),
+            static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdt) / 1e6)),
             2 * quicConnectionState_.udpSendPacketLen);
           cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
@@ -309,7 +309,7 @@
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
-     uint64_t owdt = rttMinUs + 0.3 * (lossMaxRtt_.count() - rttMinUs);
+     uint64_t owdt = 0.3 * (lossMaxRtt_.count() - rttMinUs);
  
      owd_ = owdt;
      owdv_ = owdt;
@@ -325,8 +325,8 @@
          endOfRecovery_ = Clock::now();
          uint64_t rttMinUs = rttSampler_.minRtt().count();
          ssthresh_ = std::max(
-             static_cast<uint64_t>(bandwidthEstimate_ * (owdt / 1e6)),
-             2 * quicConnectionState_.udpSendPacketLen);
+            static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdt) / 1e6)),
+            2 * quicConnectionState_.udpSendPacketLen);
          cwndBytes_ = ssthresh_;
          cwndBytes_ = boundedCwnd(
              cwndBytes_,
