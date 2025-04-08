@@ -57,6 +57,7 @@ def main():
     qdc50_rtt = build_rtt('delay_control_50', args)
     cubic_rtt = build_rtt('cubic', args)
     bbr2_rtt = build_rtt('bbr2', args)
+    newreno_rtt = build_rtt('newreno', args)
 
     sorted_data, cdf_values = cdf(westwood_rtt)
     plt.plot(sorted_data, cdf_values, label='Westwood+', color='red')
@@ -72,6 +73,9 @@ def main():
 
     sorted_data, cdf_values = cdf(bbr2_rtt)
     plt.plot(sorted_data, cdf_values, label='BBRv2', color='aquamarine')
+
+    sorted_data, cdf_values = cdf(newreno_rtt)
+    plt.plot(sorted_data, cdf_values, label='New Reno', color='orange')
 
     plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)')
