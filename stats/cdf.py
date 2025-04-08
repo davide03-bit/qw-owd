@@ -26,7 +26,7 @@ def get_all_qlog_files(directory, extensions=('.qlog')):
     files = [os.path.join(directory, f) for f in os.listdir(directory)
              if os.path.isfile(os.path.join(directory, f)) and f.lower().endswith(extensions)]
     files = sorted(files, key=os.path.getmtime)
-    return files[-40]
+    return files[-40:]
 
 def build_rtt(sub, args):
     rtt_data = []
