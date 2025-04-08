@@ -97,7 +97,7 @@
        owdv_(0),
        owd_(0),
        //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
-       lossMaxRtt_(std::chrono::microseconds(60000)) 
+       lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
