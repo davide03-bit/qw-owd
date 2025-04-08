@@ -80,7 +80,7 @@ def main():
     plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)')
     plt.ylabel('CDF')
-    plt.xlim(70,210)
+    plt.xlim(30,150)
 
     plt.grid(True)
 
