@@ -324,7 +324,7 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
     # Subplot 1: RTT (and one way delay and max RTT if provided)
     ax_rtt = axs[0, 0]
     if times_rtt_s and latest_rtts_ms:
-        ax_rtt.plot(times_rtt_s, latest_rtts_ms, label='Latest RTT (ms)')
+        ax_rtt.plot(times_rtt_s, latest_rtts_ms, label='RTT (ms)')
     if times_rtt_s and min_rtts_ms:
         ax_rtt.plot(times_rtt_s, min_rtts_ms, label='Min RTT (ms)', linestyle='--')
     # Plot one way delay and max RTT if owd_data is provided
