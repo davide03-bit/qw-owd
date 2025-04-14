@@ -10,6 +10,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes, mark_inset
 
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+
 def extract_rtt_metrics(qlog_data):
     latest_rtts = []
     events = qlog_data['traces'][0]['events']
@@ -91,13 +94,15 @@ def main():
     plt.plot(sorted_data, cdf_values, label='New Reno', color='orange')
 
     plt.title('CDF of RTT')
-    plt.xlabel('RTT (ms)')
-    plt.ylabel('CDF')
+    plt.xlabel('RTT (ms)', fontsize=22)
+    plt.ylabel('CDF',fontsize=22)
     plt.xlim(30,150)
 
     plt.grid(True)
 
-    plt.legend()
+    plt.legend(fontsize=18)
+
+    plt.gca().tick_params(axis='both', labelsize=16)
 
     print("Salvando il grafico come cdf.pdf...")
     plt.savefig("cdf.pdf", bbox_inches="tight")
