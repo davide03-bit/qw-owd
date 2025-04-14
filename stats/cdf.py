@@ -90,7 +90,7 @@ def main():
     plt.plot(sorted_data, cdf_values, label='BBRv2', color="#a65628")
 
     sorted_data, cdf_values = cdf(cubic_rtt)
-    plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf"
+    plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf")
 
     sorted_data, cdf_values = cdf(newreno_rtt)
     plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf")
