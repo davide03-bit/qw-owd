@@ -55,6 +55,8 @@ def main():
     parser.add_argument('--parent-dir', type=str, help="Parent directory containing subdirectories with qlog files.")
     args = parser.parse_args()
     
+    line_width = 2.5
+
     westwood_rtt = build_rtt('westwood+', args)
     qdc20_rtt = build_rtt('delay_control_20', args)
     qdc50_rtt = build_rtt('delay_control_50', args)
@@ -76,7 +78,7 @@ def main():
     std_newreno = np.std(newreno_rtt)
 
     sorted_data, cdf_values = cdf(westwood_rtt)
-    plt.plot(sorted_data, cdf_values, label='Westwood+', color='red')
+    plt.plot(sorted_data, cdf_values, label='Westwood+', color='orange')
 
     sorted_data, cdf_values = cdf(qdc20_rtt)
     plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color='blue')
@@ -85,13 +87,13 @@ def main():
     plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color='green')
 
     sorted_data, cdf_values = cdf(cubic_rtt)
-    plt.plot(sorted_data, cdf_values, label='Cubic', color='fuchsia')
+    plt.plot(sorted_data, cdf_values, label='Cubic', color='pink')
 
     sorted_data, cdf_values = cdf(bbr2_rtt)
-    plt.plot(sorted_data, cdf_values, label='BBRv2', color='aquamarine')
+    plt.plot(sorted_data, cdf_values, label='BBRv2', color='brown')
 
     sorted_data, cdf_values = cdf(newreno_rtt)
-    plt.plot(sorted_data, cdf_values, label='New Reno', color='orange')
+    plt.plot(sorted_data, cdf_values, label='New Reno', color='turquoise')
 
     plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)', fontsize=22)
