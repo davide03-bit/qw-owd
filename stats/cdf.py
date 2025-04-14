@@ -59,14 +59,27 @@ def main():
     bbr2_rtt = build_rtt('bbr2', args)
     newreno_rtt = build_rtt('newreno', args)
 
+    avg_westwood = np.mean(westwood_rtt)
+    std_westwood = np.std(westwood_rtt)
+    avg_qdc20 = np.mean(qdc20_rtt)
+    std_qdc20 = np.std(qdc20_rtt)
+    avg_qdc50 = np.mean(qdc50_rtt)
+    std_qdc50 = np.std(qdc50_rtt)
+    avg_cubic = np.mean(cubic_rtt)
+    std_cubic = np.std(cubic_rtt)
+    avg_bbr2 = np.mean(bbr2_rtt)
+    std_bbr2 = np.std(bbr2_rtt)
+    avg_newreno = np.mean(newreno_rtt)
+    std_newreno = np.std(newreno_rtt)
+
     sorted_data, cdf_values = cdf(westwood_rtt)
     plt.plot(sorted_data, cdf_values, label='Westwood+', color='red')
 
     sorted_data, cdf_values = cdf(qdc20_rtt)
-    plt.plot(sorted_data, cdf_values, label='Quidc Delay Control 20%', color='blue')
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color='blue')
 
     sorted_data, cdf_values = cdf(qdc50_rtt)
-    plt.plot(sorted_data, cdf_values, label='Quic Delay Control 50%', color='green')
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color='green')
 
     sorted_data, cdf_values = cdf(cubic_rtt)
     plt.plot(sorted_data, cdf_values, label='Cubic', color='fuchsia')
@@ -86,9 +99,15 @@ def main():
 
     plt.legend()
 
-    print("Salvando il grafico come cdf.png...")
+    print("Salvando il grafico come cdf.pdf...")
     plt.savefig("cdf.pdf")
     print("Grafico salvato con successo!")
+    print(f"Westwood RTT medio: {avg_westwood}. Deviazione standard: {std_westwood}")
+    print(f"QUIC-DC (20%) RTT medio: {avg_qdc20}. Deviazione standard: {std_qdc20}")
+    print(f"QUIC-DC (50%) RTT medio: {avg_qdc50}. Deviazione standard: {std_qdc50}")
+    print(f"Cubic RTT medio: {avg_cubic}. Deviazione standard: {std_cubic}")
+    print(f"BBRv2 RTT medio: {avg_bbr2}. Deviazione standard: {std_bbr2}")
+    print(f"New Reno RTT medio: {avg_newreno}. Deviazione standard: {std_newreno}")
 
 if __name__ == '__main__':
     main()
