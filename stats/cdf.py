@@ -77,23 +77,23 @@ def main():
     avg_newreno = np.mean(newreno_rtt)
     std_newreno = np.std(newreno_rtt)
 
-    sorted_data, cdf_values = cdf(westwood_rtt)
-    plt.plot(sorted_data, cdf_values, label='Westwood+', color='orange')
-
     sorted_data, cdf_values = cdf(qdc20_rtt)
-    plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color='blue')
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color="#377eb8")
 
     sorted_data, cdf_values = cdf(qdc50_rtt)
-    plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color='green')
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color="#4daf4a")
 
-    sorted_data, cdf_values = cdf(cubic_rtt)
-    plt.plot(sorted_data, cdf_values, label='Cubic', color='pink')
+    sorted_data, cdf_values = cdf(westwood_rtt)
+    plt.plot(sorted_data, cdf_values, label='Westwood+', color="#ff7f00")
 
     sorted_data, cdf_values = cdf(bbr2_rtt)
-    plt.plot(sorted_data, cdf_values, label='BBRv2', color='brown')
+    plt.plot(sorted_data, cdf_values, label='BBRv2', color="#a65628")
+
+    sorted_data, cdf_values = cdf(cubic_rtt)
+    plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf"
 
     sorted_data, cdf_values = cdf(newreno_rtt)
-    plt.plot(sorted_data, cdf_values, label='New Reno', color='turquoise')
+    plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf")
 
     plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)', fontsize=22)
