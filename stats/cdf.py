@@ -100,7 +100,7 @@ def main():
     plt.legend()
 
     print("Salvando il grafico come cdf.pdf...")
-    plt.savefig("cdf.pdf")
+    plt.savefig("cdf.pdf", bbox_inches="tight")
     print("Grafico salvato con successo!")
     print(f"Westwood RTT medio: {avg_westwood}. Deviazione standard: {std_westwood}")
     print(f"QUIC-DC (20%) RTT medio: {avg_qdc20}. Deviazione standard: {std_qdc20}")
