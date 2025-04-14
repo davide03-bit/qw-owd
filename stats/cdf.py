@@ -87,7 +87,7 @@ def main():
     plt.legend()
 
     print("Salvando il grafico come cdf.png...")
-    plt.savefig("cdf.png")
+    plt.savefig("cdf.pdf")
     print("Grafico salvato con successo!")
 
 if __name__ == '__main__':
