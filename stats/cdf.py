@@ -56,6 +56,7 @@ def main():
     args = parser.parse_args()
     
     line_width = 2.5
+    plt.figure(figsize=(10, 7))
 
     westwood_rtt = build_rtt('westwood+', args)
     qdc20_rtt = build_rtt('delay_control_20', args)
@@ -98,7 +99,7 @@ def main():
     plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)', fontsize=22)
     plt.ylabel('CDF',fontsize=22)
-    plt.xlim(30,150)
+    plt.xlim(30,100)
 
     plt.grid(True)
 
