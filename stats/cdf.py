@@ -96,7 +96,6 @@ def main():
     sorted_data, cdf_values = cdf(newreno_rtt)
     plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf")
 
-    plt.title('CDF of RTT')
     plt.xlabel('RTT (ms)', fontsize=22)
     plt.ylabel('CDF',fontsize=22)
     plt.xlim(30,100)
