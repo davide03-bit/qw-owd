@@ -56,7 +56,7 @@ def main():
     args = parser.parse_args()
     
     line_width = 2.5
-    plt.figure(figsize=(10, 7))
+    plt.figure(figsize=(10, 6))
 
     westwood_rtt = build_rtt('westwood+', args)
     qdc20_rtt = build_rtt('delay_control_20', args)
@@ -79,22 +79,22 @@ def main():
     std_newreno = np.std(newreno_rtt)
 
     sorted_data, cdf_values = cdf(qdc20_rtt)
-    plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color="#377eb8")
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (20%)', color="#377eb8", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(qdc50_rtt)
-    plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color="#4daf4a")
+    plt.plot(sorted_data, cdf_values, label='QUIC-DC (50%)', color="#4daf4a", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(westwood_rtt)
-    plt.plot(sorted_data, cdf_values, label='Westwood+', color="#ff7f00")
+    plt.plot(sorted_data, cdf_values, label='Westwood+', color="#ff7f00", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(bbr2_rtt)
-    plt.plot(sorted_data, cdf_values, label='BBRv2', color="#a65628")
+    plt.plot(sorted_data, cdf_values, label='BBRv2', color="#a65628", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(cubic_rtt)
-    plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf")
+    plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(newreno_rtt)
-    plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf")
+    plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf", linewidth=linewidth)
 
     plt.xlabel('RTT (ms)', fontsize=22)
     plt.ylabel('CDF',fontsize=22)
