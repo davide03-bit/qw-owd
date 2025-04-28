@@ -94,7 +94,7 @@ def main():
     plt.plot(sorted_data, cdf_values, label='Cubic', color="#f781bf", linewidth=line_width)
 
     sorted_data, cdf_values = cdf(newreno_rtt)
-    plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf", linewidth=linewidth)
+    plt.plot(sorted_data, cdf_values, label='New Reno', color="#17becf", linewidth=line_width)
 
     plt.xlabel('RTT (ms)', fontsize=22)
     plt.ylabel('CDF',fontsize=22)
