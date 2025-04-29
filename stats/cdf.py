@@ -98,7 +98,7 @@ def main():
 
     plt.xlabel('RTT (ms)', fontsize=22)
     plt.ylabel('CDF',fontsize=22)
-    plt.xlim(27,70)
+    plt.xlim(27,60)
 
     plt.grid(True)
 
