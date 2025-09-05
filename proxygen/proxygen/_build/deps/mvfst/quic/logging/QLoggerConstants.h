@@ -35,6 +35,7 @@ constexpr auto kCopaInit = "copa init";
 constexpr auto kCongestionPacketSent = "congestion on packet sent";
 constexpr auto kCopaCheckAndUpdateDirection = "copa check and update direction";
 constexpr auto kCongestionPacketLoss = "congestion packet loss";
+constexpr auto kCongestionDelaySignal = "queue threshold reached";
 constexpr auto kAppLimited = "app limited";
 constexpr auto kAppUnlimited = "app unlimited";
 constexpr uint64_t kDefaultCwnd = 12320;
