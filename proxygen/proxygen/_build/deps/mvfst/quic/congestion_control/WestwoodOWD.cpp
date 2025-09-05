@@ -246,7 +246,7 @@
           //ssthresh_ = std::max(
             //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
             //2 * quicConnectionState_.udpSendPacketLen);
-          ssthresh_ = ssthresh_ - quicConnectionState_.udpSendPacketLen;
+          ssthresh_ = ssthresh_ - kDefaultUDPSendPacketLen;
           cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
