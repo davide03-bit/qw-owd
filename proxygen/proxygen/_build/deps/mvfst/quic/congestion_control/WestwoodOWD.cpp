@@ -243,11 +243,11 @@
      // If the delay condition is met, adjust ssthresh and cwnd.
     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
           uint64_t rttMinUs = rttSampler_.minRtt().count();
-          ssthresh_ = std::max(
-            static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-            2 * quicConnectionState_.udpSendPacketLen);
-          //cwndBytes_ = ssthresh_;
-          cwndBytes_ = cwndBytes_ - ackedBytes; // new reaction on owd threshold
+          //ssthresh_ = std::max(
+            //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+            //2 * quicConnectionState_.udpSendPacketLen);
+          ssthresh_ = ssthresh_ - ackedBytes;
+          cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
               quicConnectionState_.udpSendPacketLen,
@@ -256,8 +256,24 @@
  
          owd_ = 0;
          owdv_ = 0;
-          //lossMaxRtt_ = rttSampler_.maxRtt();
+         //lossMaxRtt_ = rttSampler_.maxRtt();
       }
+
+    VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
+         << " ackedBytes=" << ackedBytes
+         << " writable=" << getWritableBytes()
+         << " cwnd=" << cwndBytes_
+         << " inflight=" << quicConnectionState_.lossState.inflightBytes
+         << " " << quicConnectionState_;
+
+    if (quicConnectionState_.qLogger) {
+        quicConnectionState_.qLogger->addCongestionMetricUpdate(
+        quicConnectionState_.lossState.inflightBytes,
+        getCongestionWindow(),
+        getSlowStartThreshold(),
+        kCongestionDelaySignal);
+    }
+
  
      // Slow start or congestion avoidance increment:
      if (cwndBytes_ < ssthresh_) {
