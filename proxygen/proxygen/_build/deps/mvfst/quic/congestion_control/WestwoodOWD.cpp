@@ -214,27 +214,8 @@
      * caused by out‐of‐order arrivals that produce apparent negative gaps 
      * and not reflecting actual queue empting. 
      **/
-    owd_ = std::max(static_cast<int64_t>(0), owd_);
- 
-    // std::cout << packet.packetNum << " " << currentSendTimeStamp << " " << currentReceiveTimeStamp << std::endl; 
- 
-     // VLOG(1) << "-------------------------";
-     // VLOG(1) << "Packet Number   :" << packet.packetNum;
-     // VLOG(1) << "Inter-departure : " << interArrival_ << " = " 
-     //     << std::chrono::duration_cast<std::chrono::microseconds>(currentReceiveTimeStamp.time_since_epoch()).count()
-     //     << " - "
-     //     << std::chrono::duration_cast<std::chrono::microseconds>(latestReceiveTimeStamp_.time_since_epoch()).count();
- 
-     // VLOG(1) << "Inter-departure : " << interDeparture_ << " = " 
-     //     << std::chrono::duration_cast<std::chrono::microseconds>(currentSendTimeStamp.time_since_epoch()).count()
-     //     << " - "
-     //     << std::chrono::duration_cast<std::chrono::microseconds>(latestSendTimeStamp_.time_since_epoch()).count();
- 
-     // VLOG(1) << "OWD variation   : " << owdv_ << " = " << interArrival_ << " - " << interDeparture_;
-     // VLOG(1) << "One-way-delay   : " << owd_ << " += " << owdv_;
-     // VLOG(1) << "-------------------------";
- 
- 
+     owd_ = std::max(static_cast<int64_t>(0), owd_);
+
      std::cout << time_owd_us << " " << owd_ << " " << owdv_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
  
@@ -265,8 +246,8 @@
           ssthresh_ = std::max(
             static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
             2 * quicConnectionState_.udpSendPacketLen);
-          // cwndBytes_ = ssthresh_;
-          cwndBytes_ = cwndBytes_ - ackedBytes; // new reaction on owd threshold
+          cwndBytes_ = ssthresh_;
+          // cwndBytes_ = cwndBytes_ - ackedBytes; // new reaction on owd threshold
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
               quicConnectionState_.udpSendPacketLen,
