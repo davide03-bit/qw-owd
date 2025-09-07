@@ -95,6 +95,7 @@
        interDeparture_(0),
        interArrival_(0),
        owdv_(0),
+       owdvFiltered_(0),
        owd_(0),
        //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
        lossMaxRtt_(std::chrono::microseconds(70000)) 
@@ -207,7 +208,11 @@
      auto time_owd_us = std::chrono::duration_cast<std::chrono::microseconds>(time_owd).count();
  
      owdv_ = interArrival_ - interDeparture_;
-     owd_ += owdv_;
+
+     double alpha = 0.9;
+     owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
+
+     owd_ += owdvFiltered_;
  
      /** 
      * trying to clamp owd in order to reject nonsense queue negative levels
@@ -243,10 +248,9 @@
      // If the delay condition is met, adjust ssthresh and cwnd.
     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
           uint64_t rttMinUs = rttSampler_.minRtt().count();
-          //ssthresh_ = std::max(
-            //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-            //2 * quicConnectionState_.udpSendPacketLen);
-          ssthresh_ = ssthresh_ - kDefaultUDPSendPacketLen;
+          ssthresh_ = std::max(
+            static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+            2 * quicConnectionState_.udpSendPacketLen);
           cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
