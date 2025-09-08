@@ -94,6 +94,7 @@ private:
   int64_t interArrival_;
   int64_t owdv_;
   int64_t owdvFiltered_;
+  int64_t owdCalculated_;
   int64_t owd_;
   std::chrono::microseconds lossMaxRtt_;
   folly::Optional<TimePoint> endOfRecovery_;
