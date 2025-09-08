@@ -209,10 +209,12 @@
  
      owdv_ = interArrival_ - interDeparture_;
 
-     double alpha = 0.9;
-     owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
+     //double alpha = 0.9;
+     //owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
 
-     owd_ += owdvFiltered_;
+     //owd_ += owdvFiltered_;
+
+     owd_ += owdv_;
  
      /** 
      * trying to clamp owd in order to reject nonsense queue negative levels
@@ -258,8 +260,8 @@
               quicConnectionState_.transportSettings.maxCwndInMss,
               quicConnectionState_.transportSettings.minCwndInMss);
  
-         //owd_ = 0;
-         //owdv_ = 0;
+         owd_ = 0;
+         owdv_ = 0;
          //lossMaxRtt_ = rttSampler_.maxRtt();
       }
 
@@ -311,8 +313,8 @@
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
  
-     //owd_ = 0;
-     //owdv_ = 0;
+     owd_ = 0;
+     owdv_ = 0;
  
      //lossMaxRtt_ = rttSampler_.maxRtt();
  
