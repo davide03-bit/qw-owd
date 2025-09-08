@@ -95,8 +95,8 @@ private:
   int64_t owdv_;
   int64_t owdvFiltered_;
   int64_t owd_;
-  int64_t owdMax_;
-  std::deque<int64_t> owdWindow_;
+  //int64_t owdMax_;
+  //std::deque<int64_t> owdWindow_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 

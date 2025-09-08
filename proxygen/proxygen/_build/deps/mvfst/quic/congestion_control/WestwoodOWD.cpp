@@ -18,8 +18,8 @@
  #include <iostream>
  #include <string>
  #include <cmath>
- #include <deque>
- #include <vector>
+ //#include <deque>
+ //#include <vector>
  
  namespace quic {
  
@@ -100,7 +100,7 @@
        owdv_(0),
        owdvFiltered_(0),
        owd_(0),
-       owdMax_(0)
+       //owdMax_(0)
        //lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
@@ -180,16 +180,16 @@
  bool WestwoodOWD::delayControl(double delayThresholdFraction) {
      uint64_t rttMinUs = rttSampler_.minRtt().count();
      
-     //if (lossMaxRtt_.count() == 0) return false;
-     //if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-         //(owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-         //return true;
-     //}
-     //return false;
-     if (owd_ > delayThresholdFraction * owdMax_){
-        return true;
+     if (lossMaxRtt_.count() == 0) return false;
+     if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+         (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+         return true;
      }
      return false;
+     //if (owd_ > delayThresholdFraction * owdMax_){
+        //return true;
+     //}
+     //return false;
  }
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
@@ -226,17 +226,17 @@
 
      // Hold a sliding window for owd values
 
-     owdWindow_.push_back(owd_);
-     if(owdWindow_.size() > N) {
-        owdWindow_.pop_front();
-     }
+     //owdWindow_.push_back(owd_);
+     //if(owdWindow_.size() > N) {
+        //owdWindow_.pop_front();
+     //}
 
      // Find the maximum value in the window removing spikes
 
-     std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
-     std::sort(tmp.begin(), tmp.end());
-     size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
-     owdMax_ = tmp[maxIndex];
+     //std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
+     //std::sort(tmp.begin(), tmp.end());
+     //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
+     //owdMax_ = tmp[maxIndex];
 
      std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << owdMax_ << " " << std::endl;
  }
