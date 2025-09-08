@@ -219,9 +219,9 @@
      * caused by out‐of‐order arrivals that produce apparent negative gaps 
      * and not reflecting actual queue empting. 
      **/
-     owd_ = std::max(static_cast<int64_t>(0), owd_);
+     //owd_ = std::max(static_cast<int64_t>(0), owd_);
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdv_ << " " << lossMaxRtt_.count() << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
  
  
@@ -258,8 +258,8 @@
               quicConnectionState_.transportSettings.maxCwndInMss,
               quicConnectionState_.transportSettings.minCwndInMss);
  
-         owd_ = 0;
-         owdv_ = 0;
+         //owd_ = 0;
+         //owdv_ = 0;
          //lossMaxRtt_ = rttSampler_.maxRtt();
       }
 
@@ -311,8 +311,8 @@
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
  
-     owd_ = 0;
-     owdv_ = 0;
+     //owd_ = 0;
+     //owdv_ = 0;
  
      //lossMaxRtt_ = rttSampler_.maxRtt();
  
