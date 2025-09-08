@@ -18,6 +18,8 @@
  #include <iostream>
  #include <string>
  #include <cmath>
+ #include <deque>
+ #include <vector>
  
  namespace quic {
  
@@ -77,7 +79,9 @@
  
  constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;       
  constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000; 
- constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;         
+ constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;      
+ constexpr double alpha = 0.9;
+ constexpr size_t N = 100:
  
  WestwoodOWD::WestwoodOWD(QuicConnectionStateBase &conn)
      : quicConnectionState_(conn),
@@ -85,7 +89,6 @@
        latestRttSample_(std::chrono::microseconds(kWestwoodOWDInitialRttMicroseconds)),
        bandwidthNewestEstimate_(0),
        bandwidthEstimate_(0),
-       step_(0),
        bytesAckedInCurrentInterval_(0),
        ssthresh_(std::numeric_limits<uint64_t>::max()),
        rttSampler_(std::chrono::seconds(kWestwoodOWDRttExpirationSeconds)),
@@ -97,8 +100,8 @@
        owdv_(0),
        owdvFiltered_(0),
        owd_(0),
-       //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
-       lossMaxRtt_(std::chrono::microseconds(70000)) 
+       owdMax_(0)
+       //lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -209,18 +212,30 @@
  
      owdv_ = interArrival_ - interDeparture_;
 
-     double alpha = 0.9;
      owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
 
      owd_ += owdvFiltered_;
  
-     // trying to clamp owd in order to reject nonsense queue negative levels
-     
+     // Clamp owd in order to reject nonsense queue negative levels
+
      owd_ = std::max(static_cast<int64_t>(0), owd_);
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
+     // Hold a sliding window for owd values
+
+     owdWindow_.push_back(owd_);
+     if(owdWindow_.size() > N) {
+        owdWindow_.pop_front();
+     }
+
+     // Find the maximum value in the window removing spikes
+
+     std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
+     std::sort(tmp.begin(), tmp.end());
+     size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
+     owdMax_ = tmp[maxIndex];
+
+     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << owdMax_ << " " << std::endl;
  }
- 
  
  
  void WestwoodOWD::onPacketAcked(const CongestionController::AckEvent::AckPacket &packet) {
@@ -234,7 +249,6 @@
      uint64_t delta = std::chrono::duration_cast<std::chrono::microseconds>(now - rttWindowStartTime_).count();
  
      if (delta > std::max((uint64_t)latestRttSample_.count(), kWestwoodOWDMinRttMicroseconds)) {
-         step_++;
          updateWestwoodBandwidthEstimates(delta);
          rttWindowStartTime_ = now;
          bytesAckedInCurrentInterval_ = 0;
@@ -254,10 +268,6 @@
               quicConnectionState_.udpSendPacketLen,
               quicConnectionState_.transportSettings.maxCwndInMss,
               quicConnectionState_.transportSettings.minCwndInMss);
- 
-         //owd_ = 0;
-         //owdv_ = 0;
-         //lossMaxRtt_ = rttSampler_.maxRtt();
       }
 
     VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
@@ -274,7 +284,6 @@
         getSlowStartThreshold(),
         kCongestionDelaySignal);
     }
-
  
      // Slow start or congestion avoidance increment:
      if (cwndBytes_ < ssthresh_) {
@@ -307,11 +316,6 @@
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
- 
-     //owd_ = 0;
-     //owdv_ = 0;
- 
-     //lossMaxRtt_ = rttSampler_.maxRtt();
  
      if (rttSampler_.minRttExpired()) {
          rttSampler_.resetRttSample(Clock::now());
@@ -392,11 +396,6 @@
  }
  
  uint32_t WestwoodOWD::westwoodLowPassFilter(uint32_t a, uint32_t b) {
-     // constexpr float center = 16.0f;
-     // constexpr float scale  = 1.0f;
-     // float s = static_cast<float>(step_);
-     // float sigmoid = 1.0f / (1.0f + std::exp(-((s - center) / scale)));
-     // float coef = sigmoid * (6.0f / 8.0f);
      float coef = 2.0f / 8.0f;
      float filtered = (coef * static_cast<float>(a)) + 
                       ((1.0f - coef) * static_cast<float>(b));
