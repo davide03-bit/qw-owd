@@ -219,7 +219,7 @@
      * caused by out‐of‐order arrivals that produce apparent negative gaps 
      * and not reflecting actual queue empting. 
      **/
-     //owd_ = std::max(static_cast<int64_t>(0), owd_);
+     owd_ = std::max(static_cast<int64_t>(0), owd_);
 
      std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
