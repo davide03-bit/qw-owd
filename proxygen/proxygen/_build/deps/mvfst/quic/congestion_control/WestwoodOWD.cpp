@@ -101,7 +101,7 @@
        owdvFiltered_(0),
        owd_(0),
        //owdMax_(0)
-       //lossMaxRtt_(std::chrono::microseconds(70000)) 
+       lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -238,7 +238,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << owdMax_ << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_ << " " << std::endl;
  }
  
  

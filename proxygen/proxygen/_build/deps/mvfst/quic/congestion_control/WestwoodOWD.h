@@ -97,6 +97,7 @@ private:
   int64_t owd_;
   //int64_t owdMax_;
   //std::deque<int64_t> owdWindow_;
+  std::chrono::microseconds lossMaxRtt_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 
