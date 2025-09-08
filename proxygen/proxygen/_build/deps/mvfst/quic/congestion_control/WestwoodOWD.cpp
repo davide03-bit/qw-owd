@@ -180,10 +180,14 @@
  bool WestwoodOWD::delayControl(double delayThresholdFraction) {
      uint64_t rttMinUs = rttSampler_.minRtt().count();
      
-     if (lossMaxRtt_.count() == 0) return false;
-     if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-         (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-         return true;
+     //if (lossMaxRtt_.count() == 0) return false;
+     //if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+         //(owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+         //return true;
+     //}
+     //return false;
+     if (owd_ > delayThresholdFraction * owdMax_){
+        return true;
      }
      return false;
  }
