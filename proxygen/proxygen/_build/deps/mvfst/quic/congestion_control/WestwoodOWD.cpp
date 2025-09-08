@@ -238,7 +238,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_ << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
  
  
