@@ -9,6 +9,7 @@
 #include <fstream>
 #include <chrono>
 #include <optional>
+#include <deque>
 
 namespace quic {
 
@@ -83,7 +84,6 @@ private:
   std::chrono::microseconds latestRttSample_;
   uint32_t bandwidthNewestEstimate_;
   uint32_t bandwidthEstimate_;
-  uint32_t step_;
   uint64_t bytesAckedInCurrentInterval_; 
   uint64_t ssthresh_;
   WestwoodOWDRttSampler rttSampler_; 
@@ -94,9 +94,9 @@ private:
   int64_t interArrival_;
   int64_t owdv_;
   int64_t owdvFiltered_;
-  int64_t owdCalculated_;
   int64_t owd_;
-  std::chrono::microseconds lossMaxRtt_;
+  int64_t owdMax_;
+  std::deque<int64_t> owdWindow_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 
