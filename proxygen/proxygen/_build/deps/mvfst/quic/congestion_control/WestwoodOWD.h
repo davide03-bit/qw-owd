@@ -93,8 +93,9 @@ private:
   int64_t interDeparture_;
   int64_t interArrival_;
   int64_t owdv_;
-  int64_t owdvFiltered_;
+  int64_t owdvCorrect_;
   int64_t owd_;
+  double biasEstimation_;
   //int64_t owdMax_;
   //std::deque<int64_t> owdWindow_;
   std::chrono::microseconds lossMaxRtt_;

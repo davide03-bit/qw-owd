@@ -80,7 +80,7 @@
  constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;       
  constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000; 
  constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;      
- constexpr double alpha = 0.9;
+ constexpr double alphaBias = 0.999;
  constexpr size_t N = 100;
  
  WestwoodOWD::WestwoodOWD(QuicConnectionStateBase &conn)
@@ -98,8 +98,9 @@
        interDeparture_(0),
        interArrival_(0),
        owdv_(0),
-       owdvFiltered_(0),
+       owdvCorrect_(0),
        owd_(0),
+       biasEstimation_(0),
        //owdMax_(0)
        lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
@@ -216,9 +217,11 @@
  
      owdv_ = interArrival_ - interDeparture_;
 
-     owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
+     biasEstimation_ = alphaBias * biasEstimation_ + (1 - alphaBias) * owdv_;
 
-     owd_ += owdvFiltered_;
+     owdvCorrect_ = owdv_ - biasEstimation_;
+
+     owd_ += owdvCorrect_;
  
      // Clamp owd in order to reject nonsense queue negative levels
 
@@ -238,7 +241,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
  
  
