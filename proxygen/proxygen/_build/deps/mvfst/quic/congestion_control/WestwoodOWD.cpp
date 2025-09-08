@@ -96,7 +96,6 @@
        interArrival_(0),
        owdv_(0),
        owdvFiltered_(0),
-       owdCalculated_(0),
        owd_(0),
        //lossMaxRtt_(std::chrono::microseconds(0)) //fixed for test in lab
        lossMaxRtt_(std::chrono::microseconds(70000)) 
@@ -213,15 +212,11 @@
      double alpha = 0.9;
      owdvFiltered_ = alpha * owdvFiltered_ + (1 - alpha) * static_cast<double>(owdv_);
 
-     owdCalculated_ += owdvFiltered_;
+     owd_ += owdvFiltered_;
  
-     /** 
-     * trying to clamp owd in order to reject nonsense queue negative levels
-     * caused by out‐of‐order arrivals that produce apparent negative gaps 
-     * and not reflecting actual queue empting. 
-     **/
-
-     owd_ = std::max<int64_t>(0, static_cast<int64_t>(std::round(owdCalculated_)));
+     // trying to clamp owd in order to reject nonsense queue negative levels
+     
+     owd_ = std::max(static_cast<int64_t>(0), owd_);
 
      std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
