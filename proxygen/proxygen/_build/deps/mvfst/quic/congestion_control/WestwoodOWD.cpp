@@ -221,7 +221,7 @@
      * and not reflecting actual queue empting. 
      **/
 
-     owd_ = std::max<int64_t>(0, static_cast<int64_t>(std::round(rawOwd_)));
+     owd_ = std::max<int64_t>(0, static_cast<int64_t>(std::round(owdCalculated_)));
 
      std::cout << time_owd_us << " " << owd_ << " " << owdvFiltered_ << " " << lossMaxRtt_.count() << " " << std::endl;
  }
