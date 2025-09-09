@@ -18,8 +18,6 @@
  #include <iostream>
  #include <string>
  #include <cmath>
- //#include <deque>
- //#include <vector>
  
  namespace quic {
  
@@ -81,7 +79,6 @@
  constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000; 
  constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;      
  constexpr double alphaBias = 0.999;
- constexpr size_t N = 100;
  
  WestwoodOWD::WestwoodOWD(QuicConnectionStateBase &conn)
      : quicConnectionState_(conn),
@@ -101,8 +98,8 @@
        owdvCorrect_(0),
        owd_(0),
        biasEstimation_(0),
-       //owdMax_(0)
-       lossMaxRtt_(std::chrono::microseconds(70000)) 
+       owdMax_(0)
+       //lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -179,18 +176,18 @@
  }
  
  bool WestwoodOWD::delayControl(double delayThresholdFraction) {
-     uint64_t rttMinUs = rttSampler_.minRtt().count();
+     //uint64_t rttMinUs = rttSampler_.minRtt().count();
      
-     if (lossMaxRtt_.count() == 0) return false;
-     if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-         (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-         return true;
+    //  if (lossMaxRtt_.count() == 0) return false;
+    //  if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+    //      (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+    //      return true;
+    //  }
+    //  return false;
+     if (owd_ > delayThresholdFraction * owdMax_) {
+        return true;
      }
      return false;
-     //if (owd_ > delayThresholdFraction * owdMax_){
-        //return true;
-     //}
-     //return false;
  }
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
@@ -241,7 +238,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << lossMaxRtt_.count() << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << owdMax_ << " " << std::endl;
  }
  
  
@@ -324,6 +321,8 @@
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
+
+     owdMax_ = owd_;
  
      if (rttSampler_.minRttExpired()) {
          rttSampler_.resetRttSample(Clock::now());
