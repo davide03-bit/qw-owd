@@ -266,10 +266,10 @@
      // If the delay condition is met, adjust ssthresh and cwnd.
     if (delayControl(quicConnectionState_.transportSettings.ccaConfig.delayControlFraction)) {
           uint64_t rttMinUs = rttSampler_.minRtt().count();
-          //ssthresh_ = std::max(
-            //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-            //2 * quicConnectionState_.udpSendPacketLen);
-          ssthresh_ -= quicConnectionState_.udpSendPacketLen;
+          ssthresh_ = std::max(
+            static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+            2 * quicConnectionState_.udpSendPacketLen);
+          //ssthresh_ -= quicConnectionState_.udpSendPacketLen;
           cwndBytes_ = ssthresh_;
           cwndBytes_ = boundedCwnd(
               cwndBytes_,
