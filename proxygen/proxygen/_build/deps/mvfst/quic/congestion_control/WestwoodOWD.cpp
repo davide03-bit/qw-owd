@@ -80,7 +80,7 @@
  constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;       
  constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000; 
  constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;      
- constexpr double alphaBias = 0.995;
+ constexpr double alphaBias = 0.9995;
  constexpr size_t N = 100;
  
  WestwoodOWD::WestwoodOWD(QuicConnectionStateBase &conn)
