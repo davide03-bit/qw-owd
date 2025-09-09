@@ -98,7 +98,7 @@
        owdvCorrect_(0),
        owd_(0),
        biasEstimation_(0),
-       owdMax_(0)
+       owdMax_(std::chrono::microseconds(20000))
        //lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
@@ -184,8 +184,8 @@
     //      return true;
     //  }
     //  return false;
-     bool delay = (owd_ > delayThresholdFraction * owdMax_) ? true : false;
-     return delay;
+      bool delay = (owd_ > delayThresholdFraction * owdMax_.count()) ? true : false;
+      return delay;
  }
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
@@ -236,7 +236,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << owdMax_ << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << owdMax_.count() << " " << std::endl;
  }
  
  
@@ -319,8 +319,6 @@
      subtractAndCheckUnderflow(quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
      uint64_t rttMinUs = rttSampler_.minRtt().count();
-
-     owdMax_ = owd_;
  
      if (rttSampler_.minRttExpired()) {
          rttSampler_.resetRttSample(Clock::now());
