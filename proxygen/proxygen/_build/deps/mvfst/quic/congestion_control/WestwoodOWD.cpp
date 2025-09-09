@@ -184,10 +184,8 @@
     //      return true;
     //  }
     //  return false;
-     if (owd_ > delayThresholdFraction * owdMax_) {
-        return true;
-     }
-     return false;
+     bool delay = (owd_ > delayThresholdFraction * owdMax_) ? true : false;
+     return delay;
  }
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
