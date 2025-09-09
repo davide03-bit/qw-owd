@@ -80,7 +80,7 @@
  constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;       
  constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000; 
  constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;      
- constexpr double alphaBias = 0.9995;
+ constexpr double alphaBias = 0.999;
  constexpr size_t N = 100;
  
  WestwoodOWD::WestwoodOWD(QuicConnectionStateBase &conn)
@@ -225,7 +225,7 @@
  
      // Clamp owd in order to reject nonsense queue negative levels
 
-     owd_ = std::max(static_cast<int64_t>(0), owd_);
+     //owd_ = std::max(static_cast<int64_t>(0), owd_);
 
      // Hold a sliding window for owd values
 
