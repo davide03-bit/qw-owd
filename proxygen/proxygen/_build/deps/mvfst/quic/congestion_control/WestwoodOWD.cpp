@@ -225,7 +225,7 @@
  
      // Clamp owd in order to reject nonsense queue negative levels
 
-     //owd_ = std::max(static_cast<int64_t>(0), owd_);
+     owd_ = std::max(static_cast<int64_t>(0), owd_);
 
      // Hold a sliding window for owd values
 
