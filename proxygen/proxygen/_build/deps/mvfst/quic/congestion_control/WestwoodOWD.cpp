@@ -18,6 +18,8 @@
 #include <iostream>
 #include <optional>
 #include <string>
+#include <deque>
+#include <vector>
 
 namespace quic {
 
@@ -234,17 +236,17 @@ void WestwoodOWD::updateOneWayDelay(
 
   // Hold a sliding window for owd values
 
-  // owdWindow_.push_back(owd_);
-  // if(owdWindow_.size() > N) {
-  // owdWindow_.pop_front();
-  //}
+   owdWindow_.push_back(owd_);
+   if(owdWindow_.size() > N) {
+   owdWindow_.pop_front();
+  }
 
   // Find the maximum value in the window removing spikes
 
-  // std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
-  // std::sort(tmp.begin(), tmp.end());
-  // size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
-  // owdMax_ = tmp[maxIndex];
+   std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
+   std::sort(tmp.begin(), tmp.end());
+   size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
+   owdMax_ = tmp[maxIndex];
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
             << owdMax_ << " " << std::endl;
@@ -341,7 +343,7 @@ void WestwoodOWD::onPacketLoss(const LossEvent& loss) {
       quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
   uint64_t rttMinUs = rttSampler_.minRtt().count();
-  owdMax_ = owd_;
+  //owdMax_ = owd_;
 
   if (rttSampler_.minRttExpired()) {
     rttSampler_.resetRttSample(Clock::now());
