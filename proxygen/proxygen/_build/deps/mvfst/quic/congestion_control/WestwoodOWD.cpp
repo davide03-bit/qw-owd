@@ -18,8 +18,6 @@
 #include <iostream>
 #include <optional>
 #include <string>
-//#include <deque>
-//#include <vector>
 
 namespace quic {
 
@@ -80,7 +78,6 @@ constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;
 constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000;
 constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;
 constexpr double alphaBias = 0.999;
-//constexpr int N = 50;
 
 WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
     : quicConnectionState_(conn),
@@ -101,7 +98,6 @@ WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
       owdvCorrect_(0),
       owd_(0),
       biasEstimation_(0),
-      //owdMax_(0),
       lossMaxRtt_(std::chrono::microseconds(70000)) {
   cwndBytes_ = boundedCwnd(
       cwndBytes_,
@@ -232,20 +228,6 @@ void WestwoodOWD::updateOneWayDelay(
   // Clamp owd in order to reject nonsense queue negative levels
 
   owd_ = std::max(static_cast<int64_t>(0), owd_);
-
-  // Hold a sliding window for owd values
-
-//    owdWindow_.push_back(owd_);
-//    if(owdWindow_.size() > N) {
-//    owdWindow_.pop_front();
-//   }
-
-//   // Find the maximum value in the window removing spikes
-
-//    std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
-//    std::sort(tmp.begin(), tmp.end());
-//    size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
-//    owdMax_ = tmp[maxIndex];
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
             << lossMaxRtt_.count() << " " << std::endl;
