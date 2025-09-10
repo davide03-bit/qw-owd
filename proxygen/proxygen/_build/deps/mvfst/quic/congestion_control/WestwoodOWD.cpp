@@ -18,8 +18,8 @@
 #include <iostream>
 #include <optional>
 #include <string>
-#include <deque>
-#include <vector>
+//#include <deque>
+//#include <vector>
 
 namespace quic {
 
@@ -80,7 +80,7 @@ constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;
 constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000;
 constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;
 constexpr double alphaBias = 0.999;
-constexpr int N = 50;
+//constexpr int N = 50;
 
 WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
     : quicConnectionState_(conn),
@@ -101,7 +101,7 @@ WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
       owdvCorrect_(0),
       owd_(0),
       biasEstimation_(0),
-      owdMax_(0),
+      //owdMax_(0),
       lossMaxRtt_(std::chrono::microseconds(70000)) {
   cwndBytes_ = boundedCwnd(
       cwndBytes_,
@@ -191,8 +191,6 @@ bool WestwoodOWD::delayControl(double delayThresholdFraction) {
     return true;
   }
   return false;
-  //   bool delay = (owd_ > delayThresholdFraction * owdMax_.count()) ? true :
-  //   false; return delay;
 }
 
 void WestwoodOWD::updateOneWayDelay(
@@ -237,17 +235,17 @@ void WestwoodOWD::updateOneWayDelay(
 
   // Hold a sliding window for owd values
 
-   owdWindow_.push_back(owd_);
-   if(owdWindow_.size() > N) {
-   owdWindow_.pop_front();
-  }
+//    owdWindow_.push_back(owd_);
+//    if(owdWindow_.size() > N) {
+//    owdWindow_.pop_front();
+//   }
 
-  // Find the maximum value in the window removing spikes
+//   // Find the maximum value in the window removing spikes
 
-   std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
-   std::sort(tmp.begin(), tmp.end());
-   size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
-   owdMax_ = tmp[maxIndex];
+//    std::vector<int64_t> tmp(owdWindow_.begin(), owdWindow_.end());
+//    std::sort(tmp.begin(), tmp.end());
+//    size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
+//    owdMax_ = tmp[maxIndex];
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
             << owdMax_ << " " << std::endl;
@@ -279,12 +277,13 @@ void WestwoodOWD::onPacketAcked(
 
   // If the delay condition is met, adjust ssthresh and cwnd.
   if (delayControl(quicConnectionState_.transportSettings.ccaConfig
-                       .delayControlFraction)) {
-    uint64_t rttMinUs = rttSampler_.minRtt().count();
-    ssthresh_ = std::max(
-        static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-        2 * quicConnectionState_.udpSendPacketLen);
-    // ssthresh_ -= quicConnectionState_.udpSendPacketLen;
+                       .delayControlFraction) && 
+                       ssthresh_ != std::numeric_limits<uint64_t>::max()) {
+    //uint64_t rttMinUs = rttSampler_.minRtt().count();
+    //ssthresh_ = std::max(
+        //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+        //2 * quicConnectionState_.udpSendPacketLen);
+    ssthresh_ -= quicConnectionState_.udpSendPacketLen;
     cwndBytes_ = ssthresh_;
     cwndBytes_ = boundedCwnd(
         cwndBytes_,
@@ -344,7 +343,6 @@ void WestwoodOWD::onPacketLoss(const LossEvent& loss) {
       quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
 
   uint64_t rttMinUs = rttSampler_.minRtt().count();
-  //owdMax_ = owd_;
 
   if (rttSampler_.minRttExpired()) {
     rttSampler_.resetRttSample(Clock::now());

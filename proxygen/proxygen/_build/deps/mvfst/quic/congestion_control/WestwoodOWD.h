@@ -9,7 +9,7 @@
 #include <fstream>
 #include <chrono>
 #include <optional>
-#include <deque>
+//#include <deque>
 
 namespace quic {
 
@@ -96,8 +96,8 @@ private:
   int64_t owdvCorrect_;
   int64_t owd_;
   double biasEstimation_;
-  std::deque<int64_t> owdWindow_;
-  int64_t owdMax_;
+  //std::deque<int64_t> owdWindow_;
+  //int64_t owdMax_;
   std::chrono::microseconds lossMaxRtt_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
