@@ -95,8 +95,8 @@ private:
   int64_t owdvCorrect_;
   int64_t owd_;
   double biasEstimation_;
-  std::chrono::microseconds owdMax_;
-  //std::chrono::microseconds lossMaxRtt_;
+  int64_t owdMax_;
+  std::chrono::microseconds lossMaxRtt_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 

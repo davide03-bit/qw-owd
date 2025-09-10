@@ -98,8 +98,8 @@
        owdvCorrect_(0),
        owd_(0),
        biasEstimation_(0),
-       owdMax_(std::chrono::microseconds(20000))
-       //lossMaxRtt_(std::chrono::microseconds(70000)) 
+       owdMax_(0),
+       lossMaxRtt_(std::chrono::microseconds(70000)) 
        {
  
      cwndBytes_ = boundedCwnd(
@@ -176,16 +176,16 @@
  }
  
  bool WestwoodOWD::delayControl(double delayThresholdFraction) {
-     //uint64_t rttMinUs = rttSampler_.minRtt().count();
+     uint64_t rttMinUs = rttSampler_.minRtt().count();
      
-    //  if (lossMaxRtt_.count() == 0) return false;
-    //  if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-    //      (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-    //      return true;
-    //  }
-    //  return false;
-      bool delay = (owd_ > delayThresholdFraction * owdMax_.count()) ? true : false;
-      return delay;
+      if (lossMaxRtt_.count() == 0) return false;
+      if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+          (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+          return true;
+      }
+      return false;
+    //   bool delay = (owd_ > delayThresholdFraction * owdMax_.count()) ? true : false;
+    //   return delay;
  }
  
  void WestwoodOWD::updateOneWayDelay(const CongestionController::AckEvent::AckPacket &packet) {
@@ -236,7 +236,7 @@
      //size_t maxIndex = static_cast<size_t>(0.95 * tmp.size());
      //owdMax_ = tmp[maxIndex];
 
-     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << owdMax_.count() << " " << std::endl;
+     std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " " << owdMax_ << " " << std::endl;
  }
  
  
