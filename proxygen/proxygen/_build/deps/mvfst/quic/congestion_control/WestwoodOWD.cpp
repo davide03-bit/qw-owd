@@ -248,7 +248,7 @@ void WestwoodOWD::updateOneWayDelay(
 //    owdMax_ = tmp[maxIndex];
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
-            << owdMax_ << " " << std::endl;
+            << lossMaxRtt_.count() << " " << std::endl;
 }
 
 void WestwoodOWD::onPacketAcked(
