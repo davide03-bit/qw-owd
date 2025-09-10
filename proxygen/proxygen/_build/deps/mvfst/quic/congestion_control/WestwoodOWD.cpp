@@ -259,8 +259,7 @@ void WestwoodOWD::onPacketAcked(
 
   // If the delay condition is met, adjust ssthresh and cwnd.
   if (delayControl(quicConnectionState_.transportSettings.ccaConfig
-                       .delayControlFraction) && 
-                       ssthresh_ != std::numeric_limits<uint64_t>::max()) {
+                       .delayControlFraction)) {
     //uint64_t rttMinUs = rttSampler_.minRtt().count();
     //ssthresh_ = std::max(
         //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
