@@ -264,13 +264,13 @@ void WestwoodOWD::onPacketAcked(
     //ssthresh_ = std::max(
         //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
         //2 * quicConnectionState_.udpSendPacketLen);
-    ssthresh_ -= quicConnectionState_.udpSendPacketLen;
-    cwndBytes_ = ssthresh_;
+    cwndBytes_ -= quicConnectionState_.udpSendPacketLen;
     cwndBytes_ = boundedCwnd(
         cwndBytes_,
         quicConnectionState_.udpSendPacketLen,
         quicConnectionState_.transportSettings.maxCwndInMss,
         quicConnectionState_.transportSettings.minCwndInMss);
+    ssthresh_ = cwndBytes_;
   }
 
   VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
