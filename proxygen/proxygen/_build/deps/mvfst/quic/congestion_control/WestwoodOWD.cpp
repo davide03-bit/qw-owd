@@ -98,7 +98,7 @@ WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
       owdvCorrect_(0),
       owd_(0),
       biasEstimation_(0),
-      lossMaxRtt_(std::chrono::microseconds(70000)) {
+      lossMaxRtt_(std::chrono::microseconds(100000)) {
   cwndBytes_ = boundedCwnd(
       cwndBytes_,
       quicConnectionState_.udpSendPacketLen,
