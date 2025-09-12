@@ -264,7 +264,8 @@ void WestwoodOWD::onPacketAcked(
     //ssthresh_ = std::max(
         //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
         //2 * quicConnectionState_.udpSendPacketLen);
-    uint64_t owdth = delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs);
+    uint64_t owdth = quicConnectionState_.transportSettings.ccaConfig
+                      .delayControlFraction * (lossMaxRtt_.count() - rttMinUs);
     cwndBytes_ = std::max(
         static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdth) / 1e6)),
         2 * quicConnectionState_.udpSendPacketLen);
