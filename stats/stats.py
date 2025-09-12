@@ -114,7 +114,7 @@ def extract_congestion_metrics(qlog_data):
 
         # ssthresh
         ssthresh = event_data.get('ssthresh', None)
-        if ssthresh is not None and ssthresh < 1e5:
+        if ssthresh is not None #and ssthresh < 1e5:
             ssthresh_list.append((event_time_us, ssthresh))
 
         # Packet sent: store packet size by packet number
