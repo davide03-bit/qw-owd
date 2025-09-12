@@ -269,7 +269,7 @@ void WestwoodOWD::onPacketAcked(
     // cwndBytes_ = std::max(
     //     static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdth) / 1e6)),
     //     2 * quicConnectionState_.udpSendPacketLen);
-    cwndBytes_ -= 3 * quicConnectionState_.udpSendPacketLen;
+    cwndBytes_ -= quicConnectionState_.udpSendPacketLen;
     cwndBytes_ = boundedCwnd(
         cwndBytes_,
         quicConnectionState_.udpSendPacketLen,
