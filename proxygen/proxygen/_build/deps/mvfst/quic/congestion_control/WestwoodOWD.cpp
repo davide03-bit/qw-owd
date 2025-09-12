@@ -260,15 +260,16 @@ void WestwoodOWD::onPacketAcked(
   // If the delay condition is met, adjust ssthresh and cwnd.
   if (delayControl(quicConnectionState_.transportSettings.ccaConfig
                       .delayControlFraction)) {
-    uint64_t rttMinUs = rttSampler_.minRtt().count();
+    //uint64_t rttMinUs = rttSampler_.minRtt().count();
     //ssthresh_ = std::max(
         //static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
         //2 * quicConnectionState_.udpSendPacketLen);
-    uint64_t owdth = quicConnectionState_.transportSettings.ccaConfig
-                      .delayControlFraction * (lossMaxRtt_.count() - rttMinUs);
-    cwndBytes_ = std::max(
-        static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdth) / 1e6)),
-        2 * quicConnectionState_.udpSendPacketLen);
+    // uint64_t owdth = quicConnectionState_.transportSettings.ccaConfig
+    //                   .delayControlFraction * (lossMaxRtt_.count() - rttMinUs);
+    // cwndBytes_ = std::max(
+    //     static_cast<uint64_t>(bandwidthEstimate_ * ((rttMinUs + owdth) / 1e6)),
+    //     2 * quicConnectionState_.udpSendPacketLen);
+    cwndBytes_ -= 3 * quicConnectionState_.udpSendPacketLen;
     cwndBytes_ = boundedCwnd(
         cwndBytes_,
         quicConnectionState_.udpSendPacketLen,
