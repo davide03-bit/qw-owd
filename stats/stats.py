@@ -525,20 +525,20 @@ def print_summary_metrics(metrics):
     avg_rtt_str      = f"{metrics['avg_rtt_ms']:.2f} ms"
     tx_time_str      = f"{metrics['total_time_s']:.2f} s"
 
-    # print(f"{'Average BW:':30s}{avg_bw_str:>15s}")
-    # print(f"{'Std Dev BW:':30s}{std_bw_str:>15s}")
-    # print(f"{'Throughput:':30s}{throughput_str:>15s}")
-    # print(f"{'Goodput:':30s}{goodput_str:>15s}")
-    # print(f"{'Average CWND:':30s}{avg_cwnd_str:>15s}")
-    # print(f"{'Std Dev CWND:':30s}{std_cwnd_str:>15s}")
-    # print(f"{'Average RTT:':30s}{avg_rtt_str:>15s}")
-    # print(f"{'Std Dev RTT:':30s}{std_rtt_str:>15s}")
-    # print(f"{'Loss Rate:':30s}{loss_rate_str:>15s}")
-    # print(f"{'Retransmissions:':30s}{retransmissions:>15s}")
-    # print(f"{'Duration:':30s}{tx_time_str:>15s}")
-    # print("------------------------------------------------------------")
+    print(f"{'Average BW:':30s}{avg_bw_str:>15s}")
+    print(f"{'Std Dev BW:':30s}{std_bw_str:>15s}")
+    print(f"{'Throughput:':30s}{throughput_str:>15s}")
+    print(f"{'Goodput:':30s}{goodput_str:>15s}")
+    print(f"{'Average CWND:':30s}{avg_cwnd_str:>15s}")
+    print(f"{'Std Dev CWND:':30s}{std_cwnd_str:>15s}")
+    print(f"{'Average RTT:':30s}{avg_rtt_str:>15s}")
+    print(f"{'Std Dev RTT:':30s}{std_rtt_str:>15s}")
+    print(f"{'Loss Rate:':30s}{loss_rate_str:>15s}")
+    print(f"{'Retransmissions:':30s}{retransmissions:>15s}")
+    print(f"{'Duration:':30s}{tx_time_str:>15s}")
+    print("------------------------------------------------------------")
 
-    print(f"{avg_bw_str}, {std_bw_str}, {throughput_str}, {goodput_str}, {avg_cwnd_str},{std_cwnd_str}, {avg_rtt_str}, {std_rtt_str}, {loss_rate_str}, {retransmissions}, {tx_time_str}")
+    # print(f"{avg_bw_str}, {std_bw_str}, {throughput_str}, {goodput_str}, {avg_cwnd_str},{std_cwnd_str}, {avg_rtt_str}, {std_rtt_str}, {loss_rate_str}, {retransmissions}, {tx_time_str}")
 
 
 ###############################################################################
