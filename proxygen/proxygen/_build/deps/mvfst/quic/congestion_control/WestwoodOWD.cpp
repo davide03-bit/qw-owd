@@ -235,11 +235,11 @@ void WestwoodOWD::updateOneWayDelay(
   uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_).count();
 
   if (delta < 30)
-    OneWayDelayVec.push_back(owd_);
+    OneWayDelayVec_.push_back(owd_);
   else {
-    std::sort(OneWayDelayVec.begin(), OneWayDelayVec.end());
-    OneWayDelayMax_ = OneWayDelayVec[static_cast<size_t>(0.95 * OneWayDelayVec.size())];
-    OneWayDelayVec.clear();
+    std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
+    OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
+    OneWayDelayVec_.clear();
     OneWayDelayWindowStartTime_ = now;
   }
 
