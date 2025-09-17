@@ -83,6 +83,7 @@ private:
   std::chrono::microseconds latestRttSample_;
   uint32_t bandwidthNewestEstimate_;
   uint32_t bandwidthEstimate_;
+  uint32_t step_;
   uint64_t bytesAckedInCurrentInterval_; 
   uint64_t ssthresh_;
   WestwoodOWDRttSampler rttSampler_; 
@@ -94,8 +95,9 @@ private:
   int64_t owdv_;
   int64_t owdvCorrect_;
   int64_t owd_;
-  double biasEstimation_;
-  std::chrono::microseconds lossMaxRtt_;
+  float biasEstimation_;
+  int64_t OneWayDelayMax_;
+  std::chrono::steady_clock::time_point OneWayDelayWindowStartTime_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 
