@@ -231,6 +231,9 @@ void WestwoodOWD::updateOneWayDelay(
 
   owd_ = std::max(static_cast<int64_t>(0), owd_);
 
+  std::cout << "pippo";
+  std::cout << OneWayDelayWindowStartTime_.count();
+
   auto now = Clock::now();
   uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_).count();
 
