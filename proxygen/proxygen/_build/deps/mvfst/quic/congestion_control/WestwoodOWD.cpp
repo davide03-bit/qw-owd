@@ -18,6 +18,8 @@
 #include <iostream>
 #include <optional>
 #include <string>
+#include <vector>
+#include <algorithm> // std::sort()
 
 namespace quic {
 
@@ -69,7 +71,6 @@ void WestwoodOWDRttSampler::resetRttSample(
   minRtt_ = std::chrono::microseconds::max();
   minRttTimestamp_ = sampledTime;
   rttExpired_ = true;
-  // Do NOT reset maxRttSinceLastLoss_ here; we reset it at loss time.
 }
 
 // ==================== WestwoodOWD ====================
@@ -98,7 +99,8 @@ WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
       owdvCorrect_(0),
       owd_(0),
       biasEstimation_(0),
-      lossMaxRtt_(std::chrono::microseconds(70000)) {
+      OneWayDelayMax_(0),
+      OneWayDelayWindowStartTime_(Clock::now()) {
   cwndBytes_ = boundedCwnd(
       cwndBytes_,
       quicConnectionState_.udpSendPacketLen,
@@ -229,8 +231,22 @@ void WestwoodOWD::updateOneWayDelay(
 
   owd_ = std::max(static_cast<int64_t>(0), owd_);
 
+  auto now = Clock::now();
+  uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_);
+
+  std::vector<int64_t> OneWayDelayVec;
+
+  if (delta < 30)
+    OneWayDelayVec.push_back(owd_);
+  else {
+    std::sort(OneWayDelayVec.begin(), OneWayDelayVec.end());
+    OneWayDelayMax_ = OneWayDelayVec[static_cast<size_t>(0.95 * OneWayDelayVec.size())];
+    OneWayDelayVec.clear();
+    OneWayDelayWindowStartTime_ = now;
+  }
+
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
-            << lossMaxRtt_.count() << " " << std::endl;
+            << OneWayDelayMax_ << " " << std::endl;
 }
 
 void WestwoodOWD::onPacketAcked(
@@ -258,35 +274,33 @@ void WestwoodOWD::onPacketAcked(
   }
 
   // If the delay condition is met, adjust ssthresh and cwnd.
-  if (delayControl(quicConnectionState_.transportSettings.ccaConfig
-                      .delayControlFraction)) {
-    uint64_t rttMinUs = rttSampler_.minRtt().count();
-    ssthresh_ = std::max(
-        static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-        2 * quicConnectionState_.udpSendPacketLen);
-    //cwndBytes_ -= quicConnectionState_.udpSendPacketLen;
-    cwndBytes_ = ssthresh_;
-    cwndBytes_ = boundedCwnd(
-        cwndBytes_,
-        quicConnectionState_.udpSendPacketLen,
-        quicConnectionState_.transportSettings.maxCwndInMss,
-        quicConnectionState_.transportSettings.minCwndInMss);
-    //ssthresh_ = cwndBytes_;
-  }
+  // if (delayControl(quicConnectionState_.transportSettings.ccaConfig
+  //                     .delayControlFraction)) {
+  //   uint64_t rttMinUs = rttSampler_.minRtt().count();
+  //   ssthresh_ = std::max(
+  //       static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+  //       2 * quicConnectionState_.udpSendPacketLen);
+  //   cwndBytes_ = ssthresh_;
+  //   cwndBytes_ = boundedCwnd(
+  //       cwndBytes_,
+  //       quicConnectionState_.udpSendPacketLen,
+  //       quicConnectionState_.transportSettings.maxCwndInMss,
+  //       quicConnectionState_.transportSettings.minCwndInMss);
+  // }
 
-  VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
-           << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
-           << " cwnd=" << cwndBytes_
-           << " inflight=" << quicConnectionState_.lossState.inflightBytes
-           << " " << quicConnectionState_;
+  // VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
+  //          << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
+  //          << " cwnd=" << cwndBytes_
+  //          << " inflight=" << quicConnectionState_.lossState.inflightBytes
+  //          << " " << quicConnectionState_;
 
-  if (quicConnectionState_.qLogger) {
-    quicConnectionState_.qLogger->addCongestionMetricUpdate(
-        quicConnectionState_.lossState.inflightBytes,
-        getCongestionWindow(),
-        getSlowStartThreshold(),
-        kCongestionDelaySignal);
-  }
+  // if (quicConnectionState_.qLogger) {
+  //   quicConnectionState_.qLogger->addCongestionMetricUpdate(
+  //       quicConnectionState_.lossState.inflightBytes,
+  //       getCongestionWindow(),
+  //       getSlowStartThreshold(),
+  //       kCongestionDelaySignal);
+  // }
 
   // Slow start or congestion avoidance increment:
   if (cwndBytes_ < ssthresh_) {
