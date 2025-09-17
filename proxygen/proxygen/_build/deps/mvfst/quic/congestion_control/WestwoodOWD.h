@@ -9,6 +9,7 @@
 #include <fstream>
 #include <chrono>
 #include <optional>
+#include <vector>
 
 namespace quic {
 
@@ -98,6 +99,7 @@ private:
   float biasEstimation_;
   int64_t OneWayDelayMax_;
   std::chrono::steady_clock::time_point OneWayDelayWindowStartTime_;
+  std::vector<int64_t> OneWayDelayVec_;
   folly::Optional<TimePoint> endOfRecovery_;
 };
 

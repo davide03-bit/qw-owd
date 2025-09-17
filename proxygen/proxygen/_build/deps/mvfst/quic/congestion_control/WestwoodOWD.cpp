@@ -234,8 +234,6 @@ void WestwoodOWD::updateOneWayDelay(
   auto now = Clock::now();
   uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_).count();
 
-  std::vector<int64_t> OneWayDelayVec;
-
   if (delta < 30)
     OneWayDelayVec.push_back(owd_);
   else {
