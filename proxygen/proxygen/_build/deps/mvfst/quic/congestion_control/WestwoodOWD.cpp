@@ -236,6 +236,7 @@ void WestwoodOWD::updateOneWayDelay(
 
   if (delta < 30)
     OneWayDelayVec_.push_back(owd_);
+    std::cout << "yuppi";
   else {
     std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
     OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
