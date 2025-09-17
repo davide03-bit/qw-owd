@@ -234,9 +234,10 @@ void WestwoodOWD::updateOneWayDelay(
   auto now = Clock::now();
   uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_).count();
 
-  if (delta < 30)
+  if (delta < 30) {
     OneWayDelayVec_.push_back(owd_);
     std::cout << "yuppi";
+  }
   else {
     std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
     OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
