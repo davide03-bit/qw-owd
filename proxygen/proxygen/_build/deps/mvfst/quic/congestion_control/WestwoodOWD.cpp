@@ -179,17 +179,17 @@ void WestwoodOWD::onAckEvent(const AckEvent& ack) {
       quicConnectionState_.transportSettings.minCwndInMss);
 }
 
-bool WestwoodOWD::delayControl(double delayThresholdFraction) {
-  uint64_t rttMinUs = rttSampler_.minRtt().count();
+// bool WestwoodOWD::delayControl(double delayThresholdFraction) {
+//   uint64_t rttMinUs = rttSampler_.minRtt().count();
 
-  if (lossMaxRtt_.count() == 0)
-    return false;
-  if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-      (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-    return true;
-  }
-  return false;
-}
+//   if (lossMaxRtt_.count() == 0)
+//     return false;
+//   if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+//       (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+//     return true;
+//   }
+//   return false;
+// }
 
 void WestwoodOWD::updateOneWayDelay(
     const CongestionController::AckEvent::AckPacket& packet) {
@@ -232,7 +232,7 @@ void WestwoodOWD::updateOneWayDelay(
   owd_ = std::max(static_cast<int64_t>(0), owd_);
 
   auto now = Clock::now();
-  uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_);
+  uint64_t delta = std::chrono::duration_cast<std::chrono::milliseconds>(now - OneWayDelayWindowStartTime_).count();
 
   std::vector<int64_t> OneWayDelayVec;
 
