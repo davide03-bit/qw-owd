@@ -239,7 +239,7 @@ void WestwoodOWD::updateOneWayDelay(
   }
   else {
     std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-    OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
+    OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.98 * OneWayDelayVec_.size())];
     OneWayDelayVec_.clear();
     OneWayDelayWindowStartTime_ = now;
   }
