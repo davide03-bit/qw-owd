@@ -180,12 +180,7 @@ void WestwoodOWD::onAckEvent(const AckEvent& ack) {
 }
 
 bool WestwoodOWD::delayControl(double delayThresholdFraction) {
-  uint64_t rttMinUs = rttSampler_.minRtt().count();
-
-  if (lossMaxRtt_.count() == 0)
-    return false;
-  if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-      (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+  if (owd_ > delayThresholdFraction * OneWayDelayMax_) {
     return true;
   }
   return false;
@@ -336,8 +331,6 @@ void WestwoodOWD::onPacketLoss(const LossEvent& loss) {
       loss.largestLostSentTime.has_value());
   subtractAndCheckUnderflow(
       quicConnectionState_.lossState.inflightBytes, loss.lostBytes);
-
-  uint64_t rttMinUs = rttSampler_.minRtt().count();
 
   if (rttSampler_.minRttExpired()) {
     rttSampler_.resetRttSample(Clock::now());
