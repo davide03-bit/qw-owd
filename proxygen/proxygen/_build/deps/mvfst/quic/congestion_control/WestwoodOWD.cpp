@@ -179,17 +179,17 @@ void WestwoodOWD::onAckEvent(const AckEvent& ack) {
       quicConnectionState_.transportSettings.minCwndInMss);
 }
 
-// bool WestwoodOWD::delayControl(double delayThresholdFraction) {
-//   uint64_t rttMinUs = rttSampler_.minRtt().count();
+bool WestwoodOWD::delayControl(double delayThresholdFraction) {
+  uint64_t rttMinUs = rttSampler_.minRtt().count();
 
-//   if (lossMaxRtt_.count() == 0)
-//     return false;
-//   if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
-//       (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
-//     return true;
-//   }
-//   return false;
-// }
+  if (lossMaxRtt_.count() == 0)
+    return false;
+  if (static_cast<uint64_t>(lossMaxRtt_.count()) > rttMinUs &&
+      (owd_ > (delayThresholdFraction * (lossMaxRtt_.count() - rttMinUs)))) {
+    return true;
+  }
+  return false;
+}
 
 void WestwoodOWD::updateOneWayDelay(
     const CongestionController::AckEvent::AckPacket& packet) {
@@ -239,7 +239,7 @@ void WestwoodOWD::updateOneWayDelay(
   }
   else {
     std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-    OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.98 * OneWayDelayVec_.size())];
+    OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
     OneWayDelayVec_.clear();
     OneWayDelayWindowStartTime_ = now;
   }
@@ -273,33 +273,33 @@ void WestwoodOWD::onPacketAcked(
   }
 
   // If the delay condition is met, adjust ssthresh and cwnd.
-  // if (delayControl(quicConnectionState_.transportSettings.ccaConfig
-  //                     .delayControlFraction)) {
-  //   uint64_t rttMinUs = rttSampler_.minRtt().count();
-  //   ssthresh_ = std::max(
-  //       static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-  //       2 * quicConnectionState_.udpSendPacketLen);
-  //   cwndBytes_ = ssthresh_;
-  //   cwndBytes_ = boundedCwnd(
-  //       cwndBytes_,
-  //       quicConnectionState_.udpSendPacketLen,
-  //       quicConnectionState_.transportSettings.maxCwndInMss,
-  //       quicConnectionState_.transportSettings.minCwndInMss);
-  // }
+  if (delayControl(quicConnectionState_.transportSettings.ccaConfig
+                      .delayControlFraction)) {
+    uint64_t rttMinUs = rttSampler_.minRtt().count();
+    ssthresh_ = std::max(
+        static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+        2 * quicConnectionState_.udpSendPacketLen);
+    cwndBytes_ = ssthresh_;
+    cwndBytes_ = boundedCwnd(
+        cwndBytes_,
+        quicConnectionState_.udpSendPacketLen,
+        quicConnectionState_.transportSettings.maxCwndInMss,
+        quicConnectionState_.transportSettings.minCwndInMss);
+  }
 
-  // VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
-  //          << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
-  //          << " cwnd=" << cwndBytes_
-  //          << " inflight=" << quicConnectionState_.lossState.inflightBytes
-  //          << " " << quicConnectionState_;
+  VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
+           << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
+           << " cwnd=" << cwndBytes_
+           << " inflight=" << quicConnectionState_.lossState.inflightBytes
+           << " " << quicConnectionState_;
 
-  // if (quicConnectionState_.qLogger) {
-  //   quicConnectionState_.qLogger->addCongestionMetricUpdate(
-  //       quicConnectionState_.lossState.inflightBytes,
-  //       getCongestionWindow(),
-  //       getSlowStartThreshold(),
-  //       kCongestionDelaySignal);
-  // }
+  if (quicConnectionState_.qLogger) {
+    quicConnectionState_.qLogger->addCongestionMetricUpdate(
+        quicConnectionState_.lossState.inflightBytes,
+        getCongestionWindow(),
+        getSlowStartThreshold(),
+        kCongestionDelaySignal);
+  }
 
   // Slow start or congestion avoidance increment:
   if (cwndBytes_ < ssthresh_) {
