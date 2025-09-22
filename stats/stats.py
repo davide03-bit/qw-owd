@@ -281,7 +281,7 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
                       save_path=None):
     """
     Generates a 2x2 plot of:
-      - RTT over time (and one way delay and max RTT if provided)
+      - RTT over time (and one way delay and max OWD if provided)
       - Data (sent, acked, lost) over time
       - Congestion control (CWND, bytes in flight) over time
       - Bandwidth: estimated bandwidth and real bandwidth (sampled bandwidth)
@@ -321,15 +321,15 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
     fig, axs = plt.subplots(2, 2, figsize=(14, 10))
     fig.suptitle("QUIC " + cca_name + " Overview", fontsize=16)
 
-    # Subplot 1: RTT (and one way delay and max RTT if provided)
+    # Subplot 1: RTT (and one way delay and max OWD if provided)
     ax_rtt = axs[0, 0]
     if times_rtt_s and latest_rtts_ms:
         ax_rtt.plot(times_rtt_s, latest_rtts_ms, label='RTT (ms)')
     if times_rtt_s and min_rtts_ms:
         ax_rtt.plot(times_rtt_s, min_rtts_ms, label='Min RTT (ms)', linestyle='--')
-    # Plot one way delay and max RTT if owd_data is provided
+    # Plot one way delay and max OWD if owd_data is provided
     if owd_data is not None:
-        # Expecting owd_data as a tuple: (timestamps, one way delay values, [rtt_max values])
+        # Expecting owd_data as a tuple: (timestamps, one way delay values, [owd_max values])
         if len(owd_data) >= 2:
             owd_timestamps = owd_data[0]
             owd_values = owd_data[1]
@@ -337,11 +337,11 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
                 owd_timestamps_norm = normalize_times(owd_timestamps, common_base)
                 ax_rtt.plot(owd_timestamps_norm, owd_values, label='One Way Delay (ms)', color='red')
         if len(owd_data) >= 3:
-            rtt_max_values = owd_data[2]
-            # Assume same timestamps for max RTT as for one way delay
-            if owd_timestamps and rtt_max_values:
+            owd_max_values = owd_data[2]
+            # Assume same timestamps for max OWD as for one way delay
+            if owd_timestamps and owd_max_values:
                 owd_timestamps_norm = normalize_times(owd_timestamps, common_base)
-                ax_rtt.plot(owd_timestamps_norm, rtt_max_values, label='Max RTT (ms)', color='magenta', linestyle='--')
+                ax_rtt.plot(owd_timestamps_norm, owd_max_values, label='Max OWD (ms)', color='magenta', linestyle='--')
     ax_rtt.set_title("RTT Over Time")
     ax_rtt.set_xlabel("Time (s)")
     ax_rtt.set_ylabel("Delay (ms)")
@@ -554,7 +554,7 @@ def main():
                         help='Path to save the plot (e.g., output.png)')
     # New argument for one way delay file
     parser.add_argument('-owd', type=str, required=False,
-                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, rtt_max)')
+                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, owd_max)')
     args = parser.parse_args()
     qlog_path = args.qlog_path
 
@@ -595,7 +595,7 @@ def main():
                 lines = f.readlines()
             owd_timestamps = []
             owd_values = []
-            rtt_max_values = []
+            owd_max_values = []
             for line in lines:
                 line = line.strip()
                 if not line:
@@ -610,13 +610,13 @@ def main():
                 if len(parts) >= 4:
                     try:
                         ts = float(parts[0])
-                        # Convert one way delay and rtt_max from microseconds to milliseconds
+                        # Convert one way delay and owd_max from microseconds to milliseconds
                         owd = float(parts[1]) / 1000.0
                         # parts[2] is one way delay variation (not used in plotting)
-                        rtt_max = float(parts[3]) / 1000.0
+                        owd_max = float(parts[3]) / 1000.0
                         owd_timestamps.append(ts)
                         owd_values.append(owd)
-                        rtt_max_values.append(rtt_max)
+                        owd_max_values.append(owd_max)
                     except ValueError:
                         continue
                 elif len(parts) >= 2:
@@ -627,9 +627,9 @@ def main():
                         owd_values.append(owd)
                     except ValueError:
                         continue
-            # If rtt_max_values were read, include them in the tuple
-            if rtt_max_values:
-                owd_data = (owd_timestamps, owd_values, rtt_max_values)
+            # If owd_max_values were read, include them in the tuple
+            if owd_max_values:
+                owd_data = (owd_timestamps, owd_values, owd_max_values)
             else:
                 owd_data = (owd_timestamps, owd_values)
         except Exception as e:
@@ -641,7 +641,7 @@ def main():
     print_summary_metrics(metrics)
 
     # Plot all subplots with a common base time for normalization.
-    # Pass owd_data to plot one way delay and max RTT in subplot 1.
+    # Pass owd_data to plot one way delay and max OWD in subplot 1.
     plot_all_subplots(
         rtt_data,
         cc_data,
