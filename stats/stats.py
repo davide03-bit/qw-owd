@@ -618,6 +618,8 @@ def main():
                         owd_values.append(owd)
                         if owd_max < 1e15:
                             owd_max_values.append(owd_max)
+                        else:
+                            owd_max_values.append(None)
                     except ValueError:
                         continue
                 elif len(parts) >= 2:
