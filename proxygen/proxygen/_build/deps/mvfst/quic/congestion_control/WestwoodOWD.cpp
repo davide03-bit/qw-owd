@@ -268,33 +268,33 @@ void WestwoodOWD::onPacketAcked(
   }
 
   // If the delay condition is met, adjust ssthresh and cwnd.
-  if (delayControl(quicConnectionState_.transportSettings.ccaConfig
-                      .delayControlFraction)) {
-    uint64_t rttMinUs = rttSampler_.minRtt().count();
-    ssthresh_ = std::max(
-        static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
-        2 * quicConnectionState_.udpSendPacketLen);
-    cwndBytes_ = ssthresh_;
-    cwndBytes_ = boundedCwnd(
-        cwndBytes_,
-        quicConnectionState_.udpSendPacketLen,
-        quicConnectionState_.transportSettings.maxCwndInMss,
-        quicConnectionState_.transportSettings.minCwndInMss);
-  }
+  // if (delayControl(quicConnectionState_.transportSettings.ccaConfig
+  //                     .delayControlFraction)) {
+  //   uint64_t rttMinUs = rttSampler_.minRtt().count();
+  //   ssthresh_ = std::max(
+  //       static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+  //       2 * quicConnectionState_.udpSendPacketLen);
+  //   cwndBytes_ = ssthresh_;
+  //   cwndBytes_ = boundedCwnd(
+  //       cwndBytes_,
+  //       quicConnectionState_.udpSendPacketLen,
+  //       quicConnectionState_.transportSettings.maxCwndInMss,
+  //       quicConnectionState_.transportSettings.minCwndInMss);
+  // }
 
-  VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
-           << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
-           << " cwnd=" << cwndBytes_
-           << " inflight=" << quicConnectionState_.lossState.inflightBytes
-           << " " << quicConnectionState_;
+  // VLOG(10) << __func__ << " delay control triggered, ssthresh=" << ssthresh_
+  //          << " ackedBytes=" << ackedBytes << " writable=" << getWritableBytes()
+  //          << " cwnd=" << cwndBytes_
+  //          << " inflight=" << quicConnectionState_.lossState.inflightBytes
+  //          << " " << quicConnectionState_;
 
-  if (quicConnectionState_.qLogger) {
-    quicConnectionState_.qLogger->addCongestionMetricUpdate(
-        quicConnectionState_.lossState.inflightBytes,
-        getCongestionWindow(),
-        getSlowStartThreshold(),
-        kCongestionDelaySignal);
-  }
+  // if (quicConnectionState_.qLogger) {
+  //   quicConnectionState_.qLogger->addCongestionMetricUpdate(
+  //       quicConnectionState_.lossState.inflightBytes,
+  //       getCongestionWindow(),
+  //       getSlowStartThreshold(),
+  //       kCongestionDelaySignal);
+  // }
 
   // Slow start or congestion avoidance increment:
   if (cwndBytes_ < ssthresh_) {
