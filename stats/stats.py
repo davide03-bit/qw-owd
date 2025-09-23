@@ -616,7 +616,8 @@ def main():
                         owd_max = float(parts[3]) / 1000.0
                         owd_timestamps.append(ts)
                         owd_values.append(owd)
-                        owd_max_values.append(owd_max)
+                        if owd_max > 1e15:
+                            owd_max_values.append(owd_max)
                     except ValueError:
                         continue
                 elif len(parts) >= 2:
