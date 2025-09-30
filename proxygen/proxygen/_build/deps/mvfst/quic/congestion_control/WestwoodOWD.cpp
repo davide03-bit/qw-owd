@@ -19,7 +19,7 @@
 #include <optional>
 #include <string>
 #include <vector>
-#include <algorithm> // std::sort()
+#include <algorithm> // std::max_element()
 
 namespace quic {
 
@@ -234,8 +234,8 @@ void WestwoodOWD::updateOneWayDelay(
   }
   else {
     if (OneWayDelayVec_.size() > 0) {
-      std::sort(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-      OneWayDelayMax_ = OneWayDelayVec_[static_cast<size_t>(0.95 * OneWayDelayVec_.size())];
+      auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
+      OneWayDelayMax_ = *max_it;
       OneWayDelayVec_.clear();
       //OneWayDelayWindowStartTime_ = now;
     }
