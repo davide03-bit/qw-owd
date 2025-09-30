@@ -243,7 +243,7 @@ void WestwoodOWD::updateOneWayDelay(
   }
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
-            << OneWayDelayMax_ << " " << " " << kRttMax << " " << rttMax - rttSampler_.minRtt().count() << std::endl;
+            << OneWayDelayMax_ << " " << " " << kRttMax << " " << krttMax - rttSampler_.minRtt().count() << std::endl;
 }
 
 void WestwoodOWD::onPacketAcked(
