@@ -556,7 +556,7 @@ def main():
                         help='Path to save the plot (e.g., output.png)')
     # New argument for one way delay file
     parser.add_argument('-owd', type=str, required=False,
-                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, owd_max)
+                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, owd_max)')
     args = parser.parse_args()
     qlog_path = args.qlog_path
 
