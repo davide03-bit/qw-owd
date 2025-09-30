@@ -629,7 +629,10 @@ def main():
                         else:
                             owd_max_values.append(None)
                         rtt_max_values.append(rtt_max)
-                        queuing_values.append(queuing)
+                        if queuing < 1e15:
+                            queuing_values.append(queuing)
+                        else:
+                            queuing_values.append(None)
                     except ValueError:
                         continue
                 elif len(parts) >= 2:
