@@ -78,7 +78,6 @@ void WestwoodOWDRttSampler::resetRttSample(
 constexpr uint64_t kWestwoodOWDMinRttMicroseconds = 50000;
 constexpr uint64_t kWestwoodOWDInitialRttMicroseconds = 20000000;
 constexpr uint16_t kWestwoodOWDRttExpirationSeconds = 20;
-constexpr uint64_t kRttMax = 70000;
 constexpr double alphaBias = 0.999;
 
 WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
@@ -243,7 +242,7 @@ void WestwoodOWD::updateOneWayDelay(
   }
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
-            << OneWayDelayMax_ << " " << " " << kRttMax << " " << kRttMax - rttSampler_.minRtt().count() << std::endl;
+            << OneWayDelayMax_ << std::endl;
 }
 
 void WestwoodOWD::onPacketAcked(
