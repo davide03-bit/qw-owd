@@ -338,10 +338,8 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
                 ax_rtt.plot(owd_timestamps_norm, owd_values, label='One Way Delay (ms)', color='red')
         if len(owd_data) >= 3:
             owd_max_values = owd_data[2]
-            rtt_max_values = owd_data[3]
-            queuing_values = owd_data[4]
             # Assume same timestamps for max OWD as for one way delay
-            if owd_timestamps and owd_max_values and rtt_max_values and queuing_values:
+            if owd_timestamps and owd_max_values:
                 owd_timestamps_norm = normalize_times(owd_timestamps, common_base)
                 ax_rtt.plot(owd_timestamps_norm, owd_max_values, label='Max OWD (ms)', color='magenta', linestyle='--')
     ax_rtt.set_title("RTT Over Time")
@@ -632,8 +630,8 @@ def main():
                         owd_values.append(owd)
                     except ValueError:
                         continue
-            # If owd_max_values, rtt_max_values and queuing_values were read, include them in the tuple
-            if owd_max_values and rtt_max_values and queuing_values:
+            # If owd_max_values were read, include them in the tuple
+            if owd_max_values:
                 owd_data = (owd_timestamps, owd_values, owd_max_values)
             else:
                 owd_data = (owd_timestamps, owd_values)
