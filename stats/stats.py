@@ -329,7 +329,7 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
         ax_rtt.plot(times_rtt_s, min_rtts_ms, label='Min RTT (ms)', linestyle='--')
     # Plot one way delay and max OWD if owd_data is provided
     if owd_data is not None:
-        # Expecting owd_data as a tuple: (timestamps, one way delay values, [owd_max values], [rtt_max values], [queuing values])
+        # Expecting owd_data as a tuple: (timestamps, one way delay values, [owd_max values])
         if len(owd_data) >= 2:
             owd_timestamps = owd_data[0]
             owd_values = owd_data[1]
@@ -344,8 +344,6 @@ def plot_all_subplots(rtt_data, cc_data, bw_data,
             if owd_timestamps and owd_max_values and rtt_max_values and queuing_values:
                 owd_timestamps_norm = normalize_times(owd_timestamps, common_base)
                 ax_rtt.plot(owd_timestamps_norm, owd_max_values, label='Max OWD (ms)', color='magenta', linestyle='--')
-                ax_rtt.plot(owd_timestamps_norm, rtt_max_values, label='Max RTT (ms)', color='blue', linestyle='-')
-                ax_rtt.plot(owd_timestamps_norm, queuing_values, label='RTT Max - RTT Min (ms)', color='green', linestyle=':')
     ax_rtt.set_title("RTT Over Time")
     ax_rtt.set_xlabel("Time (s)")
     ax_rtt.set_ylabel("Delay (ms)")
@@ -558,7 +556,7 @@ def main():
                         help='Path to save the plot (e.g., output.png)')
     # New argument for one way delay file
     parser.add_argument('-owd', type=str, required=False,
-                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, owd_max, rtt_max, rtt_max - rtt_min)')
+                        help='Path to one way delay file (expected columns: timestamp, owd, owd variation, owd_max)
     args = parser.parse_args()
     qlog_path = args.qlog_path
 
@@ -600,8 +598,6 @@ def main():
             owd_timestamps = []
             owd_values = []
             owd_max_values = []
-            rtt_max_values = []
-            queuing_values = []
             for line in lines:
                 line = line.strip()
                 if not line:
@@ -620,19 +616,12 @@ def main():
                         owd = float(parts[1]) / 1000.0
                         # parts[2] is one way delay variation (not used in plotting)
                         owd_max = float(parts[3]) / 1000.0
-                        rtt_max = float(parts[4]) / 1000.0
-                        queuing = float(parts[5]) / 1000.0
                         owd_timestamps.append(ts)
                         owd_values.append(owd)
                         if owd_max < 1e15:
                             owd_max_values.append(owd_max)
                         else:
                             owd_max_values.append(None)
-                        rtt_max_values.append(rtt_max)
-                        if queuing < 1e15:
-                            queuing_values.append(queuing)
-                        else:
-                            queuing_values.append(None)
                     except ValueError:
                         continue
                 elif len(parts) >= 2:
@@ -645,7 +634,7 @@ def main():
                         continue
             # If owd_max_values, rtt_max_values and queuing_values were read, include them in the tuple
             if owd_max_values and rtt_max_values and queuing_values:
-                owd_data = (owd_timestamps, owd_values, owd_max_values, rtt_max_values, queuing_values)
+                owd_data = (owd_timestamps, owd_values, owd_max_values)
             else:
                 owd_data = (owd_timestamps, owd_values)
         except Exception as e:
