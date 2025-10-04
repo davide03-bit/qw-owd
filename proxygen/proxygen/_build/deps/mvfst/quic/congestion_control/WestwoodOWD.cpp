@@ -237,7 +237,7 @@ void WestwoodOWD::updateOneWayDelay(
       auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
       OneWayDelayMax_ = *max_it;
       OneWayDelayVec_.clear();
-      //OneWayDelayWindowStartTime_ = now;
+      OneWayDelayWindowStartTime_ = now;
     }
   }
 
