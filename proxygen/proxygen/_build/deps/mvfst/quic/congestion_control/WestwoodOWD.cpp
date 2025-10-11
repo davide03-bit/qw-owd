@@ -233,13 +233,13 @@ void WestwoodOWD::updateOneWayDelay(
     OneWayDelayVec_.push_back(owd_);
   }
   else {
-    if (OneWayDelayVec_.size() > 0) {
       auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-      OneWayDelayMax_ = *max_it;
-      OneWayDelayVec_.clear();
-      //OneWayDelayWindowStartTime_ = now;
+      if (*max_it > OneWayDelayMax_ || OneWayDelayMax_ == std::numeric_limits<int64_t>::max()) {
+        OneWayDelayMax_ = *max_it;
+        OneWayDelayVec_.clear();
+        OneWayDelayWindowStartTime_ = now;
+      }
     }
-  }
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
             << OneWayDelayMax_ << std::endl;
