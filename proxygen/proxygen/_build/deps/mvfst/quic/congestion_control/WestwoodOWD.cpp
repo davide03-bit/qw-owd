@@ -270,7 +270,6 @@ void WestwoodOWD::onTransition() {
         OneWayDelayMax_ = *max_it;
       }
       OneWayDelayVec_.clear();
-      break;
 }
 
 void WestwoodOWD::onCruise() {
@@ -501,7 +500,7 @@ uint64_t WestwoodOWD::getOneWayDelayMax() const noexcept {
   return OneWayDelayMax_;
 }
 
-State WestwoodOWD::getState() const noexcept {
+Westwood::State WestwoodOWD::getState() const noexcept {
   return currentState_;
 }
 
