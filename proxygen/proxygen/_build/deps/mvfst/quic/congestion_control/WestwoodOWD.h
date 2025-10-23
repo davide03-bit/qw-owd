@@ -49,6 +49,12 @@ public:
     onPacketAckOrLoss(ack.get_pointer(), loss.get_pointer());
   }
 
+  enum class State : uint8_t {
+    Probe,
+    Transition,
+    Cruise
+  };
+
   uint64_t getWritableBytes() const noexcept override;
   uint64_t getCongestionWindow() const noexcept override;
   uint64_t getSlowStartThreshold() const noexcept;
@@ -106,13 +112,6 @@ private:
   float biasEstimation_;
   int64_t OneWayDelayMax_;
   std::chrono::steady_clock::time_point stateWindowStartTime_;
-
-  enum class State : uint8_t {
-    Probe,
-    Transition,
-    Cruise
-  };
-
   State currentState_;
   std::vector<int64_t> OneWayDelayVec_;
   folly::Optional<TimePoint> endOfRecovery_;
