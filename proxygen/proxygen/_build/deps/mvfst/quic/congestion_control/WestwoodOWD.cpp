@@ -500,7 +500,7 @@ uint64_t WestwoodOWD::getOneWayDelayMax() const noexcept {
   return OneWayDelayMax_;
 }
 
-Westwood::State WestwoodOWD::getState() const noexcept {
+WestwoodOWD::State WestwoodOWD::getState() const noexcept {
   return currentState_;
 }
 
