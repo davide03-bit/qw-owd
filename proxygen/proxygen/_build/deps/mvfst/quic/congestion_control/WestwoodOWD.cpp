@@ -238,6 +238,7 @@ void WestwoodOWD::updateOneWayDelay(
 void WestwoodOWD::updateState() {
   auto now = Clock::now();
   uint64_t delta = std::chrono::duration_cast<std::chrono::seconds>(now - stateWindowStartTime_).count();
+  std::cout << "delta : " << delta << " s\n";
   if (delta < 3) {
     currentState_ = State::Probe;
   }
@@ -266,10 +267,10 @@ void WestwoodOWD::onTransition() {
   // take the maximum among the one way delay samples collected during the probe phase,
   // then empty the vector
   auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-      if (max_it != OneWayDelayVec_.end()) {
-        OneWayDelayMax_ = *max_it;
-      }
-      OneWayDelayVec_.clear();
+  if (max_it != OneWayDelayVec_.end()) {
+    OneWayDelayMax_ = *max_it;
+  }
+  OneWayDelayVec_.clear();
 }
 
 void WestwoodOWD::onCruise() {
