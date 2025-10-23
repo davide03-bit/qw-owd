@@ -237,15 +237,15 @@ void WestwoodOWD::updateOneWayDelay(
 
 void WestwoodOWD::updateState() {
   auto now = Clock::now();
-  uint64_t delta = std::chrono::duration_cast<std::chrono::seconds>(now - stateWindowStartTime_).count();
-  std::cout << "delta : " << delta << " s\n";
-  if (delta < 3) {
+  uint64_t delta = std::chrono::duration_cast<std::chrono::microseconds>(now - stateWindowStartTime_).count();
+  //std::cout << "delta : " << delta << " us\n";
+  if (delta < 3e6) {
     currentState_ = State::Probe;
   }
   else if (!OneWayDelayVec_.empty()) {
     currentState_ = State::Transition;
   }
-  else if (delta > 3 && delta < 13) {
+  else if (delta > 3e6 && delta < 13e6) {
     currentState_ = State::Cruise;
   }
   else {
