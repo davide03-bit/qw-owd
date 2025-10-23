@@ -54,6 +54,8 @@ public:
   uint64_t getSlowStartThreshold() const noexcept;
   uint64_t getOneWayDelay() const noexcept;
   uint64_t getOneWayDelayVariation() const noexcept;
+  uint64_t getOneWayDelayMax() const noexcept;
+  State getState() const noexcept;
   void setAppIdle(bool, TimePoint) noexcept override;
   void setAppLimited() override;
   void setBandwidthUtilizationFactor(
@@ -77,6 +79,11 @@ private:
   bool isFirstPacket();
   void updateOneWayDelay(const CongestionController::AckEvent::AckPacket&);
   bool delayControl(double delayThresholdFraction);
+  void updateState();
+  void runCurrentState();
+  void onProbe();
+  void onTransition();
+  void onCruise();
 
 private:
   QuicConnectionStateBase& quicConnectionState_;
@@ -98,7 +105,15 @@ private:
   int64_t owd_;
   float biasEstimation_;
   int64_t OneWayDelayMax_;
-  std::chrono::steady_clock::time_point OneWayDelayWindowStartTime_;
+  std::chrono::steady_clock::time_point stateWindowStartTime_;
+
+  enum class State : uint8_t {
+    Probe,
+    Transition,
+    Cruise
+  };
+
+  State currentState_;
   std::vector<int64_t> OneWayDelayVec_;
   folly::Optional<TimePoint> endOfRecovery_;
 };

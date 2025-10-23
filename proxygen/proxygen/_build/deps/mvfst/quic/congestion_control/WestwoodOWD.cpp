@@ -100,7 +100,8 @@ WestwoodOWD::WestwoodOWD(QuicConnectionStateBase& conn)
       owd_(0),
       biasEstimation_(0),
       OneWayDelayMax_(std::numeric_limits<int64_t>::max()),
-      OneWayDelayWindowStartTime_(Clock::now()) {
+      stateWindowStartTime_(Clock::now()),
+      currentState_(State::Probe) {
   cwndBytes_ = boundedCwnd(
       cwndBytes_,
       quicConnectionState_.udpSendPacketLen,
@@ -225,24 +226,69 @@ void WestwoodOWD::updateOneWayDelay(
   // Clamp owd in order to reject nonsense queue negative levels
 
   owd_ = std::max(static_cast<int64_t>(0), owd_);
-  
-  auto now = Clock::now();
-  uint64_t delta = std::chrono::duration_cast<std::chrono::seconds>(now - OneWayDelayWindowStartTime_).count();
 
-  if (delta < 10) {
-    OneWayDelayVec_.push_back(owd_);
-  }
-  else {
-      auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
-      if (*max_it > OneWayDelayMax_ || OneWayDelayMax_ == std::numeric_limits<int64_t>::max()) {
-        OneWayDelayMax_ = *max_it;
-        OneWayDelayVec_.clear();
-        OneWayDelayWindowStartTime_ = now;
-      }
-    }
+  updateState();
+
+  runCurrentState();
 
   std::cout << time_owd_us << " " << owd_ << " " << owdvCorrect_ << " "
             << OneWayDelayMax_ << std::endl;
+}
+
+void WestwoodOWD::updateState() {
+  auto now = Clock::now();
+  uint64_t delta = std::chrono::duration_cast<std::chrono::seconds>(now - stateWindowStartTime_).count();
+  if (delta < 3) {
+    currentState_ = State::Probe;
+  }
+  else if (!OneWayDelayVec_.empty()) {
+    currentState_ = State::Transition;
+  }
+  else if (delta > 3 && delta < 13) {
+    currentState_ = State::Cruise;
+  }
+  else {
+    stateWindowStartTime_ = now;
+    currentState_ = State::Probe;
+  }
+}
+
+void WestwoodOWD::onProbe() {
+  // collect one way queuing delay samples in a vector without using any threshold
+  // the aim of this phase is to fill up the queue in order to measure the real maximum 
+  if (OneWayDelayMax_ != std::numeric_limits<int64_t>::max()) {
+    OneWayDelayMax_ = std::numeric_limits<int64_t>::max();
+  }
+  OneWayDelayVec_.push_back(owd_);
+}
+
+void WestwoodOWD::onTransition() {
+  // take the maximum among the one way delay samples collected during the probe phase,
+  // then empty the vector
+  auto max_it = std::max_element(OneWayDelayVec_.begin(), OneWayDelayVec_.end());
+      if (max_it != OneWayDelayVec_.end()) {
+        OneWayDelayMax_ = *max_it;
+      }
+      OneWayDelayVec_.clear();
+      break;
+}
+
+void WestwoodOWD::onCruise() {
+  // no operation in this phase
+}
+
+void WestwoodOWD::runCurrentState() {
+  switch(currentState_) {
+    case State::Probe:
+        onProbe();
+        break;
+    case State::Transition:
+        onTransition();
+        break;
+    case State::Cruise:
+        onCruise();
+        break;
+  }
 }
 
 void WestwoodOWD::onPacketAcked(
@@ -451,6 +497,14 @@ uint64_t WestwoodOWD::getOneWayDelayVariation() const noexcept {
   return owdv_;
 }
 
+uint64_t WestwoodOWD::getOneWayDelayMax() const noexcept {
+  return OneWayDelayMax_;
+}
+
+State WestwoodOWD::getState() const noexcept {
+  return currentState_;
+}
+
 bool WestwoodOWD::inSlowStart() const noexcept {
   return cwndBytes_ < ssthresh_;
 }
@@ -469,6 +523,8 @@ void WestwoodOWD::getStats(CongestionControllerStats& stats) const {
   stats.westwoodOWDStats.ssthresh = ssthresh_;
   stats.westwoodOWDStats.owd = owd_;
   stats.westwoodOWDStats.owdv = owdv_;
+  stats.westwoodOWDStats.owd_max = OneWayDelayMax_;
+  stats.westwoodOWDStats.state = static_cast<uint8_t>(currentState_);
 }
 
 void WestwoodOWD::setAppIdle(bool, TimePoint) noexcept { /* unsupported */ }
