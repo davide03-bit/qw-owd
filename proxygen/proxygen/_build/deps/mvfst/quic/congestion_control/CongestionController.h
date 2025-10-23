@@ -48,6 +48,8 @@ struct WestwoodOWDStats {
   uint64_t ssthresh;
   uint64_t owd;
   uint64_t owdv;
+  uint64_t owd_max;
+  uint8_t state;
 };
 
 union CongestionControllerStats {
