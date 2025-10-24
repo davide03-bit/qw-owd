@@ -245,7 +245,7 @@ void WestwoodOWD::updateState() {
   else if (!OneWayDelayVec_.empty()) {
     currentState_ = State::Transition;
   }
-  else if (delta > 5e6 && delta < 13e6) {
+  else if (delta > 3e6 && delta < 13e6) {
     currentState_ = State::Cruise;
   }
   else {
