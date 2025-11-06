@@ -320,7 +320,7 @@ void WestwoodOWD::onPacketAcked(
                       .delayControlFraction)) {
     uint64_t rttMinUs = rttSampler_.minRtt().count();
     ssthresh_ = std::max(
-        static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6)),
+        0.5 * (cwndBytes_ + static_cast<uint64_t>(bandwidthEstimate_ * (rttMinUs / 1e6))),
         2 * quicConnectionState_.udpSendPacketLen);
     cwndBytes_ = ssthresh_;
     cwndBytes_ = boundedCwnd(
